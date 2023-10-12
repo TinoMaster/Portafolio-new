@@ -1,0 +1,39 @@
+import { motion } from "framer-motion";
+import { RiSuitcaseFill } from "react-icons/ri";
+import { resumeAboutMe } from "../../../animation/framers";
+import { FcPortraitMode } from "react-icons/fc";
+import { aboutMe } from "../../../data/aboutMe";
+
+export const Resume = () => {
+  const { description, lenguages } = aboutMe;
+  return (
+    <motion.div
+      variants={resumeAboutMe}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: 0.7 }}
+      className="flex flex-col gap-4 lg:w-1/2 m-auto h-full"
+    >
+      <p className="w-full flex text-xl lg:text-lg gap-1 justify-center items-center font-semibold">
+        <span className="flex items-center gap-2">
+          <FcPortraitMode className="text-xl" /> Welcome To My Portfolio.
+        </span>
+        <span className="md:text-xl hidden lg:flex">
+          <RiSuitcaseFill className="bg-white/10 inline p-1 rounded-full shadow -translate-y-1 shadow-black/50" />
+        </span>
+      </p>
+
+      <p className="w-full lg:text-base text-lg text-justify font-light">
+        {description}
+      </p>
+      <div className="flex flex-col gap-3 bg-black/5 p-3 rounded-md">
+        <h4 className="font-semibold w-full text-center">Languages:</h4>
+        <div className="flex w-full gap-3 justify-center">
+          <p className="text-sm p-1">Spanish: {lenguages.Spanish}</p>
+          <p className="text-sm p-1">English: {lenguages.English}</p>
+          <p className="text-sm p-1">Italian: {lenguages.Italian}</p>
+        </div>
+      </div>
+    </motion.div>
+  );
+};

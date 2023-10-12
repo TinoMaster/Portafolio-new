@@ -1,0 +1,16 @@
+import { useContext } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import AppContext from "../../context/appContext";
+
+export const BtnMenuMovil = () => {
+  const context = useContext(AppContext);
+
+  return (
+    <div
+      onClick={context?.handlerMenuMovile}
+      className="md:hidden shadow shadow-primary/40 p-2 mx-4 rounded-full"
+    >
+      <AiOutlineMenu className="text-3xl" />
+    </div>
+  );
+};
