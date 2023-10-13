@@ -1,8 +1,8 @@
-import React from "react";
+import { Project } from "../../../../models/types/Project";
 
-export const ProjectTitle = ({ name }) => {
+export const ProjectTitle = ({ name }: { name: Project["name"] }) => {
   return (
-    <h3 className="w-full text-center text-lg font-semibold pb-6 lg:pb-10">
+    <h3 className="w-full lg:text-center pb-2 lg:pb-10">
       {name}
     </h3>
   );

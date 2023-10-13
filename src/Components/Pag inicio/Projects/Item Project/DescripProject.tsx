@@ -6,7 +6,7 @@ export const DescripProject = ({
   description: Project["description"];
 }) => {
   return (
-    <p className="w-full text-justify text-sm border-b font-normal font-roboto pb-2">
+    <p className="w-full text-justify border-b border-slate-600 font-light pb-2">
       {description}
     </p>
   );

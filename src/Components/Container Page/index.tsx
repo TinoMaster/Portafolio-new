@@ -1,6 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { MenuMovil } from "../Menu/MenuMovil";
-import { PagInicio } from "../Pag inicio";
+import { PagInicio } from "../../pages/Inicio";
+import { Error404 } from "../../pages/404";
+import { BlogPage } from "../../pages/Blog";
+import { AboutPage } from "../../pages/About";
+import { ProjectsPage } from "../../pages/Projects";
 
 export const Container = () => {
   return (
@@ -8,7 +12,10 @@ export const Container = () => {
       <MenuMovil />
       <Routes>
         <Route path="/" element={<PagInicio />} />
-        {/* <Route path="/*" element={<Error404 />} /> */}
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
     </section>
   );

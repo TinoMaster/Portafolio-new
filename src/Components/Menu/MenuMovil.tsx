@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { linksScroll } from "../../data/linksMenu";
 import AppContext from "../../context/appContext";
+import { Link } from "react-router-dom";
 
 export const MenuMovil = () => {
   const context = useContext(AppContext);
@@ -18,17 +19,16 @@ export const MenuMovil = () => {
     >
       <div className="p-4 flex flex-col justify-center items-center gap-8 text-3xl md:hidden font-siliguri font-normal">
         {linksScroll?.map((link) => (
-          <a
+          <Link
             key={link.name}
-            href="seccion1"
-            onClick={(e) => {
-              e.preventDefault();
+            to={link.path}
+            onClick={() => {
               scrollToSection(link.section);
               context?.handlerMenuMovile();
             }}
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
