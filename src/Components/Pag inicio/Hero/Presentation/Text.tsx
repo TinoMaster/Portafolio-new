@@ -11,7 +11,7 @@ export const Text = () => {
       </h2>
       <span className="block p-1">Junior Web Developer.</span>
       <span className="p-1 mr-28 md:m-0">
-        Technologies{" "}
+        <span className="text-primary text-2xl">Full Stack</span> Technologies
         <span className="absolute ml-1">{/* <TypedReactHooksDemo /> */}</span>
       </span>
     </>

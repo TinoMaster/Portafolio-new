@@ -1,16 +1,24 @@
-import { Presentation } from "./Presentation";
-import { Imagen } from "./imagen.js";
 import { BoxTechs } from "./BoxTechs.js";
-import { Fondo } from "./Fondo.js";
+import { FondoHero } from "../../global/Hero/FondoHero.js";
+import { ImageHero } from "../../global/Hero/ImageHero.js";
+import { mi_fondo1, mi_foto2 } from "../../../utils/images.js";
+import { PresentationHero } from "../../global/Hero/PresentationHero.js";
+import { Text } from "./Presentation/Text.js";
+import { BtnDonwloadCurr } from "./Presentation/BtnDonwloadCurr.js";
+import { Links } from "./Presentation/Links.js";
 
-export const Hero = () => {
+export const HeroHome = () => {
   return (
     <>
       <div className="w-full h-full relative">
-        <Fondo />
-        <section className="container flex flex-wrap relative  flex-row-reverse w-full h-full items-center justify-center py-10 md:px-10">
-          <Imagen />
-          <Presentation />
+        <FondoHero image={mi_fondo1} />
+        <section className="principalSectionHero">
+          <ImageHero image={mi_foto2} />
+          <PresentationHero>
+            <Text />
+            <BtnDonwloadCurr />
+            <Links />
+          </PresentationHero>
         </section>
       </div>
       <div className="container w-full h-1/2 flex flex-col items-center md:justify-cente px-8">

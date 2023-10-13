@@ -2,27 +2,19 @@ const linksScroll = [
   {
     name: "Home",
     path: "/",
-    section: "1",
-  },
-  {
-    name: "About Me",
-    path: "/",
-    section: "2",
   },
   {
     name: "Projects",
-    path: "/",
-    section: "3",
+    path: "/projects",
   },
   {
-    name: "Contact",
-    path: "/",
-    section: "4",
+    name: "About Me",
+    path: "/about",
   },
+
   {
     name: "Blog",
     path: "/blog",
-    section: "",
   },
 ];
 

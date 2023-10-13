@@ -1,12 +1,10 @@
-import { mi_fondo1 } from "../../../utils/images";
-
-export const Fondo = () => {
+export const FondoHero = ({ image }: { image: string }) => {
   return (
     <>
       <div className="absolute w-full h-full overflow-hidden">
         <img
           className="w-full object-cover h-full bg-transparent blur-md"
-          src={mi_fondo1}
+          src={image}
           alt=""
         />
       </div>

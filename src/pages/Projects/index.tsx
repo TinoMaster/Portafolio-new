@@ -1,13 +1,14 @@
+import { HeroProjects } from "../../Components/Pag Projects/hero";
+import { Projects } from "../../Components/Pag Projects/projects";
+
 export const ProjectsPage = () => {
   return (
-    <div className="pt-20">
-      <h1>AboutPage</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
-        laudantium! Doloribus ipsum vitae tenetur, veniam quis nulla consequatur
-        expedita in voluptates veritatis. Saepe repellendus eaque temporibus
-        adipisci maxime, natus ducimus?
-      </p>
+    <div className="flex flex-col pt-20">
+      {/* Hero */}
+      <HeroProjects />
+      <div className="w-full relative px-4 max-w-720p m-auto overflow-hidden">
+        <Projects />
+      </div>
     </div>
   );
 };

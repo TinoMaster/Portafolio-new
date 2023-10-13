@@ -23,7 +23,7 @@ export const Resume = () => {
         </span>
       </p>
 
-      <p className="w-full lg:text-base text-lg text-justify font-light">
+      <p className="w-full text-lg text-justify font-light">
         {description}
       </p>
       <div className="flex flex-col gap-3 bg-black/5 p-3 rounded-md">

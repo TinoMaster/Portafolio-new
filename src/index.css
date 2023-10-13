@@ -7,3 +7,7 @@
 .container {
   @apply max-w-720p m-auto;
 }
+
+.principalSectionHero {
+  @apply container flex flex-wrap relative  flex-row-reverse w-full h-full items-center justify-center py-10 md:px-10;
+}
