@@ -1,4 +1,3 @@
-import React from "react";
 import { FaHandPointDown } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
@@ -18,7 +17,7 @@ const contacts = [
   },
 ];
 
-export const Contacts = ({ darkMode }) => {
+export const Contacts = () => {
   return (
     <div className="flex flex-wrap justify-center w-full m-auto max-w-720p">
       <h2 className="w-full font-semibold text-center lg:py-10 lg:text-xl text-primary">
@@ -40,11 +39,7 @@ export const Contacts = ({ darkMode }) => {
             >
               {/* Icon */}
               <div className="w-full flex justify-center lg:w-auto">
-                <div
-                  className={`p-3 ${
-                    darkMode ? "bg-white " : "bg-white/10"
-                  } rounded-full text-3xl shadow-xl shadow-primary/10 border-2 border-primary/20`}
-                >
+                <div className="p-3 bg-white/10 rounded-full text-3xl shadow-xl shadow-primary/10 border-2 border-primary/20">
                   {el.icon}
                 </div>
               </div>

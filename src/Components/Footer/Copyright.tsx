@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Copyright = () => {
   return (
     <div className="w-full md:w-1/2 flex py-2 justify-center">

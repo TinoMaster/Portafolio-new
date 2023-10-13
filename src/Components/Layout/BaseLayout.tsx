@@ -1,4 +1,5 @@
 import { Container } from "../Container Page";
+import { Footer } from "../Footer";
 import { Menu } from "../Menu";
 
 export const BaseLayout = () => {
@@ -8,9 +9,9 @@ export const BaseLayout = () => {
     >
       <Menu />
       <Container />
-      {/* <div className="bg-primary/70">
+      <div className="bg-primary/70">
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 };
