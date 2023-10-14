@@ -3,7 +3,7 @@ import { Categories } from "./categories";
 
 export const Blogs = () => {
   return (
-    <div className="flex flex-col gap-2 p-2">
+    <div className="flex flex-col gap-4 p-2">
       <Categories />
       <Outlet />
     </div>

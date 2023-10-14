@@ -21,12 +21,12 @@ export const Categories = () => {
     <motion.div
       ref={categoriesCarousel}
       whileTap={{ cursor: "grabbing" }}
-      className="flex gap-2 overflow-hidden relative"
+      className="flex lg:justify-center overflow-hidden relative"
     >
       <motion.div
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
-        className="flex w-max gap-2 cursor-grab"
+        className="flex w-max gap-4 lg:gap-7 cursor-grab"
       >
         {categories?.map((category) => (
           <Category key={category} category={category} />

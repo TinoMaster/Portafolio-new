@@ -10,7 +10,7 @@ export const PrincipalContent = ({
 }: PricipalContentProps) => {
   return (
     <div className="flex justify-between p-1">
-      <h1>{description}</h1>
+      <h1 className="lg:text-lg w-4/5">{description}</h1>
       <div className="w-16 h-12 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>

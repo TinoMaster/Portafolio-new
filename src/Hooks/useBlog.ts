@@ -4,12 +4,19 @@ import { BlogService } from "../services/blog";
 
 const useBlog = (category: BlogCategory) => {
   const [blogsFilter, setBlogsFilter] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    BlogService.getBlogs(category).then((res) => setBlogsFilter(res));
+    setLoading(true);
+    BlogService.getBlogs(category).then((res) => {
+      setTimeout(() => {
+        setLoading(false);
+        setBlogsFilter(res);
+      }, 1000);
+    });
   }, [category]);
 
-  return { blogsFilter };
+  return { blogsFilter, loading };
 };
 
 export default useBlog;

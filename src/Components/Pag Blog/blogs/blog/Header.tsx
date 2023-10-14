@@ -1,24 +1,35 @@
 import { IconType } from "react-icons";
+import { Blog } from "../../../../models/types/Blog";
+import { whatColorIs } from "../../../../utils/colorIconBlog";
 
 interface HeaderBlogProps {
   Icon: IconType;
   title: string;
-  date: string;
+  date: Blog["date"];
+  category: Blog["category"];
 }
 
-export const HeaderBlog = ({ Icon, title, date }: HeaderBlogProps) => {
+export const HeaderBlog = ({
+  Icon,
+  title,
+  date,
+  category,
+}: HeaderBlogProps) => {
+  const background = whatColorIs(category);
   return (
     <div className="w-full">
       <div className="flex flex-wrap justify-between items-center gap-2">
         {/* author */}
-        <div className="flex gap-1 items-center">
-          <div className="p-1 bg-yellow-600 rounded-full">
-            <Icon />
+        <div className="flex gap-2 items-center">
+          <div className={`p-1 rounded-full ${background}`}>
+            <Icon className="lg:text-xl text-darkMode" />
           </div>
-          <span className="text-gray-500">{title}</span>
+          <span className="text-gray-300 lg:text-xl font-light">{title}</span>
         </div>
         {/* date */}
-        <span className="text-gray-500 text-xs font-lora">{date}</span>
+        <span className="text-gray-300 text-xs lg:text-sm font-lora">
+          {date}
+        </span>
       </div>
     </div>
   );

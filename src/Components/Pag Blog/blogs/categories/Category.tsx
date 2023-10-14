@@ -18,7 +18,7 @@ export const Category = ({ category }: { category: BlogCategory }) => {
           className="absolute w-full h-full border-b"
         ></motion.div>
       ) : null}
-      <span className="text-xs">{linkCategory}</span>
+      <span className="text-xs lg:text-xl">{linkCategory}</span>
     </Link>
   );
 };

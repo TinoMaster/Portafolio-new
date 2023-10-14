@@ -18,6 +18,7 @@ export const Container = () => {
         <Route path="/blog" element={<BlogPage />}>
           <Route path=":category" element={<WrapperBlogs />} />
         </Route>
+        {/* <Route path="/blog/:category/:id" element={<WrapperBlogs />} /> */}
         <Route path="/*" element={<Error404 />} />
       </Routes>
     </section>
