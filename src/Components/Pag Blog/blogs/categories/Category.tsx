@@ -11,7 +11,7 @@ export const Category = ({ category }: { category: BlogCategory }) => {
   ].join("");
 
   return (
-    <Link to={`/blog/${category}`}>
+    <Link to={`/blog/${category}`} className="relative">
       {currentPath === category ? (
         <motion.div
           layoutId="active"
