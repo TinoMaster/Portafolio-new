@@ -1,6 +1,6 @@
 export interface Blog {
   id: number | string;
-  lenguage: Lenguage;
+  category: BlogCategory;
   title: string;
   description: string;
   content: string;
@@ -9,22 +9,21 @@ export interface Blog {
   date: string;
 }
 
-interface BlogSection {
+export interface BlogSection {
   id: number;
   title: string;
   type: "text" | "image" | "code";
   content: string;
 }
 
-type Lenguage =
+export type BlogCategory =
+  | "general"
   | "javascript"
   | "react"
-  | "curious"
   | "next"
-  | "ux"
   | "ui"
+  | "curious"
   | "tailwind"
   | "node"
   | "typescript"
-  | "me"
-  | "general";
+  | "me";

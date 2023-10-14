@@ -9,7 +9,7 @@ export const blogs: Blog[] = [
     title: "Esto es una prueba",
     description: "Esto es una descripción",
     content: "Esto es el contenido",
-    lenguage: "javascript",
+    category: "javascript",
     date: formatDate,
     image: "https://picsum.photos/500/300",
     sections: [
@@ -38,7 +38,7 @@ export const blogs: Blog[] = [
     title: "Esto es una prueba",
     description: "Esto es una descripción",
     content: "Esto es el contenido",
-    lenguage: "react",
+    category: "react",
     date: formatDate,
     image: "https://picsum.photos/500/300",
     sections: [

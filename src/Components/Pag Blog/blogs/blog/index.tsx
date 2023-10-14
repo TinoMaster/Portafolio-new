@@ -4,7 +4,7 @@ import { iconsHeadBlog } from "../../../../data/iconsHeadBlog";
 import { PrincipalContent } from "./PrincipalContent";
 
 export const ItemBlog = ({ blog }: { blog: Blog }) => {
-  const icon = iconsHeadBlog[blog.lenguage];
+  const icon = iconsHeadBlog[blog.category];
 
   return (
     <div className="w-full flex flex-col gap-2 bg-white/5 rounded-md p-2 shadow shadow-black/10">
