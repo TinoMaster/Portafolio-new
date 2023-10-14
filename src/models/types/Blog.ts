@@ -1,5 +1,5 @@
 export interface Blog {
-  id: number | string;
+  id: string;
   category: BlogCategory;
   title: string;
   description: string;
@@ -15,6 +15,19 @@ export interface BlogSection {
   type: "text" | "image" | "code";
   content: string;
 }
+
+export const ArrValidCategory: BlogCategory[] = [
+  "general",
+  "javascript",
+  "react",
+  "next",
+  "ui",
+  "curious",
+  "tailwind",
+  "node",
+  "typescript",
+  "me",
+];
 
 export type BlogCategory =
   | "general"

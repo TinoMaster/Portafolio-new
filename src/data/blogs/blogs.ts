@@ -5,7 +5,7 @@ const formatDate = `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`;
 
 export const blogs: Blog[] = [
   {
-    id: 1,
+    id: "1",
     title: "Creacion de arreglos",
     description: "Mejor no intentar construir un arreglo con estas condiciones",
     content: "Esto es el contenido",
@@ -34,7 +34,7 @@ export const blogs: Blog[] = [
     ],
   },
   {
-    id: 2,
+    id: "2",
     title: "Esto es una prueba",
     description: "Esto es una descripción",
     content: "Esto es el contenido",
@@ -63,7 +63,7 @@ export const blogs: Blog[] = [
     ],
   },
   {
-    id: 3,
+    id: "3",
     title: "Esto es una prueba",
     description: "Esto es una descripción",
     content: "Esto es el contenido",
@@ -92,7 +92,7 @@ export const blogs: Blog[] = [
     ],
   },
   {
-    id: 4,
+    id: "4",
     title: "Esto es una prueba",
     description: "Esto es una descripción",
     content: "Esto es el contenido",

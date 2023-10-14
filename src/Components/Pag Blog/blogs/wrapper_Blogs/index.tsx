@@ -1,14 +1,19 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useBlog from "../../../../Hooks/useBlog";
-import { BlogCategory } from "../../../../models/types/Blog";
+import { ArrValidCategory, BlogCategory } from "../../../../models/types/Blog";
 import { ItemBlog } from "../blog";
 import { ListLoading } from "../../../loaders/listLoader";
 
 export const WrapperBlogs = () => {
-  const params = useParams();
+  const navigate = useNavigate();
+  const params = useParams<{ category: BlogCategory }>();
   const { category } = params;
-  const cat = category as BlogCategory;
-  const { blogsFilter, loading } = useBlog(cat);
+  const { blogsFilter, loading } = useBlog(category || "general");
+  if (category) {
+    if (!ArrValidCategory.includes(category)) {
+      navigate("/404");
+    }
+  }
 
   return (
     <div className="flex flex-wrap">

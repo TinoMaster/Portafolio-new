@@ -7,4 +7,8 @@ export class BlogService {
       (el) => el.category === category || category === "general"
     );
   }
+
+  static async getItemBlog(id: string) {
+    return blogs.find((el) => el.id === id);
+  }
 }

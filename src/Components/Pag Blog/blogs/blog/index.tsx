@@ -2,12 +2,16 @@ import { Blog } from "../../../../models/types/Blog";
 import { HeaderBlog } from "./Header";
 import { iconsHeadBlog } from "../../../../data/iconsHeadBlog";
 import { PrincipalContent } from "./PrincipalContent";
+import { Link } from "react-router-dom";
 
 export const ItemBlog = ({ blog }: { blog: Blog }) => {
   const icon = iconsHeadBlog[blog.category];
 
   return (
-    <div className="flex justify-center items-center w-full lg:w-1/2 p-2">
+    <Link
+      to={`/blog/view_blog/${blog.id}`}
+      className="flex justify-center items-center w-full lg:w-1/2 p-2"
+    >
       <div className="w-full h-full flex flex-col gap-2 bg-white/5 rounded-md p-3 shadow shadow-black/10 hover:cursor-pointer hover:bg-white/10 transition-colors duration-300">
         <HeaderBlog
           Icon={icon}
@@ -21,6 +25,6 @@ export const ItemBlog = ({ blog }: { blog: Blog }) => {
           title={blog.title}
         />
       </div>
-    </div>
+    </Link>
   );
 };

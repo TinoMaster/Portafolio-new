@@ -6,6 +6,7 @@ import { BlogPage } from "../../pages/Blog";
 import { AboutPage } from "../../pages/About";
 import { ProjectsPage } from "../../pages/Projects";
 import { WrapperBlogs } from "../Pag Blog/blogs/wrapper_Blogs";
+import { WrapperItemBlog } from "../Pag Blog/blogs/wrapper_Item_Blog";
 
 export const Container = () => {
   return (
@@ -18,7 +19,7 @@ export const Container = () => {
         <Route path="/blog" element={<BlogPage />}>
           <Route path=":category" element={<WrapperBlogs />} />
         </Route>
-        {/* <Route path="/blog/:category/:id" element={<WrapperBlogs />} /> */}
+        <Route path="/blog/view_blog/:id" element={<WrapperItemBlog />} />
         <Route path="/*" element={<Error404 />} />
       </Routes>
     </section>
