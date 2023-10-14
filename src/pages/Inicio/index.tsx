@@ -6,7 +6,7 @@ import { Projects } from "../../Components/Pag inicio/Projects";
 export const PagInicio = () => {
   return (
     <div className="w-full flex flex-col relative">
-      <div id="1" className="flex flex-col pt-10 w-full m-auto h-[100vh]">
+      <div className="flex flex-col pt-10 w-full m-auto">
         <HeroHome />
       </div>
       <div className="w-full relative px-4 pb-10 max-w-720p m-auto overflow-hidden">
