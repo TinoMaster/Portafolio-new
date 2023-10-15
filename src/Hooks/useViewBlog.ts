@@ -4,7 +4,7 @@ import { BlogService } from "../services/blog";
 
 const initialState: Blog = {
   id: "",
-  category: "general",
+  category: "javascript",
   content: "",
   date: "",
   description: "",

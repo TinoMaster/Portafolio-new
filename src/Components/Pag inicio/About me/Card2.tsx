@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { imageaboutme2 } from "../../../animation/framers";
 import { DiJavascript1 } from "react-icons/di";

@@ -1,8 +1,10 @@
-import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { GiRapidshareArrow } from "react-icons/gi";
+interface LinksProjectProps {
+  links: string[];
+}
 
-export const LinksProject = ({ links }) => {
+export const LinksProject = ({ links }: LinksProjectProps) => {
   return (
     <>
       {/* Caja de links */}

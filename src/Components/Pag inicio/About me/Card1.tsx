@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { imageaboutme1 } from "../../../animation/framers";
 import { FaNode } from "react-icons/fa";
 

@@ -1,4 +1,4 @@
-import { BlogSection } from "../../../../models/types/Blog";
+import { BlogSection } from "../../../models/types/Blog";
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (

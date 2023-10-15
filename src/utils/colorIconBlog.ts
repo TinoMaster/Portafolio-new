@@ -27,7 +27,7 @@ export const whatColorIs: (category: BlogCategory) => string = (category) => {
     case "curious":
       result = "bg-[#2A2A2A]";
       break;
-    case "me":
+    case "vsCode":
       result = "bg-[#F7E025]";
       break;
   }

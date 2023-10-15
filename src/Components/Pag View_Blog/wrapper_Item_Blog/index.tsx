@@ -1,15 +1,9 @@
-import { useParams } from "react-router-dom";
-import { Blog } from "../../../../models/types/Blog";
-import useViewBlog from "../../../../Hooks/useViewBlog";
 import { SectionItemBlog } from "./SectionItemBlog";
 import { ButtonBack } from "./ButtonBack";
 import { Header } from "./Header";
+import { Blog } from "../../../models/types/Blog";
 
-export const WrapperItemBlog = () => {
-  const params = useParams<{ id: Blog["id"] }>();
-  const { id } = params;
-  const { itemBlog } = useViewBlog(id || "");
-
+export const WrapperItemBlog = ({ itemBlog }: { itemBlog: Blog }) => {
   return (
     <div className="mt-20 max-w-720p m-auto p-2 text-slate-400 font-light">
       <ButtonBack />

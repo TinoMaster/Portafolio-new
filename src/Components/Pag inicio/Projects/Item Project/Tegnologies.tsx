@@ -1,8 +1,17 @@
-import React from "react";
 import { CgScreen } from "react-icons/cg";
 import { GoDatabase, GoServer } from "react-icons/go";
 
-export const Tegnologies = ({ tegnologiesF, tegnologiesB, dataBase }) => {
+interface TegnoligiesProps {
+  tegnologiesF: string[];
+  tegnologiesB: string[];
+  dataBase: string;
+}
+
+export const Tegnologies = ({
+  tegnologiesF,
+  tegnologiesB,
+  dataBase,
+}: TegnoligiesProps) => {
   return (
     <>
       {/* Seccion tegnologias que use */}
