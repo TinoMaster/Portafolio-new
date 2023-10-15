@@ -1,5 +1,5 @@
 import { BlogSection } from "../../../models/types/Blog";
-import { FormatTextWithLinks } from "../../global/formatTextWithLinks";
+import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (
