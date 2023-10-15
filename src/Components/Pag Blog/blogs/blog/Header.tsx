@@ -25,10 +25,10 @@ export const HeaderBlog = ({
           <div className={`p-1 rounded-full ${background}`}>
             <Icon className="lg:text-xl text-darkMode" />
           </div>
-          <span className="text-gray-300 lg:text-xl font-light">{title}</span>
+          <span className="text-gray-500 lg:text-xl font-light">{title}</span>
         </div>
         {/* date */}
-        <span className="text-gray-300 text-xs lg:text-sm font-lora">
+        <span className="text-gray-500 text-xs lg:text-sm font-lora">
           {formatDate(date)}
         </span>
       </div>

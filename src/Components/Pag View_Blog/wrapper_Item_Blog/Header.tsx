@@ -24,7 +24,7 @@ export const Header = ({
   const Icon = iconsHeadBlog[category];
   const background = whatColorIs(category);
   return (
-    <div className="flex flex-col gap-2 pt-[40px]">
+    <div className="flex flex-col gap-2 pt-[40px] lg:text-lg">
       <h1 className="text-3xl font-bold">{title}</h1>
       <p className="font-semibold">{description}</p>
       <span className="text-xs">{formatDate(date)}</span>
@@ -32,8 +32,8 @@ export const Header = ({
         <Icon className={`p-1 rounded-full text-darkMode ${background}`} />
         <span className="text-xl">{category}</span>
       </div>
-      <div className="">
-        <img src={image} alt="" />
+      <div className="w-full">
+        <img src={image} alt="" className="w-full object-cover" />
       </div>
       <div>
         <FormatTextWithLinks text={content} />
