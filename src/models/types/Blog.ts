@@ -17,7 +17,6 @@ export interface BlogSection {
 }
 
 export const ArrValidCategory: BlogCategory[] = [
-  "general",
   "javascript",
   "react",
   "next",
@@ -26,11 +25,10 @@ export const ArrValidCategory: BlogCategory[] = [
   "tailwind",
   "node",
   "typescript",
-  "me",
+  "vsCode",
 ];
 
 export type BlogCategory =
-  | "general"
   | "javascript"
   | "react"
   | "next"
@@ -39,4 +37,4 @@ export type BlogCategory =
   | "tailwind"
   | "node"
   | "typescript"
-  | "me";
+  | "vsCode";

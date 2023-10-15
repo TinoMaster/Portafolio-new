@@ -8,7 +8,7 @@ export const WrapperBlogs = () => {
   const navigate = useNavigate();
   const params = useParams<{ category: BlogCategory }>();
   const { category } = params;
-  const { blogsFilter, loading } = useBlog(category || "general");
+  const { blogsFilter, loading } = useBlog(category);
   if (category) {
     if (!ArrValidCategory.includes(category)) {
       navigate("/404");

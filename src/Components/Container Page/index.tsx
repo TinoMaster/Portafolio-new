@@ -17,6 +17,7 @@ export const Container = () => {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />}>
+          <Route index element={<WrapperBlogs />} />
           <Route path=":category" element={<WrapperBlogs />} />
         </Route>
         <Route path="/blog/view_blog/:id" element={<WrapperItemBlog />} />

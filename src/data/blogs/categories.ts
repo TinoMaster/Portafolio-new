@@ -1,7 +1,6 @@
 import { BlogCategory } from "../../models/types/Blog";
 
 export const categories: BlogCategory[] = [
-  "general",
   "javascript",
   "react",
   "typescript",
@@ -10,5 +9,5 @@ export const categories: BlogCategory[] = [
   "curious",
   "ui",
   "tailwind",
-  "me",
+  "vsCode",
 ];

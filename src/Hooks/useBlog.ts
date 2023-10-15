@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Blog, BlogCategory } from "../models/types/Blog";
 import { BlogService } from "../services/blog";
 
-const useBlog = (category: BlogCategory) => {
+const useBlog = (category: BlogCategory | undefined) => {
   const [blogsFilter, setBlogsFilter] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(false);
 
