@@ -2,7 +2,7 @@ import mi_foto2 from "../assets/images/my_image.png";
 import mi_fondo1 from "../assets/images/fondo1.png";
 import fondo_projects from "../assets/images/fondoAmarillo.jpg";
 import fondo_about from "../assets/images/fondoAbout.jpg";
-import fondo_blog from "../assets/images/fondoBlog.jpg";
+import fondo_blog from "../assets/images/fondoBlog.jpeg";
 import mi_logo from "../assets/images/Mi_Logo.png";
 import appLocal_dark from "../assets/images/appLocalDark.png";
 import appDebts from "../assets/images/appDebts.png";
