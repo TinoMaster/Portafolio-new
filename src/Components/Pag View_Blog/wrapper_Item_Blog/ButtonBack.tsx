@@ -16,7 +16,7 @@ export const ButtonBack = () => {
   return (
     <button
       onClick={handleGoBack}
-      className="flex gap-2 items-center shadow-xl bg-darkMode/80 p-2 rounded-md text-white/90 fixed top-[75px] hover:bg-slate-500"
+      className="flex gap-2 items-center shadow bg-darkMode/80 p-2 rounded-md text-white/90 fixed top-[75px] hover:bg-slate-500"
     >
       <FaArrowLeft /> Volver
     </button>

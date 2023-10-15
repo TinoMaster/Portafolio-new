@@ -6,7 +6,7 @@ export interface Blog {
   content: string;
   image: string;
   sections: BlogSection[];
-  date: string;
+  date: Date;
 }
 
 export interface BlogSection {

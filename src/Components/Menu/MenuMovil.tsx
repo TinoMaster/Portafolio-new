@@ -13,7 +13,11 @@ export const MenuMovil = () => {
     >
       <div className="p-4 flex flex-col justify-center items-center gap-8 text-3xl md:hidden font-siliguri font-normal">
         {linksScroll?.map((link) => (
-          <Link key={link.name} to={link.path}>
+          <Link
+            onClick={context?.handlerMenuMovile}
+            key={link.name}
+            to={link.path}
+          >
             {link.name}
           </Link>
         ))}

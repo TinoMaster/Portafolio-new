@@ -1,7 +1,6 @@
 import { Blog } from "../../models/types/Blog";
 
 const date = new Date();
-const formatDate = `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`;
 
 export const blogs: Blog[] = [
   {
@@ -9,9 +8,9 @@ export const blogs: Blog[] = [
     title: "Creacion de arreglos",
     description: "Mejor no intentar construir un arreglo con estas condiciones",
     content:
-      "Claro, puedo ayudarte con eso. Si estás buscando información sobre cómo copiar y pegar párrafos en programación web, la función que suele utilizarse en JavaScript es document.execCommand('copy'). Esta función permite copiar el contenido de un elemento HTML o una selección de texto al portapapeles del usuario. Luego, puedes pegar ese contenido en otro lugar.",
+      "Claro, puedo ayudarte con eso. Si estás buscando __link:https://prueba.com**nombre información sobre cómo copiar y pegar párrafos en programación web, la función que suele utilizarse en JavaScript es document.execCommand('copy'). Esta función permite copiar el contenido de un elemento HTML o una selección de texto al portapapeles del usuario. Luego, puedes pegar ese contenido en otro lugar.",
     category: "javascript",
-    date: formatDate,
+    date: date,
     image: "https://picsum.photos/500/300",
     sections: [
       {
@@ -19,7 +18,7 @@ export const blogs: Blog[] = [
         title: "Esto es una prueba",
         type: "text",
         content:
-          "Claro, puedo ayudarte con eso. Si estás buscando información sobre cómo copiar y pegar párrafos en programación web, la función que suele utilizarse en JavaScript es document.execCommand('copy'). Esta función permite copiar el contenido de un elemento HTML o una selección de texto al portapapeles del usuario. Luego, puedes pegar ese contenido en otro lugar.",
+          "2-Claro, puedo ayudarte con eso. Si estás __link:https://prueba.com**nombre buscando información sobre cómo copiar y pegar párrafos en programación web, la función que suele utilizarse en JavaScript es document.execCommand('copy'). Esta función permite copiar el contenido de un elemento HTML o una selección de texto al portapapeles del usuario. Luego, puedes pegar ese contenido en otro lugar.",
       },
       {
         id: 2,
@@ -42,7 +41,7 @@ export const blogs: Blog[] = [
     content:
       "Claro, puedo ayudarte con eso. Si estás buscando información sobre cómo copiar y pegar párrafos en programación web, la función que suele utilizarse en JavaScript es document.execCommand('copy'). Esta función permite copiar el contenido de un elemento HTML o una selección de texto al portapapeles del usuario. Luego, puedes pegar ese contenido en otro lugar.",
     category: "react",
-    date: formatDate,
+    date: date,
     image: "https://picsum.photos/500/300",
     sections: [
       {
@@ -71,7 +70,7 @@ export const blogs: Blog[] = [
     description: "Esto es una descripción",
     content: "Esto es el contenido",
     category: "typescript",
-    date: formatDate,
+    date: date,
     image: "https://picsum.photos/500/300",
     sections: [
       {
@@ -100,7 +99,7 @@ export const blogs: Blog[] = [
     description: "Esto es una descripción",
     content: "Esto es el contenido",
     category: "node",
-    date: formatDate,
+    date: date,
     image: "https://picsum.photos/500/300",
     sections: [
       {

@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 import { Blog } from "../../../../models/types/Blog";
 import { whatColorIs } from "../../../../utils/colorIconBlog";
+import { formatDate } from "../../../../utils/formatDate";
 
 interface HeaderBlogProps {
   Icon: IconType;
@@ -28,7 +29,7 @@ export const HeaderBlog = ({
         </div>
         {/* date */}
         <span className="text-gray-300 text-xs lg:text-sm font-lora">
-          {date}
+          {formatDate(date)}
         </span>
       </div>
     </div>
