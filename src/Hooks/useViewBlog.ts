@@ -6,7 +6,7 @@ const initialState: Blog = {
   id: "",
   category: "javascript",
   content: "",
-  date: "",
+  date: new Date(),
   description: "",
   image: "",
   sections: [],
