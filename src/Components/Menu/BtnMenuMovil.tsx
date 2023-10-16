@@ -8,7 +8,7 @@ export const BtnMenuMovil = () => {
   return (
     <div
       onClick={context?.handlerMenuMovile}
-      className="md:hidden shadow shadow-primary/40 p-2 mx-4 rounded-full"
+      className="md:hidden shadow shadow-primary/40 p-2 mr-6 rounded-full"
     >
       <AiOutlineMenu className="text-3xl" />
     </div>
