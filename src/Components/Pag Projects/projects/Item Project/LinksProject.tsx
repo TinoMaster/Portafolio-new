@@ -14,7 +14,7 @@ export const LinksProject = ({ links }: LinksProjectProps) => {
             onClick={() => {
               window.open(links[0], "_blank");
             }}
-            className="flex items-center mx-2 my-2 text-green-500 hover:text-green-400 transition-colors"
+            className="flex items-center mx-2 my-2 text-secondary/80 hover:text-secondary transition-colors"
           >
             <FaGithub className="mr-1 text-2xl" />{" "}
             <span className="">Code</span>
@@ -23,7 +23,7 @@ export const LinksProject = ({ links }: LinksProjectProps) => {
             onClick={() => {
               window.open(links[1], "_blank");
             }}
-            className="flex items-center mx-2 my-2 text-violet-500 hover:text-violet-400 transition-colors"
+            className="flex items-center mx-2 my-2 text-primary/80 hover:text-primary transition-colors"
           >
             <FaGithub className="mr-1 text-2xl" />{" "}
             <span className="">Code API</span>
@@ -32,7 +32,7 @@ export const LinksProject = ({ links }: LinksProjectProps) => {
             onClick={() => {
               window.open(links[2], "_blank");
             }}
-            className="flex items-center mx-2 my-2 text-yellow-500 hover:text-yellow-400 transition-colors"
+            className="flex items-center mx-2 my-2 text-third/80 hover:text-third transition-colors"
           >
             <GiRapidshareArrow className="mr-1 text-2xl" />{" "}
             <span className="">Demo</span>

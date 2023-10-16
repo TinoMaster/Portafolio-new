@@ -15,7 +15,7 @@ export const Tegnologies = ({
   return (
     <>
       {/* Seccion tegnologias que use */}
-      <h3 className="pt-2 text-primary font-semibold">Tegnologies:</h3>
+      <h3 className="pt-2 text-third/90 font-semibold">Tegnologies:</h3>
       {/* Frontend */}
       <div className="flex pt-3 items-baseline w-full text-sm">
         <p className="flex items-center">
