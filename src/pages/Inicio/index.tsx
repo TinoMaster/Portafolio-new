@@ -1,5 +1,5 @@
-import { AboutMe } from "../../Components/Pag inicio/About me";
-import { Contacts } from "../../Components/Pag inicio/Contacts";
+import { SectionBlog } from "../../Components/Pag inicio/Blog";
+import { SectionContacts } from "../../Components/Pag inicio/Contacts";
 import { HeroHome } from "../../Components/Pag inicio/Hero";
 import { SectionProjects } from "../../Components/Pag inicio/Projects";
 import { Section } from "../../Components/global/Section";
@@ -8,9 +8,11 @@ export const PagInicio = () => {
   return (
     <div className="w-full flex flex-col relative pt-20">
       <HeroHome />
-      <Section Component={AboutMe} />
+      <div className="w-full bg-gradient-to-r from-darkMode via-white/5 to-darkMode pb-5">
+        <Section Component={SectionBlog} />
+      </div>
       <Section Component={SectionProjects} />
-      <Section Component={Contacts} />
+      <Section Component={SectionContacts} />
     </div>
   );
 };

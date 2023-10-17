@@ -17,7 +17,7 @@ const contacts = [
   },
 ];
 
-export const Contacts = () => {
+export const SectionContacts = () => {
   return (
     <div className="flex flex-wrap justify-center w-full m-auto max-w-720p">
       <h2 className="w-full font-semibold text-center lg:py-10 lg:text-xl text-primary">
