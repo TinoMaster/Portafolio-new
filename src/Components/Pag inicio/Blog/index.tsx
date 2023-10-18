@@ -9,9 +9,9 @@ export const SectionBlog = () => {
         Ya Conoces Mi Blog?
       </h3>
       <div className="flex flex-col gap-10">
-        <RenderSection reverse svg={knowMyBlog} />
-        <RenderSection reverse={false} svg={comentBlog} />
-        <RenderSection reverse svg={knowMyBlog} />
+        <RenderSection reverse svg={knowMyBlog} color="primary" />
+        <RenderSection reverse={false} svg={comentBlog} color="secondary" />
+        <RenderSection reverse svg={knowMyBlog} color="third" />
       </div>
       <ButtonVisitBlog />
     </div>

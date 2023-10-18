@@ -1,7 +1,16 @@
-export const SvgSection = ({ svg }: { svg: string }) => {
+import { Colors } from "../../../../models/types/Color";
+import { home_classnames } from "../../../../styles/classnames/Home.classnames";
+
+interface SvgSectionProps {
+  svg: string;
+  color: Colors;
+}
+
+export const SvgSection = ({ svg, color }: SvgSectionProps) => {
+  const { svgHomeStyle } = home_classnames({ color });
   return (
     <div className="w-full lg:w-1/2 overflow-hidden">
-      <div className="w-6/12 m-auto bg-gradient-to-tr from-primary/10 to-white/50 rounded-full">
+      <div className={svgHomeStyle}>
         <img src={svg} alt="" className="w-full h-full object-cover" />
       </div>
     </div>
