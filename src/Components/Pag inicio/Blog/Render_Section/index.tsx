@@ -1,22 +1,22 @@
-import { Colors } from "../../../../models/types/Color";
+import { SectionBlogHome } from "../../../../models/types/SectionBlogHome";
 import { SvgSection } from "./SvgSection";
 import { TextSection } from "./TextSection";
 
-interface RenderSectionProps {
-  reverse: boolean;
-  svg: string;
-  color: Colors;
-}
-
-export const RenderSection = ({ reverse, svg, color }: RenderSectionProps) => {
+export const RenderSection = ({
+  reverse,
+  img,
+  color,
+  description,
+  title,
+}: SectionBlogHome) => {
   return (
     <div
       className={`flex flex-wrap w-full ${
         reverse ? "flex-row-reverse" : null
       } `}
     >
-      <SvgSection svg={svg} color={color} />
-      <TextSection />
+      <SvgSection img={img} color={color} />
+      <TextSection title={title} description={description} />
     </div>
   );
 };

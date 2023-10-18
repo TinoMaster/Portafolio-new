@@ -5,5 +5,14 @@ import svgBlog from "../assets/svgs/svgBlog.svg";
 /* Blogs pag inicio */
 import knowMyBlog from "../assets/svgs/nowmyblog.svg";
 import comentBlog from "../assets/svgs/comentBlog.svg";
+import createBlog from "../assets/svgs/createBlog.svg";
 
-export { svgReact, svgFolder, svgAbout, svgBlog, knowMyBlog, comentBlog };
+export {
+  svgReact,
+  svgFolder,
+  svgAbout,
+  svgBlog,
+  knowMyBlog,
+  comentBlog,
+  createBlog,
+};

@@ -11,9 +11,9 @@ export const home_classnames = ({ color }: SectionStyle) => {
     "rounded-full",
     "bg-gradient-to-tr",
     {
-      "from-primary/10 to-white/50": color === "primary",
-      "from-secondary/10 to-white/50": color === "secondary",
-      "from-third/10 to-white/50": color === "third",
+      "from-primary/50 to-white/50": color === "primary",
+      "from-secondary/50 to-white/50": color === "secondary",
+      "from-third/50 to-white/50": color === "third",
     }
   );
 

@@ -1,4 +1,4 @@
-import { comentBlog, knowMyBlog } from "../../../utils/svgs";
+import { sectionsBlogHome } from "../../../data/sectionBlogHome";
 import { ButtonVisitBlog } from "./ButtonVisitBlog";
 import { RenderSection } from "./Render_Section";
 
@@ -9,9 +9,16 @@ export const SectionBlog = () => {
         Ya Conoces Mi Blog?
       </h3>
       <div className="flex flex-col gap-10">
-        <RenderSection reverse svg={knowMyBlog} color="primary" />
-        <RenderSection reverse={false} svg={comentBlog} color="secondary" />
-        <RenderSection reverse svg={knowMyBlog} color="third" />
+        {sectionsBlogHome?.map((section, index) => (
+          <RenderSection
+            key={index}
+            reverse={section.reverse}
+            img={section.img}
+            color={section.color}
+            description={section.description}
+            title={section.title}
+          />
+        ))}
       </div>
       <ButtonVisitBlog />
     </div>
