@@ -12,21 +12,24 @@ interface SectionBlogHome {
 export const sectionsBlogHome: SectionBlogHome[] = [
   {
     title: "Que encontraras en el",
-    description: "Aquí encontrarás mis últimos artículos",
+    description:
+      "Explora el mundo de la programación web en mi blog. Desde JavaScript hasta las últimas tendencias, encontrarás contenido valioso para aprender y crear. ¡Bienvenido a mi viaje de aprendizaje y desarrollo web!",
     img: knowMyBlog,
     color: "primary",
     reverse: true,
   },
   {
     title: "Comenta y participa",
-    description: "Aquí encontrarás mis últimos artículos",
+    description:
+      "¡Tu opinión cuenta! Interactúa y comenta en mis publicaciones. Comparte tus ideas y preguntas sobre tecnologías web en un espacio de aprendizaje colaborativo.",
     img: comentBlog,
     color: "third",
     reverse: false,
   },
   {
-    title: "Crea tus porpios blogs",
-    description: "Aquí encontrarás mis últimos artículos",
+    title: "Desafíos de Programación",
+    description:
+      " Acepta desafíos de codificación y proyectos colaborativos. Únete a la comunidad para resolver problemas juntos, desarrollar proyectos emocionantes y aprender en equipo.",
     img: createBlog,
     color: "secondary",
     reverse: true,

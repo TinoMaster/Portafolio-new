@@ -17,5 +17,16 @@ export const home_classnames = ({ color }: SectionStyle) => {
     }
   );
 
-  return { svgHomeStyle };
+  const boxStrength_itemStyle = classNames({
+    "shadow-primary/5": color === "primary",
+    "shadow-secondary/5": color === "secondary",
+    "shadow-third/5": color === "third",
+  });
+  const iconStrength_itemStyle = classNames({
+    "shadow-primary/30": color === "primary",
+    "shadow-secondary/30": color === "secondary",
+    "shadow-third/30": color === "third",
+  });
+
+  return { svgHomeStyle, iconStrength_itemStyle, boxStrength_itemStyle };
 };

@@ -11,7 +11,7 @@ export const RenderSection = ({
 }: SectionBlogHome) => {
   return (
     <div
-      className={`flex flex-wrap w-full ${
+      className={`flex flex-wrap w-full lg:py-10 ${
         reverse ? "flex-row-reverse" : null
       } `}
     >
