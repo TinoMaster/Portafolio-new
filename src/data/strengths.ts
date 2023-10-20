@@ -1,8 +1,8 @@
 import { IconType } from "react-icons";
 import { MdSmartToy } from "react-icons/md";
 import { Colors } from "../models/types/Color";
-import { SiTalenthouse } from "react-icons/si";
-import { BsFillChatFill } from "react-icons/bs";
+import { GiSelfLove } from "react-icons/gi";
+import { FaStudiovinari } from "react-icons/fa";
 
 interface Strength {
   title: string;
@@ -13,24 +13,24 @@ interface Strength {
 
 export const strengthsData: Strength[] = [
   {
-    title: "PRUEBA",
+    title: "APASIONADO",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    icon: MdSmartToy,
+      "Apasionado por el desarrollo web y la resolución de problemas. En constante búsqueda de desafíos técnicos para aprender y crecer.",
+    icon: GiSelfLove,
     color: "third",
   },
   {
-    title: "GLORIA",
+    title: "INNOVADOR",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    icon: SiTalenthouse,
+      "Apasionado en las últimas tendencias en el mundo del desarrollo web y aplicarlas de manera creativa en proyectos innovadores.",
+    icon: MdSmartToy,
     color: "primary",
   },
   {
-    title: "PRAERDSE",
+    title: "COMPROMETIDO",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    icon: BsFillChatFill,
+      "Enfocado y dedicado a alcanzar metas, entregando soluciones de calidad y superando desafíos con determinación.",
+    icon: FaStudiovinari,
     color: "secondary",
   },
 ];

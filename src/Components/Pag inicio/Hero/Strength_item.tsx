@@ -24,10 +24,10 @@ export const Strength_item = ({
         className={`${boxStrength_itemStyle} flex flex-col justify-center items-center gap-2 p-3 lg:top-10 relative shadow-2xl rounded-md`}
       >
         <Icon
-          className={`${iconStrength_itemStyle} text-4xl p-2 lg:text-7xl lg:p-5 shadow-lg rounded-full`}
+          className={`${iconStrength_itemStyle} text-4xl p-2 lg:text-5xl lg:p-3 shadow-lg rounded-full`}
         />
-        <h3 className="text-sm">{title}</h3>
-        <p className="text-xs text-center">{description}</p>
+        <h3 className="text-sm  font-roboto">{title}</h3>
+        <p className="text-sm text-center font-light font-roboto ">{description}</p>
       </div>
     </div>
   );
