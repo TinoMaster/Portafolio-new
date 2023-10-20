@@ -19,8 +19,6 @@ import nextImage from "../assets/images/nextjs.png";
 import reduxImage from "../assets/images/redux.png";
 import mongoImage from "../assets/images/mongo.png";
 
-/* import videotv from "../assets/video/tv_noise_glitch_3-1.mov"; */
-
 export const imagesTechStack = [
   githubImage,
   reactImage,
