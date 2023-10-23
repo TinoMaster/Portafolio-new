@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -17,6 +14,7 @@ export default {
         lora: ["Lora", "serif"],
         roboto: ["Roboto", "sans"],
         siliguri: ["Hind-Siliguri", "sans"],
+        inter: ["Inter"],
       },
       maxHeight: {
         "1080p": "1080px",
@@ -32,5 +30,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};
