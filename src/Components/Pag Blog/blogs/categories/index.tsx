@@ -1,14 +1,14 @@
 import { categories } from "../../../../data/blogs/categories";
 import { Category } from "./Category";
 import { motion } from "framer-motion";
-import { useCategories } from "../../../../Hooks/useCategories";
+import { useNavCategoriesBlog } from "../../../../Hooks/useNavCategoriesBlog";
 
 export const Categories = () => {
-  const { width, categoriesCarousel } = useCategories();
+  const { width, element } = useNavCategoriesBlog();
 
   return (
     <motion.div
-      ref={categoriesCarousel}
+      ref={element}
       whileTap={{ cursor: "grabbing" }}
       className="flex lg:justify-center overflow-hidden relative"
     >

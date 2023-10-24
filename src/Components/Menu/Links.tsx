@@ -1,15 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { linksScroll } from "../../data/linksMenu";
+import { motion } from "framer-motion";
 
 export const Links = () => {
+  const pathName = useLocation();
+  const currentPath = pathName.pathname;
+
   return (
-    <div className="md:flex relative hidden pr-2">
+    <div className="md:flex relative hidden pr-2 gap-4 last:mr-5">
       {linksScroll?.map((link) => (
         <Link
-          className={`flex items-baseline mr-4 hover:text-primary/60 transition-all`}
+          className={`flex items-baseline hover:text-primary/60 transition-all relative`}
           key={link.name}
           to={link.path}
         >
+          {currentPath === link.path ? (
+            <motion.div
+              layoutId="active"
+              className="absolute w-full h-full border-b"
+            ></motion.div>
+          ) : null}
           {link.name}
         </Link>
       ))}
