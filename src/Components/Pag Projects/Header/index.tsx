@@ -1,7 +1,7 @@
 export const SectionHeaderProjectPage = () => {
   return (
-    <div>
-      <h3>SectionHeaderProjectPage</h3>
+    <div className="">
+      <h3>header</h3>
     </div>
   );
 };

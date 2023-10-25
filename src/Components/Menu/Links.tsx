@@ -16,7 +16,7 @@ export const Links = () => {
         >
           {currentPath === link.path ? (
             <motion.div
-              layoutId="active"
+              layoutId="principalMenu"
               className="absolute w-full h-full border-b"
             ></motion.div>
           ) : null}
