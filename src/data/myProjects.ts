@@ -1,6 +1,7 @@
+import { Project } from "../models/types/Project";
 import { appDebts, appLocal_dark, appMercado } from "../utils/images";
 
-export const myProjects = [
+export const myProjects: Project[] = [
   {
     name: "Debt management",
     description:
