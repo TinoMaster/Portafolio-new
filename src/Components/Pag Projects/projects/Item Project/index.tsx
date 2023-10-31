@@ -12,7 +12,7 @@ export const Project = ({ project, index }: ProjectProps) => {
     <div
       className={`flex flex-wrap ${
         index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-      } justify-center w-full rounded-lg`}
+      } justify-center w-full rounded-lg shadow-lg`}
     >
       <BoxImage image={project.image} />
       <motion.div
@@ -20,7 +20,7 @@ export const Project = ({ project, index }: ProjectProps) => {
         initial="initial"
         whileInView="animate"
         transition={{ duration: 0.7 }}
-        className="flex flex-col w-full md:w-1/2 p-3 pb-0"
+        className="flex flex-col justify-around w-full md:w-1/2 p-3"
       >
         <ProjectTitle name={project.name} />
         <DescripProject description={project.description} />
@@ -29,7 +29,7 @@ export const Project = ({ project, index }: ProjectProps) => {
           tegnologiesB={project.tegnologiesB}
           dataBase={project.dataBase}
         />
-        <LinksProject links={project.links} />
+        <LinksProject onlyIcon={false} links={project.links} />
       </motion.div>
     </div>
   );

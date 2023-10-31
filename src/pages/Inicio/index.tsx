@@ -12,7 +12,7 @@ export const PagInicio = () => {
         <div className="gradient"></div>
         <Section Component={SectionBlog} />
       </div>
-      <div className="w-full bg-zinc-800">
+      <div className="w-full bg-gradient-to-b from-zinc-800 via-white/5 to-zinc-800">
         <Section Component={SectionProjects} />
       </div>
       <Section Component={SectionContacts} />

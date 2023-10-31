@@ -17,7 +17,7 @@ export const Tegnologies = ({
       {/* Seccion tegnologias que use */}
       <h3 className="pt-2 text-third/90 font-semibold">Tegnologies:</h3>
       {/* Frontend */}
-      <div className="flex pt-3 items-baseline w-full text-sm">
+      <div className="flex items-center w-full text-sm">
         <p className="flex items-center">
           <CgScreen className="mr-1" /> Frontend:
         </p>
@@ -31,7 +31,7 @@ export const Tegnologies = ({
         ))}
       </div>
       {/* Backend */}
-      <div className="flex pt-3 items-baseline w-full text-sm">
+      <div className="flex items-center w-full text-sm">
         <p className="flex items-center">
           <GoServer className="mr-1" /> Backend:
         </p>
@@ -45,7 +45,7 @@ export const Tegnologies = ({
         ))}
       </div>
       {/* Databases */}
-      <div className="flex pt-3 items-baseline w-full text-sm">
+      <div className="flex items-center w-full text-sm">
         <p className="flex items-center">
           <GoDatabase className="mr-1" /> DataBase:
         </p>

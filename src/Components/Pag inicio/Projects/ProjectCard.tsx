@@ -1,5 +1,5 @@
-import { FaAd } from "react-icons/fa";
 import { Project } from "../../../models/types/Project";
+import { LinksProject } from "../../Pag Projects/Projects/Item Project/LinksProject";
 
 interface ProjectCardProps {
   project: Project;
@@ -8,8 +8,8 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, description, image, links } = project;
   return (
-    <div className="w-full lg:w-1/3 overflow-hidden">
-      <div className="w-full rounded overflow-hidden shadow-lg m-4">
+    <div className="w-full lg:w-1/3 overflow-hidden p-2">
+      <div className="w-full rounded overflow-hidden shadow-lg">
         <img className="w-full object-cover" src={image} alt="Hola" />
 
         <div className="px-6 py-4">
@@ -27,14 +27,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             rel="noopener noreferrer"
             className="text-primary hover:underline"
           >
-            Ver proyecto
+            Ver mas
           </a>
           <div className="flex space-x-2">
-            {links.map((icon, index) => (
-              <div key={index}>
-                <FaAd />
-              </div>
-            ))}
+            <LinksProject onlyIcon links={links} />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Project } from "./Item Project";
 
 export const Projects = () => {
   return (
-    <div className="flex flex-wrap gap-5 justify-center w-full m-auto max-w-720p">
+    <div className="flex flex-wrap gap-5 justify-center w-full m-auto max-w-720p pb-10">
       <h2 className="w-full text-center lg:text-start lg:text-xl font-semibold text-third">
        LIST OF PROJECTS
       </h2>

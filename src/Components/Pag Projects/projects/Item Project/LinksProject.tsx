@@ -1,45 +1,45 @@
+import { AiOutlineGlobal } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-import { GiRapidshareArrow } from "react-icons/gi";
 interface LinksProjectProps {
   links: string[];
+  onlyIcon: boolean;
 }
 
-export const LinksProject = ({ links }: LinksProjectProps) => {
+export const LinksProject = ({ links, onlyIcon }: LinksProjectProps) => {
   return (
     <>
-      {/* Caja de links */}
       {links.length > 0 ? (
-        <div className="w-full flex flex-wrap py-8 justify-center">
+        <div className="w-full flex flex-wrap gap-2 justify-center">
           <button
             onClick={() => {
               window.open(links[0], "_blank");
             }}
-            className="flex items-center mx-2 my-2 text-secondary/80 hover:text-secondary transition-colors"
+            className="flex items-center text-secondary/50 hover:text-secondary transition-colors"
           >
             <FaGithub className="mr-1 text-2xl" />{" "}
-            <span className="">Code</span>
+            <span className={`${onlyIcon ? "hidden" : ""}`}>Code</span>
           </button>
           <button
             onClick={() => {
               window.open(links[1], "_blank");
             }}
-            className="flex items-center mx-2 my-2 text-primary/80 hover:text-primary transition-colors"
+            className="flex items-center text-primary/50 hover:text-primary transition-colors"
           >
             <FaGithub className="mr-1 text-2xl" />{" "}
-            <span className="">Code API</span>
+            <span className={`${onlyIcon ? "hidden" : ""}`}>Code API</span>
           </button>
           <button
             onClick={() => {
               window.open(links[2], "_blank");
             }}
-            className="flex items-center mx-2 my-2 text-third/80 hover:text-third transition-colors"
+            className="flex items-center text-third/50 hover:text-third transition-colors"
           >
-            <GiRapidshareArrow className="mr-1 text-2xl" />{" "}
-            <span className="">Demo</span>
+            <AiOutlineGlobal className="mr-1 text-2xl" />{" "}
+            <span className={`${onlyIcon ? "hidden" : ""}`}>Demo</span>
           </button>
         </div>
       ) : (
-        <div className="w-full flex gap-2 flex-wrap py-8 justify-center">
+        <div className="w-full flex gap-2 flex-wrap text-slate-500 justify-center">
           <p className="">Links:</p>
           <p className="">Soon...</p>
         </div>
