@@ -1,36 +1,57 @@
-import { BoxImage } from "./BoxImages";
-import { ProjectTitle } from "./ProjectTitle";
-import { DescripProject } from "./DescripProject";
-import { Tegnologies } from "./Tegnologies";
+import { IProject } from "../../../../models/types/Project";
 import { LinksProject } from "./LinksProject";
-import { motion } from "framer-motion";
-import { resumeAboutProject } from "../../../../animation/framers";
-import { ProjectProps } from "../../../../models/types/Project";
 
-export const Project = ({ project, index }: ProjectProps) => {
+interface ProjectProps {
+  project: IProject;
+}
+
+export const Project = ({ project }: ProjectProps) => {
+  const {
+    image,
+    tegnologiesB,
+    description,
+    dataBase,
+    links,
+    name,
+    tegnologiesF,
+  } = project;
   return (
-    <div
-      className={`flex flex-wrap ${
-        index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-      } justify-center w-full rounded-lg shadow-lg`}
-    >
-      <BoxImage image={project.image} />
-      <motion.div
-        variants={resumeAboutProject}
-        initial="initial"
-        whileInView="animate"
-        transition={{ duration: 0.7 }}
-        className="flex flex-col justify-around w-full md:w-1/2 p-3"
-      >
-        <ProjectTitle name={project.name} />
-        <DescripProject description={project.description} />
-        <Tegnologies
-          tegnologiesF={project.tegnologiesF}
-          tegnologiesB={project.tegnologiesB}
-          dataBase={project.dataBase}
-        />
-        <LinksProject onlyIcon={false} links={project.links} />
-      </motion.div>
-    </div>
+    <article className=" text-white w-full lg:w-1/2 p-2">
+      <div className="shadow-lg rounded-lg overflow-hidden">
+        <img src={image} alt={name} className="w-full h-64 object-cover" />
+        <div className="p-4">
+          <h2 className="text-xl font-semibold text-gray-200">{name}</h2>
+          <p className="text-gray-400 text-sm mt-2">{description}</p>
+          <div className="mt-4">
+            <h3 className="font-semibold text-gray-200">Technologies:</h3>
+            <div className="flex flex-wrap mt-2">
+              {tegnologiesF.map((tech, index) => (
+                <span
+                  key={index}
+                  className="bg-gray-600 text-xs rounded-full px-3 py-1 font-semibold text-gray-200 m-1"
+                >
+                  {tech}
+                </span>
+              ))}
+              {tegnologiesB.map((tech, index) => (
+                <span
+                  key={index}
+                  className="bg-gray-600 rounded-full px-3 py-1 text-xs font-semibold text-gray-200 m-1"
+                >
+                  {tech}
+                </span>
+              ))}
+              <span className="bg-gray-600 rounded-full px-3 py-1 text-xs font-semibold text-gray-200 m-1">
+                {dataBase}
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 mt-4">
+            <h3 className="font-semibold text-gray-200">Links:</h3>
+            <LinksProject onlyIcon={false} links={links} />
+          </div>
+        </div>
+      </div>
+    </article>
   );
 };

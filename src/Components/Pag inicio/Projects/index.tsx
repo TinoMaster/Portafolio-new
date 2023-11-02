@@ -9,7 +9,7 @@ export const SectionProjects = () => {
       </h3>
       <div className="flex flex-wrap">
         {myProjects.map((pjct) => (
-          <ProjectCard project={pjct} />
+          <ProjectCard key={pjct.name} project={pjct} />
         ))}
       </div>
     </div>

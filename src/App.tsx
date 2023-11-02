@@ -4,13 +4,13 @@ import { AppProvider } from "./context/appContext";
 
 function App() {
   return (
-    <main className="w-screen h-screen overflow-hidden font-siliguri font-bold bg-darkMode text-slate-300">
+    <section className="w-screen h-screen overflow-hidden font-siliguri font-bold bg-darkMode text-slate-300">
       <AppProvider>
         <BrowserRouter>
           <BaseLayout />
         </BrowserRouter>
       </AppProvider>
-    </main>
+    </section>
   );
 }
 

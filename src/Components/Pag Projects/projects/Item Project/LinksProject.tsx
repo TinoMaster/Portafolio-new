@@ -9,7 +9,7 @@ export const LinksProject = ({ links, onlyIcon }: LinksProjectProps) => {
   return (
     <>
       {links.length > 0 ? (
-        <div className="w-full flex flex-wrap gap-2 justify-center">
+        <div className="flex flex-wrap gap-2">
           <button
             onClick={() => {
               window.open(links[0], "_blank");
@@ -39,8 +39,7 @@ export const LinksProject = ({ links, onlyIcon }: LinksProjectProps) => {
           </button>
         </div>
       ) : (
-        <div className="w-full flex gap-2 flex-wrap text-slate-500 justify-center">
-          <p className="">Links:</p>
+        <div className="w-full flex gap-2 flex-wrap text-slate-500">
           <p className="">Soon...</p>
         </div>
       )}

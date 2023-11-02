@@ -6,11 +6,11 @@ export const BtnMenuMovil = () => {
   const context = useContext(AppContext);
 
   return (
-    <div
+    <small
       onClick={context?.handlerMenuMovile}
       className="md:hidden shadow shadow-primary/40 p-2 mr-6 rounded-full"
     >
       <AiOutlineMenu className="text-3xl" />
-    </div>
+    </small>
   );
 };

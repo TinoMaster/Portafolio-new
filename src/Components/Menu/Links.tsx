@@ -7,7 +7,7 @@ export const Links = () => {
   const currentPath = pathName.pathname;
 
   return (
-    <div className="md:flex relative hidden pr-2 gap-4 last:mr-5">
+    <ul className="md:flex relative hidden pr-2 gap-4 last:mr-5">
       {linksScroll?.map((link) => (
         <Link
           className={`flex items-baseline hover:text-primary/60 transition-all relative`}
@@ -23,6 +23,6 @@ export const Links = () => {
           {link.name}
         </Link>
       ))}
-    </div>
+    </ul>
   );
 };

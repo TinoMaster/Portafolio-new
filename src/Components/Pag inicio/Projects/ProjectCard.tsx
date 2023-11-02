@@ -1,8 +1,8 @@
-import { Project } from "../../../models/types/Project";
+import { IProject } from "../../../models/types/Project";
 import { LinksProject } from "../../Pag Projects/Projects/Item Project/LinksProject";
 
 interface ProjectCardProps {
-  project: Project;
+  project: IProject;
 }
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {

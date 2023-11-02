@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Project } from "../../../../models/types/Project";
+import { IProject } from "../../../../models/types/Project";
 
-export const BoxImage = ({ image }: { image: Project["image"] }) => {
+export const BoxImage = ({ image }: { image: IProject["image"] }) => {
   return (
     <div className="flex items-center justify-center w-full h-[300px] lg:h-full md:w-1/2 px-4 py-7">
       <motion.div

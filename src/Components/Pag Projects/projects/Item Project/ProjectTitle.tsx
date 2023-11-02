@@ -1,6 +1,6 @@
-import { Project } from "../../../../models/types/Project";
+import { IProject } from "../../../../models/types/Project";
 
-export const ProjectTitle = ({ name }: { name: Project["name"] }) => {
+export const ProjectTitle = ({ name }: { name: IProject["name"] }) => {
   return (
     <h3 className="w-full lg:text-center pb-2 ">
       {name}

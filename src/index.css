@@ -7,11 +7,11 @@
 @layer base {
   /* Estilo de la barra de desplazamiento vertical */
   ::-webkit-scrollbar {
-    width: 8px; /* Ancho de la barra de desplazamiento */
+    width: 5px; /* Ancho de la barra de desplazamiento */
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #544af4; /* Color del pulgar de la barra de desplazamiento */
+    background-color: #9998a7; /* Color del pulgar de la barra de desplazamiento */
     border-radius: 5px; /* Radio de los bordes del pulgar */
   }
 

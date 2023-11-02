@@ -4,7 +4,7 @@ import { RenderSection } from "./Render_Section";
 
 export const SectionBlog = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <article className="flex flex-col gap-5">
       <h3 className="w-full font-semibold text-center lg:text-start lg:py-10 text-lg lg:text-xl text-primary">
         Ya Conoces Mi Blog?
       </h3>
@@ -21,6 +21,6 @@ export const SectionBlog = () => {
         ))}
       </div>
       <ButtonVisitBlog />
-    </div>
+    </article>
   );
 };

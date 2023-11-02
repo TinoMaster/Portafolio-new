@@ -1,11 +1,11 @@
-import { Project } from "../models/types/Project";
+import { IProject } from "../models/types/Project";
 import { appDebts, appLocal_dark, appMercado } from "../utils/images";
 
-export const myProjects: Project[] = [
+export const myProjects: IProject[] = [
   {
     name: "Debt management",
     description:
-      "This application arose from the recurring need to manage debts with a friend effectively. It enabled both of us to have control over our debts, further enhancing my existing knowledge. The application effectively tracks debts with proper permissions, allowing each user to make changes according to their circumstances.",
+      "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente. Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
     image: appDebts,
     links: [
       "https://github.com/TinoMaster/my_debts",
@@ -19,7 +19,7 @@ export const myProjects: Project[] = [
   {
     name: "Sales management",
     description:
-      "This was my first completed and fully functional application, which has been in operation for three years for a business. It was a significant challenge because it incorporates many features and represented my first major learning experience.",
+      "Esta fue mi primera aplicación completamente funcional y finalizada, en operación durante tres años para una empresa. Constituyó un desafío significativo al integrar múltiples funciones, marcando un hito fundamental en mi proceso de aprendizaje y desarrollo.",
     image: appLocal_dark,
     links: [
       "https://github.com/TinoMaster/apklocal",

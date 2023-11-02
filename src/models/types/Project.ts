@@ -1,4 +1,4 @@
-export interface Project {
+export interface IProject {
   name: string;
   description: string;
   image: string;
@@ -6,8 +6,4 @@ export interface Project {
   tegnologiesF: string[];
   tegnologiesB: string[];
   dataBase: string;
-}
-export interface ProjectProps {
-  project: Project;
-  index: number;
 }
