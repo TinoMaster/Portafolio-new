@@ -20,9 +20,9 @@ export const Content = ({
   date,
 }: ContentProps) => {
   return (
-    <div className="w-full h-full flex flex-col gap-2 ">
+    <div className="w-full h-full flex flex-col gap-2">
       <HeaderBlog Icon={icon} category={category} date={date} />
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center min-h-[60px]">
         <PrincipalContent title={title} />
         <Image image={image} title={title} />
       </div>

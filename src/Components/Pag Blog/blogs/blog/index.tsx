@@ -8,7 +8,7 @@ export const ItemBlog = ({ blog }: { blog: Blog }) => {
 
   return (
     <Link to={`/blog/view_blog/${blog.id}`} className="w-full lg:w-1/2 p-2">
-      <div className="flex items-center bg-white/5 rounded-md p-3 shadow shadow-black/10 hover:cursor-pointer hover:bg-white/10 transition-colors duration-300">
+      <div className="flex items-center bg-white/5 rounded-md p-4 shadow shadow-black/10 hover:cursor-pointer hover:bg-white/10 transition-colors duration-300">
         <Content
           category={blog.category}
           icon={icon}

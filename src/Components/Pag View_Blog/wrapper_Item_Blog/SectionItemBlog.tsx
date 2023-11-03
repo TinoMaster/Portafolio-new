@@ -4,8 +4,8 @@ import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (
-    <div className="lg:text-lg">
-      <h2 className="font-semibold text-lg lg:text-xl">{section.title}</h2>
+    <div className="lg:text-lg text-sm">
+      <h2 className="font-semibold lg:text-xl">{section.title}</h2>
       {section.type === "image" ? (
         <div className="w-full p-2 bg-white/5">
           <img
