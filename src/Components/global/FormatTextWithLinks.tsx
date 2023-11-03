@@ -16,12 +16,17 @@ export function FormatTextWithLinks({ text }: { text: string }) {
     const name = match[2];
     parts.push(text.slice(lastIndex, match.index));
     parts.push(
-      <a className="border-b font-thin inline text-blue-400" key={match.index} href={url} target="_blank">
+      <a
+        className="border-b font-thin inline text-blue-400"
+        key={match.index}
+        href={url}
+        target="_blank"
+      >
         {name}
       </a>
     );
     lastIndex = match.index + match[0].length;
   }
 
-  return <>{parts}</>;
+  return <div style={{ whiteSpace: "pre-wrap" }}>{parts}</div>;
 }

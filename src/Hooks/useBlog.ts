@@ -9,10 +9,8 @@ const useBlog = (category: BlogCategory | undefined) => {
   useEffect(() => {
     setLoading(true);
     BlogService.getBlogs(category).then((res) => {
-      setTimeout(() => {
-        setLoading(false);
-        setBlogsFilter(res);
-      }, 1000);
+      setLoading(false);
+      setBlogsFilter(res);
     });
   }, [category]);
 
