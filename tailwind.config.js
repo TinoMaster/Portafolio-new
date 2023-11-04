@@ -7,7 +7,7 @@ export default {
         primary: "#544AF4",
         secondary: "#63f861ff",
         third: "#ea4f18",
-        darkMode: "#242528",
+        darkMode: "#17212D",
         lightMode: "#F1F5F9",
       },
       fontFamily: {

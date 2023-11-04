@@ -4,7 +4,7 @@ import { Section } from "../../Components/global/Section";
 
 export const ProjectsPage = () => {
   return (
-    <div className="flex flex-col pt-20">
+    <div className="flex flex-col">
       <HeroProjects />
       <Section Component={Projects} />
     </div>

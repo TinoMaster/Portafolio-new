@@ -7,7 +7,7 @@
 @layer base {
   /* Estilo de la barra de desplazamiento vertical */
   ::-webkit-scrollbar {
-    width: 5px; /* Ancho de la barra de desplazamiento */
+    width: 3px; /* Ancho de la barra de desplazamiento */
   }
 
   ::-webkit-scrollbar-thumb {

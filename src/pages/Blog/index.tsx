@@ -4,7 +4,7 @@ import { Section } from "../../Components/global/Section";
 
 export const BlogPage = () => {
   return (
-    <div className="pt-20">
+    <div className="">
       <HeroBlog />
       <Section Component={Blogs} />
     </div>

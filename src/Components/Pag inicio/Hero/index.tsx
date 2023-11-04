@@ -11,7 +11,7 @@ export const HeroHome = () => {
       <div className="container w-full flex flex-col-reverse lg:flex-col min-h-[30vh] lg:min-h-[50vh]">
         <Strengths />
         <div className="w-full">
-          <h3 className="text-xl lg:text-2xl text-center">Tech Stacks</h3>
+          <h3 className="text-xl lg:text-2xl text-center">Mi Stack</h3>
           <BoxTechs />
         </div>
       </div>

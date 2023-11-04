@@ -89,10 +89,7 @@ export const getBlogByCategory = async (
   return blogsToReturn;
 };
 
-export const getBlogById = async (
-  url: string,
-  id: string
-): Promise<Blog | object> => {
+export const getBlogById = async (url: string, id: string): Promise<Blog> => {
   const newUrl = `${url}/${id}`;
   const response = await fetch(newUrl, {
     method: "GET",
@@ -102,7 +99,16 @@ export const getBlogById = async (
   });
   const data = await response.json();
 
-  let blog: Blog | object = {};
+  let blog: Blog = {
+    id: "",
+    category: "javascript",
+    content: "",
+    date: new Date(),
+    description: "",
+    image: "",
+    sections: [],
+    title: "",
+  };
   const el = data.data;
   blog = {
     id: el?._id,

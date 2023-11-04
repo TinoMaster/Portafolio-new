@@ -5,7 +5,7 @@ import { Section } from "../../Components/global/Section";
 
 export const AboutPage = () => {
   return (
-    <div className="pt-20">
+    <div className="">
       <HeroAbout />
       <Section Component={HeaderAbout} />
       <Section Component={SectionAboutMe} />

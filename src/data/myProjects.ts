@@ -3,7 +3,7 @@ import { appDebts, appLocal_dark, appMercado } from "../utils/images";
 
 export const myProjects: IProject[] = [
   {
-    name: "Debt management",
+    name: "Manejo de deudas",
     description:
       "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente. Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
     image: appDebts,
@@ -17,9 +17,9 @@ export const myProjects: IProject[] = [
     dataBase: "MongoDB",
   },
   {
-    name: "Sales management",
+    name: "Manejo de ventas",
     description:
-      "Esta fue mi primera aplicación completamente funcional y finalizada, en operación durante tres años para una empresa. Constituyó un desafío significativo al integrar múltiples funciones, marcando un hito fundamental en mi proceso de aprendizaje y desarrollo.",
+      "Esta fue mi primera aplicación completamente funcional y operativa, lleva mas de 3 años funcionando para una empresa. Constituyó un desafío significativo al integrar múltiples funciones, marcando un hito fundamental en mi proceso de aprendizaje y desarrollo.",
     image: appLocal_dark,
     links: [
       "https://github.com/TinoMaster/apklocal",
@@ -31,9 +31,9 @@ export const myProjects: IProject[] = [
     dataBase: "MongoDB",
   },
   {
-    name: "Vitual Market",
+    name: "Mercado Virtual",
     description:
-      "This application was created out of the need to establish a platform where images played a central role in the project. It provided an opportunity to elevate my expertise in handling images across all aspects of website development. Furthermore, it served as a test of my ability to construct a project that, despite my technical knowledge, pushed the boundaries of my aesthetic skills.",
+      "Esta aplicación se creó debido a la necesidad de establecer una plataforma en la que las imágenes desempeñaran un papel central en el proyecto. Proporcionó una oportunidad para elevar mi experiencia en el manejo de imágenes en todos los aspectos del desarrollo web. Además, sirvió como una prueba de mi capacidad para construir un proyecto que, a pesar de mis conocimientos técnicos, desafiara los límites de mis habilidades estéticas",
     image: appMercado,
     links: [],
     tegnologiesF: ["Next13", "Typescript", "Tailwind"],

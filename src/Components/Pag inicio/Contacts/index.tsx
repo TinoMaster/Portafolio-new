@@ -4,13 +4,13 @@ import { TfiEmail } from "react-icons/tfi";
 
 const contacts = [
   {
-    name: "Location",
-    description: "Rome,Italy",
+    name: "Localizacion",
+    description: "Roma, Italia",
     icon: <IoLocationSharp />,
     link: "/",
   },
   {
-    name: "Email",
+    name: "Correo",
     description: "ommallono@gmail.com",
     icon: <TfiEmail />,
     link: "mailto:ommallono@gmail.com",
@@ -20,14 +20,14 @@ const contacts = [
 export const SectionContacts = () => {
   return (
     <div className="flex flex-wrap justify-center w-full m-auto max-w-720p">
-      <h2 className="w-full font-semibold text-center lg:py-10 lg:text-xl text-primary">
-        CONTACT
+      <h2 className="w-full font-semibold text-center lg:py-10 text-lg lg:text-xl text-primary">
+        CONTACTOS
       </h2>
       <div className="w-full flex flex-col items-center">
         {/* title */}
         <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center lg:justify-start">
-          Don't hesitate, Contact me{" "}
-          <FaHandPointDown className="text-yellow-400 ml-1 hidden lg:flex" />
+          No dudes, conecta conmigo{" "}
+          <FaHandPointDown className="text-yellow-400 ml-1" />
         </h3>
         {/* Contacts links */}
         <div className="w-full flex flex-wrap">

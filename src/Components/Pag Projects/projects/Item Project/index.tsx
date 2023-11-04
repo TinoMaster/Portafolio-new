@@ -16,14 +16,14 @@ export const Project = ({ project }: ProjectProps) => {
     tegnologiesF,
   } = project;
   return (
-    <article className=" text-white w-full lg:w-1/2 p-2">
+    <article className="text-white w-full lg:w-1/2 p-2">
       <div className="shadow-lg rounded-lg overflow-hidden">
-        <img src={image} alt={name} className="w-full h-64 object-cover" />
+        <img src={image} alt={name} className="w-full h-64 object-contain" />
         <div className="p-4">
           <h2 className="text-xl font-semibold text-gray-200">{name}</h2>
           <p className="text-gray-400 text-sm mt-2">{description}</p>
           <div className="mt-4">
-            <h3 className="font-semibold text-gray-200">Technologies:</h3>
+            <h3 className="font-semibold text-gray-200">Tecnologias:</h3>
             <div className="flex flex-wrap mt-2">
               {tegnologiesF.map((tech, index) => (
                 <span
@@ -47,7 +47,7 @@ export const Project = ({ project }: ProjectProps) => {
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-4">
-            <h3 className="font-semibold text-gray-200">Links:</h3>
+            <h3 className="font-semibold text-gray-200">Enlaces:</h3>
             <LinksProject onlyIcon={false} links={links} />
           </div>
         </div>

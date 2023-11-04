@@ -1,14 +1,14 @@
 const linksScroll = [
   {
-    name: "Home",
+    name: "Inicio",
     path: "/",
   },
   {
-    name: "Projects",
+    name: "Proyectos",
     path: "/projects",
   },
   {
-    name: "About Me",
+    name: "Sobre mi",
     path: "/about",
   },
 

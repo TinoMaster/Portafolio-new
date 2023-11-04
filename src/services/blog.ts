@@ -1,4 +1,4 @@
-import { BlogCategory } from "../models/types/Blog";
+import { Blog, BlogCategory } from "../models/types/Blog";
 import { getAllBlogs, getBlogByCategory, getBlogById } from "./blogFunction";
 
 export class BlogService {
@@ -13,7 +13,7 @@ export class BlogService {
     }
   }
 
-  static async getItemBlog(id: string) {
+  static async getItemBlog(id: string): Promise<Blog> {
     const res = await getBlogById(this.url, id);
     return res;
   }

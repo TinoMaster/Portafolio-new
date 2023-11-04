@@ -1,5 +1,5 @@
-import { MenuMovil } from "../Menu/MenuMovil";
 import { Suspense } from "react";
+import { MenuMovil } from "../Menu/MenuMovil";
 import { RoutesApp } from "./RoutesApp";
 import LoadingPage from "../loaders/LoadingPage";
 

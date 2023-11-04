@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 export const ButtonVisitBlog = () => {
   return (
     <button className="bg-primary text-white font-semibold px-5 py-2 rounded-lg">
-      Ir al Blog
+      <Link to={"/blog"}>Ir al Blog</Link>
     </button>
   );
 };
