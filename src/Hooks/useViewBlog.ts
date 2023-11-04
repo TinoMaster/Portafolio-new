@@ -17,14 +17,13 @@ const useViewBlog = (id: Blog["id"]) => {
   const [itemBlog, setItemBlog] = useState<Blog>(initialState);
   const [loading, setLoading] = useState(false);
 
+  /* //Todo: ver aqui */
   useEffect(() => {
     setLoading(true);
     BlogService.getItemBlog(id).then((res) => {
       if (res) {
-        setTimeout(() => {
-          setLoading(false);
-          setItemBlog(res);
-        }, 1000);
+        setLoading(false);
+        setItemBlog(res);
       }
     });
   }, [id]);

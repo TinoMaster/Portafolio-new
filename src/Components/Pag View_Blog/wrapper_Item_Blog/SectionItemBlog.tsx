@@ -1,5 +1,6 @@
 import { BlogSection } from "../../../models/types/Blog";
 import { FormatCodeFromString } from "../../global/FormatCodeFromString";
+import { FormatInfoMarkdown } from "../../global/FormatInfoMarkdown";
 import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
@@ -20,6 +21,9 @@ export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
       ) : null}
       {section.type === "code" ? (
         <FormatCodeFromString codeString={section.content} />
+      ) : null}
+      {section.type === "markdown" ? (
+        <FormatInfoMarkdown info={section.content} />
       ) : null}
     </div>
   );

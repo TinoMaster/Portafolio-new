@@ -12,7 +12,7 @@ export interface Blog {
 export interface BlogSection {
   id: number;
   title: string;
-  type: "text" | "image" | "code";
+  type: "text" | "image" | "code" | "markdown";
   content: string;
 }
 

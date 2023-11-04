@@ -22,6 +22,18 @@
   ::-webkit-scrollbar-track {
     background-color: #242528; /* Color de fondo de la barra de desplazamiento */
   }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  ol li {
+    @apply list-disc list-inside;
+  }
+  code {
+    @apply font-mono bg-gray-700 rounded-md p-1;
+  }
 }
 
 @layer components {
@@ -55,5 +67,5 @@
   height: 100%;
   filter: blur(100px) saturate(50%);
   top: 80px;
-  opacity: 0.10;
+  opacity: 0.1;
 }

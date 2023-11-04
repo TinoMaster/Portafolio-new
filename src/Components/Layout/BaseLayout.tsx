@@ -4,7 +4,7 @@ import { Menu } from "../Menu";
 
 export const BaseLayout = () => {
   return (
-    <section className="w-full h-full flex flex-col justify-between overflow-auto bg-darkMode">
+    <section className="w-full h-full flex flex-col justify-between overflow-scroll bg-darkMode">
       <Menu />
       <Container />
       <Footer />
