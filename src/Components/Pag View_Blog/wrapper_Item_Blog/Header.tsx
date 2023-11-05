@@ -32,10 +32,10 @@ export const Header = ({
       </span>
       <p className="font-semibold text-slate-300">{description}</p>
       <div className="flex items-center gap-2 text-2xl">
-        <Icon className={`p-1 rounded-full text-darkMode ${background}`} />
+        <Icon className={`p-1 rounded-full ${background}`} />
         <span className="text-sm font-medium text-slate-300">{category}</span>
       </div>
-      <div className="w-full">
+      <div className="w-full my-4">
         <img src={image} alt="" className="w-full object-cover" />
       </div>
       <FormatTextWithLinks text={content} />

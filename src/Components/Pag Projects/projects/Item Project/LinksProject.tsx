@@ -39,8 +39,8 @@ export const LinksProject = ({ links, onlyIcon }: LinksProjectProps) => {
           </button>
         </div>
       ) : (
-        <div className="w-full flex gap-2 flex-wrap text-slate-500">
-          <p className="">Soon...</p>
+        <div className="w-full text-center text-slate-500">
+          <p className="">proximamente...</p>
         </div>
       )}
     </>

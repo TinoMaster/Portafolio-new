@@ -16,7 +16,7 @@ export const Projects = () => {
           Todos construidos paso a paso
         </h3>
       </div>
-      <div className="flex flex-wrap justify-between py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-10 py-20">
         {myProjects?.map((project) => (
           <Project key={project.name} project={project} />
         ))}

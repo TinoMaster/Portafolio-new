@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Blog } from "../models/types/Blog";
+import { Blog, BlogSection } from "../models/types/Blog";
 import { BlogService } from "../services/blog";
+import { convertSectionTitle } from "../utils/convertTilteInId";
 
 const initialState: Blog = {
   id: "",
@@ -17,7 +18,6 @@ const useViewBlog = (id: Blog["id"]) => {
   const [itemBlog, setItemBlog] = useState<Blog>(initialState);
   const [loading, setLoading] = useState(false);
 
-  /* //Todo: ver aqui */
   useEffect(() => {
     setLoading(true);
     BlogService.getItemBlog(id).then((res) => {
@@ -28,7 +28,24 @@ const useViewBlog = (id: Blog["id"]) => {
     });
   }, [id]);
 
-  return { itemBlog, loading };
+  const ajustScrollBlogNavegation = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    section: BlogSection
+  ) => {
+    e.preventDefault();
+    const target = document.querySelector(
+      `#${convertSectionTitle(section.title, section.id)}`
+    );
+    if (target) {
+      const offset = -100; // Ajusta este valor según tus necesidades
+      window.scrollTo({
+        top: (target as HTMLElement).offsetTop + offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return { itemBlog, loading, ajustScrollBlogNavegation };
 };
 
 export default useViewBlog;

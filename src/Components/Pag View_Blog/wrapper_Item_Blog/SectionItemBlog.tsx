@@ -1,4 +1,5 @@
 import { BlogSection } from "../../../models/types/Blog";
+import { convertSectionTitle } from "../../../utils/convertTilteInId";
 import { FormatCodeFromString } from "../../global/FormatCodeFromString";
 import { FormatInfoMarkdown } from "../../global/FormatInfoMarkdown";
 import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
@@ -6,7 +7,12 @@ import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (
     <div className="lg:text-lg text-sm">
-      <h2 className="font-semibold lg:text-xl">{section.title}</h2>
+      <h2
+        id={convertSectionTitle(section.title, section.id)}
+        className="font-semibold lg:text-xl"
+      >
+        {section.title}
+      </h2>
       {section.type === "image" ? (
         <div className="w-full p-2 bg-white/5">
           <img

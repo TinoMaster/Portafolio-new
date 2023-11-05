@@ -16,7 +16,7 @@ export const Project = ({ project }: ProjectProps) => {
     tegnologiesF,
   } = project;
   return (
-    <article className="text-white w-full lg:w-1/2 p-2">
+    <article className="text-white w-full p-2 rounded-md">
       <div className="shadow-lg rounded-lg overflow-hidden">
         <img src={image} alt={name} className="w-full h-64 object-contain" />
         <div className="p-4">
@@ -46,7 +46,7 @@ export const Project = ({ project }: ProjectProps) => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col gap-2 mt-4">
+          <div className="flex flex-col items-center gap-2 mt-4">
             <h3 className="font-semibold text-gray-200">Enlaces:</h3>
             <LinksProject onlyIcon={false} links={links} />
           </div>
