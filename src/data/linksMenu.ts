@@ -1,4 +1,9 @@
-const linksScroll = [
+export interface LinksScroll {
+  name: string;
+  path: string;
+}
+
+const linksScroll: LinksScroll[] = [
   {
     name: "Inicio",
     path: "/",

@@ -1,10 +1,10 @@
-import { LinkSocial } from "../../models/types/LinksSocial";
+import { LinkSocial } from "../../../models/types/LinksSocial";
 interface LinkProps {
   Icon: LinkSocial["icon"];
   link: LinkSocial["url"];
 }
 
-export const Link = ({ Icon, link }: LinkProps) => {
+export const Link_Social = ({ Icon, link }: LinkProps) => {
   return (
     <p className="m-2">
       <Icon

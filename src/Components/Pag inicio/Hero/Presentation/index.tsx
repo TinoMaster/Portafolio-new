@@ -1,13 +1,13 @@
 import { Text } from "./Text";
 import { BtnDonwloadCurr } from "./BtnDonwloadCurr";
-import { Links } from "./Links";
+import { LinksSocial } from "../../../global/Links Social";
 
 export const Presentation = () => {
   return (
     <>
       <Text />
       <BtnDonwloadCurr />
-      <Links />
+      <LinksSocial />
     </>
   );
 };

@@ -21,7 +21,7 @@ export const HeaderBlog = ({ Icon, category, date }: HeaderBlogProps) => {
         {/* author */}
         <div className="flex gap-2 items-center">
           <div className={`p-1 rounded-full ${background}`}>
-            <Icon className="text-xs lg:text-sm text-darkMode" />
+            <Icon className="text-xs lg:text-sm" />
           </div>
           <span className="text-gray-500 text-xs lg:text-base font-light">
             {`${upperCategory} • ${formatDate(date)}`}

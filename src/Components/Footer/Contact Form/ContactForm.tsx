@@ -12,7 +12,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="p-2 container text-sm">
+    <div className="p-2 text-sm">
       <h2 className="text-2xl font-bold mb-4">¡Contáctame!</h2>
       <form
         onSubmit={handleSubmit}
@@ -56,7 +56,7 @@ export const ContactForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows={4}
-            className="w-full px-4 py-2 shadow-inner rounded-md focus:outline-none focus:border-primary bg-white/5"
+            className="w-full px-4 py-2 resize-none overflow-auto shadow-inner rounded-md focus:outline-none focus:border-primary bg-white/5"
             required
           ></textarea>
         </div>

@@ -20,22 +20,22 @@ const contacts = [
 export const SectionContacts = () => {
   return (
     <div className="flex flex-wrap justify-center w-full m-auto max-w-720p">
-      <h2 className="w-full font-semibold text-center lg:py-10 text-lg lg:text-xl text-primary">
+      <h2 className="w-full font-semibold text-center text-lg lg:text-xl text-primary">
         CONTACTOS
       </h2>
       <div className="w-full flex flex-col items-center">
         {/* title */}
-        <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center lg:justify-start">
-          No dudes, conecta conmigo{" "}
+        <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center">
+          No lo dudes, conecta conmigo{" "}
           <FaHandPointDown className="text-yellow-400 ml-1" />
         </h3>
         {/* Contacts links */}
-        <div className="w-full flex flex-wrap">
+        <div className="w-full flex flex-wrap justify-center">
           {/* Each contact */}
           {contacts?.map((el) => (
             <div
               key={el.name}
-              className="flex flex-wrap justify-center lg:justify-start gap-3 items-center py-5 w-full lg:w-[300px] rounded-md"
+              className="flex flex-wrap justify-center gap-3 items-center py-5 w-full lg:w-[300px] rounded-md"
             >
               {/* Icon */}
               <div className="w-full flex justify-center lg:w-auto">

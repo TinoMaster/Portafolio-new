@@ -1,3 +1,4 @@
+import { linksScroll } from "../../data/linksMenu";
 import { BtnMenuMovil } from "./BtnMenuMovil";
 import { Links } from "./Links";
 import { Logo } from "./Logo";
@@ -11,7 +12,7 @@ export const Menu = () => {
       </header>
       <nav className="flex">
         <BtnMenuMovil />
-        <Links />
+        <Links linksScroll={linksScroll} />
       </nav>
     </header>
   );

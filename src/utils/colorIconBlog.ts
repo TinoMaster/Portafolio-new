@@ -4,31 +4,31 @@ export const whatColorIs: (category: BlogCategory) => string = (category) => {
   let result = "";
   switch (category) {
     case "javascript":
-      result = "bg-[#F7E025]";
+      result = "shadow shadow-[#F7E025]/50 text-[#F7E025]";
       break;
     case "typescript":
-      result = "bg-[#377CC8]";
+      result = "shadow-md shadow-[#377CC8]/50 text-[#377CC8]";
       break;
     case "react":
-      result = "bg-[#66DBFB]";
+      result = "shadow shadow-[#66DBFB] text-[#66DBFB]";
       break;
     case "next":
-      result = "bg-[#080808]";
+      result = "shadow shadow-[#ffffff] text-[#ffffff]";
       break;
     case "node":
-      result = "bg-[#8FC708]";
+      result = "shadow shadow-[#8FC708] text-[#8FC708]";
       break;
     case "ui":
-      result = "bg-[#EF237B]";
+      result = "shadow shadow-[#EF237B] text-[#EF237B]";
       break;
     case "tailwind":
-      result = "bg-[#3EBFF8]";
+      result = "shadow shadow-[#3EBFF8] text-[#3EBFF8]";
       break;
     case "curious":
-      result = "bg-[#2A2A2A]";
+      result = "shadow shadow-[#2A2A2A] text-[#2A2A2A]";
       break;
     case "vsCode":
-      result = "bg-[#F7E025]";
+      result = "shadow shadow-[#F7E025] text-[#F7E025]";
       break;
   }
   return result;
