@@ -19,9 +19,13 @@ export const WrapperItemBlog = ({
   ajustScrollBlogNavegation,
 }: WrapperItemBlogProps) => {
   return (
-    <div className="grid grid-cols-5 p-2 text-slate-300 font-normal mt-20 font-inter overflow-hidden min-h-screen">
-      <div className="gradient"></div>
-      <div className="col-span-full lg:col-start-2 lg:col-end-5 flex container flex-col gap-3 z-10 relative">
+    <div className="grid grid-cols-5 p-2 text-slate-300 font-normal mt-16 lg:mt-20 font-inter overflow-hidden min-h-screen">
+      <SectionNavigation
+        itemBlog={itemBlog}
+        visibleSection={visibleSection}
+        ajustScrollBlogNavegation={ajustScrollBlogNavegation}
+      />
+      <div className="col-span-full lg:col-start-2 lg:col-end-5 flex container lg:px-20 flex-col gap-3 z-10 relative">
         <ButtonBack />
         <Header
           title={itemBlog.title}
@@ -37,11 +41,6 @@ export const WrapperItemBlog = ({
           ))}
         </div>
       </div>
-      <SectionNavigation
-        itemBlog={itemBlog}
-        visibleSection={visibleSection}
-        ajustScrollBlogNavegation={ajustScrollBlogNavegation}
-      />
     </div>
   );
 };

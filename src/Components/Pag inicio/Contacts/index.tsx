@@ -25,7 +25,7 @@ export const SectionContacts = () => {
       </h2>
       <div className="w-full flex flex-col items-center">
         {/* title */}
-        <h3 className="w-full py-2 lg:py-5 text-2xl font-semibold lg:text-xl flex items-center text-center justify-center">
+        <h3 className="w-full py-2 lg:py-5 font-semibold lg:text-xl flex items-center text-center justify-center">
           No lo dudes, conecta conmigo{" "}
           <FaHandPointDown className="text-yellow-400 ml-1" />
         </h3>

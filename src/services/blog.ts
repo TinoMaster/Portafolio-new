@@ -1,8 +1,9 @@
+import { server } from "../config/server.config";
 import { Blog, BlogCategory } from "../models/types/Blog";
 import { getAllBlogs, getBlogByCategory, getBlogById } from "./blogFunction";
 
 export class BlogService {
-  static url = "http://localhost:5000/api/v1/blogs";
+  static url = server.production;
   static async getBlogs(category: BlogCategory | undefined) {
     if (category) {
       const res = await getBlogByCategory(this.url, category);

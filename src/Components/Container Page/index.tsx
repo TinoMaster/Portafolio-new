@@ -6,6 +6,7 @@ import LoadingPage from "../loaders/LoadingPage";
 export const Container = () => {
   return (
     <main className="w-full relative">
+      <div className="gradient"></div>
       <MenuMovil />
       <Suspense fallback={<LoadingPage />}>
         <RoutesApp />
