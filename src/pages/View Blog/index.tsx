@@ -7,9 +7,8 @@ import { ListLoadingBlog } from "../../Components/loaders/lisLoaderBlog";
 export const ViewBlog = () => {
   const params = useParams<{ id: Blog["id"] }>();
   const { id } = params;
-  const { itemBlog, loading, ajustScrollBlogNavegation } = useViewBlog(
-    id || ""
-  );
+  const { itemBlog, loading, ajustScrollBlogNavegation, visibleSection } =
+    useViewBlog(id || "");
   return (
     <div>
       {loading ? (
@@ -18,6 +17,7 @@ export const ViewBlog = () => {
         <WrapperItemBlog
           ajustScrollBlogNavegation={ajustScrollBlogNavegation}
           itemBlog={itemBlog}
+          visibleSection={visibleSection}
         />
       )}
     </div>

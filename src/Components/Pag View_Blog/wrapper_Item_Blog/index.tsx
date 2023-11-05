@@ -2,9 +2,11 @@ import { SectionItemBlog } from "./SectionItemBlog";
 import { ButtonBack } from "./ButtonBack";
 import { Header } from "./Header";
 import { Blog, BlogSection } from "../../../models/types/Blog";
+import { SectionNavigation } from "./SectionNavigation";
 
 interface WrapperItemBlogProps {
   itemBlog: Blog;
+  visibleSection: string;
   ajustScrollBlogNavegation: (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     section: BlogSection
@@ -13,6 +15,7 @@ interface WrapperItemBlogProps {
 
 export const WrapperItemBlog = ({
   itemBlog,
+  visibleSection,
   ajustScrollBlogNavegation,
 }: WrapperItemBlogProps) => {
   return (
@@ -34,26 +37,11 @@ export const WrapperItemBlog = ({
           ))}
         </div>
       </div>
-      {/* navegacion de secciones */}
-      <div className="col-span-1 bg-black/5 shadow-md hidden lg:block p-5 relative z-10">
-        <div className="fixed">
-          <h4 className="text-center text-slate-400 font-lora">Navegacion</h4>
-          <div className="flex flex-col gap-4 p-5">
-            {itemBlog.sections
-              .filter((el) => el.title)
-              .map((section) => (
-                <a
-                  onClick={(e) => ajustScrollBlogNavegation(e, section)}
-                  key={section.id}
-                  className="flex items-center gap-2 cursor-pointer"
-                >
-                  <div className="w-2 h-2 rounded-full bg-slate-300"></div>
-                  <span className="text-sm">{section.title}</span>
-                </a>
-              ))}
-          </div>
-        </div>
-      </div>
+      <SectionNavigation
+        itemBlog={itemBlog}
+        visibleSection={visibleSection}
+        ajustScrollBlogNavegation={ajustScrollBlogNavegation}
+      />
     </div>
   );
 };

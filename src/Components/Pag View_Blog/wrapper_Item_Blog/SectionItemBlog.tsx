@@ -9,7 +9,7 @@ export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
     <div className="lg:text-lg text-sm">
       <h2
         id={convertSectionTitle(section.title, section.id)}
-        className="font-semibold lg:text-xl"
+        className="font-bold py-5"
       >
         {section.title}
       </h2>

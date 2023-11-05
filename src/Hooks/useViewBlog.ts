@@ -17,6 +17,28 @@ const initialState: Blog = {
 const useViewBlog = (id: Blog["id"]) => {
   const [itemBlog, setItemBlog] = useState<Blog>(initialState);
   const [loading, setLoading] = useState(false);
+  const [visibleSection, setVisibleSection] = useState<string>("");
+
+  useEffect(() => {
+    const detectarSeccionVisible = () => {
+      const sections = document.querySelectorAll("h2");
+      let lastSection: string = "";
+      sections.forEach((section) => {
+        if (section.id) {
+          const topSection = section.getBoundingClientRect().top;
+          if (topSection < 300) {
+            lastSection = section.id;
+          }
+        }
+      });
+
+      setVisibleSection(lastSection);
+    };
+    window.addEventListener("scroll", detectarSeccionVisible);
+    return () => {
+      window.removeEventListener("scroll", detectarSeccionVisible);
+    };
+  }, []);
 
   useEffect(() => {
     setLoading(true);
@@ -40,12 +62,12 @@ const useViewBlog = (id: Blog["id"]) => {
       const offset = -100; // Ajusta este valor según tus necesidades
       window.scrollTo({
         top: (target as HTMLElement).offsetTop + offset,
-        behavior: "smooth",
+        behavior: "instant",
       });
     }
   };
 
-  return { itemBlog, loading, ajustScrollBlogNavegation };
+  return { itemBlog, loading, ajustScrollBlogNavegation, visibleSection };
 };
 
 export default useViewBlog;
