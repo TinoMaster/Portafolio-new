@@ -1,27 +1,16 @@
 interface HeroPageProps {
-  backImage: string;
   principalImage: string;
   pageName: string;
   ComponentMessage: React.FC;
 }
 
 export const HeroPage = ({
-  backImage,
   principalImage,
   ComponentMessage,
   pageName,
 }: HeroPageProps) => {
   return (
     <section className="w-full min-h-[50vh] relative pt-16 lg:pt-20">
-      {/* imagen de fondo */}
-      <div className="absolute w-full h-full overflow-hidden">
-        <img
-          className="w-full object-cover h-full bg-transparent blur-md"
-          src={backImage}
-          alt={`fondo de la ${pageName}`}
-        />
-      </div>
-      <div className="absolute bg-gradient-to-b from-darkMode/60 to-darkMode w-full h-full"></div>
       {/* Seccion principal */}
       <section className="principalSectionHero">
         {/* Imagen principal */}

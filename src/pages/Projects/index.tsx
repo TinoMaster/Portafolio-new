@@ -1,7 +1,7 @@
 import { ProjectsSectionPagProject } from "../../Components/Pag Projects/Projects";
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag Projects/Presentation";
-import { fondo_projects, imagesTechStack } from "../../utils/images";
+import { imagesTechStack } from "../../utils/images";
 import { svgFolder } from "../../utils/svgs";
 import { BoxTechs } from "../../Components/BoxTechs";
 
@@ -10,7 +10,6 @@ export const ProjectsPage = () => {
     <div className="flex flex-col">
       <HeroPage
         ComponentMessage={Presentation}
-        backImage={fondo_projects}
         principalImage={svgFolder}
         pageName="Pagina Proyectos"
       />

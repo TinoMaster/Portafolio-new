@@ -4,7 +4,7 @@ import { RenderSection } from "./Render_InfoBlog_InitialPage";
 
 export const SectionBlogHome = () => {
   return (
-    <article className="flex flex-col gap-10 container">
+    <article className="flex flex-col gap-10 container z-10 relative">
       <h3 className="w-full font-semibold text-center lg:text-start lg:py-10 text-lg lg:text-xl text-primary">
         Ya Conoces Mi Blog?
       </h3>

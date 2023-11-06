@@ -1,6 +1,6 @@
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag inicio/Presentation";
-import { mi_fondo1, mi_foto2 } from "../../utils/images";
+import { mi_foto2 } from "../../utils/images";
 import { lazy } from "react";
 
 const Strengths = lazy(() =>
@@ -36,7 +36,6 @@ export const PagInicio = () => {
   return (
     <section className="w-full flex flex-col relative">
       <HeroPage
-        backImage={mi_fondo1}
         principalImage={mi_foto2}
         ComponentMessage={Presentation}
         pageName="Pagina principal"
@@ -46,10 +45,10 @@ export const PagInicio = () => {
         <Strengths />
       </div>
       {/* Secciones de la pagina */}
-      <section className="w-full bg-gradient-to-r from-darkMode via-primary/5 relative lg:via-primary/5 to-darkMode py-5 px-2 lg:px-0">
+      <section className="w-full relative bg-gradient-to-r from-darkMode/5 via-primary/5  to-darkMode/5 py-10 px-2 lg:px-0">
         <SectionBlogHome />
       </section>
-      <section className="w-full bg-gradient-to-b from-black/10 via-white/5 to-black/10 py-5 px-2 lg:px-0">
+      <section className="w-full bg-gradient-to-b from-transparent via-white/5 to-transparent py-5 px-2 lg:px-0">
         <SectionProjects />
       </section>
       <section className="w-full py-20 px-2 lg:px-0">
