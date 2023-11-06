@@ -11,7 +11,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #9998a7; /* Color del pulgar de la barra de desplazamiento */
+    background-color: #282C34; /* Color del pulgar de la barra de desplazamiento */
     border-radius: 5px; /* Radio de los bordes del pulgar */
   }
 
@@ -26,13 +26,25 @@
     @apply text-2xl font-bold;
   }
   h3 {
-    @apply text-xl font-bold;
+    @apply text-xl text-slate-300 font-bold;
   }
   ol li {
     @apply list-disc list-inside;
   }
+  ul li {
+    @apply list-disc list-inside;
+  }
+  blockquote {
+    @apply border-l-4 border-slate-400 pl-4;
+  }
+  a {
+    @apply text-blue-500;
+  }
   code {
-    @apply font-mono bg-gray-700 rounded-md p-1;
+    @apply font-mono bg-[#282C34] rounded-md p-1;
+  }
+  pre {
+    @apply bg-[#282C34] rounded-md p-2 text-slate-400;
   }
 }
 

@@ -7,12 +7,15 @@ import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (
     <div className="lg:text-lg text-sm">
-      <h2
-        id={convertSectionTitle(section.title, section.id)}
-        className="font-bold py-5"
-      >
-        {section.title}
-      </h2>
+      {section.title ? (
+        <h2
+          id={convertSectionTitle(section.title, section.id)}
+          className="font-bold py-5"
+        >
+          {section.title}
+        </h2>
+      ) : null}
+
       {section.type === "image" ? (
         <div className="w-full p-2 bg-white/5">
           <img

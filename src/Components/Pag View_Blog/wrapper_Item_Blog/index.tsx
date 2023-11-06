@@ -19,7 +19,7 @@ export const WrapperItemBlog = ({
   ajustScrollBlogNavegation,
 }: WrapperItemBlogProps) => {
   return (
-    <div className="grid grid-cols-5 p-2 text-slate-300 font-normal mt-16 lg:mt-20 font-inter overflow-hidden min-h-screen">
+    <div className="grid grid-cols-5 p-4 text-slate-300 font-normal mt-16 lg:mt-20 font-inter overflow-hidden min-h-screen">
       <SectionNavigation
         itemBlog={itemBlog}
         visibleSection={visibleSection}

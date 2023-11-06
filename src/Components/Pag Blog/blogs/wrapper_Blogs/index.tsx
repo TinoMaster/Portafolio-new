@@ -16,7 +16,7 @@ export const WrapperBlogs = () => {
   }
 
   return (
-    <div className="flex flex-wrap min-h-screen">
+    <div className="grid grid-cols-2 grid-rows-5 lg:gap-4">
       {loading ? (
         <ListLoading />
       ) : (
