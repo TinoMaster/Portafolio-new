@@ -1,4 +1,5 @@
 import { IProject } from "../../../../models/types/Project";
+import { LazyImage } from "../../../global/LazyImage";
 import { LinksProject } from "./LinksProject";
 
 interface ProjectProps {
@@ -16,9 +17,9 @@ export const Project = ({ project }: ProjectProps) => {
     tegnologiesF,
   } = project;
   return (
-    <article className="text-white w-full p-2 rounded-md">
+    <article className="text-white w-full p-7 rounded-md">
       <div className="shadow-lg rounded-lg overflow-hidden">
-        <img src={image} alt={name} className="w-full h-64 object-contain" />
+        <LazyImage src={image} alt={name}/>
         <div className="p-4">
           <h2 className="text-xl font-semibold text-gray-200">{name}</h2>
           <p className="text-gray-400 text-sm mt-2">{description}</p>

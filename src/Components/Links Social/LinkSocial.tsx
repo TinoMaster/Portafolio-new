@@ -1,4 +1,4 @@
-import { LinkSocial } from "../../../models/types/LinksSocial";
+import { LinkSocial } from "../../models/types/LinksSocial";
 interface LinkProps {
   Icon: LinkSocial["icon"];
   link: LinkSocial["url"];

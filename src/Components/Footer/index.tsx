@@ -1,4 +1,4 @@
-import { LinksSocial } from "../global/Links Social";
+import { LinksSocial } from "../Links Social";
 import { Copyright } from "./Copyright";
 import { ContactForm } from "./Contact Form/ContactForm";
 

@@ -2,7 +2,7 @@ import { FcSportsMode } from "react-icons/fc";
 import { myProjects } from "../../../data/myProjects";
 import { Project } from "./Item Project";
 
-export const Projects = () => {
+export const ProjectsSectionPagProject = () => {
   return (
     <div className="flex flex-wrap gap-5 justify-center w-full pb-10">
       <h2 className="w-full text-center lg:text-start lg:text-xl font-semibold text-third">

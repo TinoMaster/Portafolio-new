@@ -1,5 +1,5 @@
 import { Link_Social } from "./LinkSocial";
-import { linksSocial } from "../../../data/linksSocial";
+import { linksSocial } from "../../data/linksSocial";
 
 export const LinksSocial = () => {
   return (

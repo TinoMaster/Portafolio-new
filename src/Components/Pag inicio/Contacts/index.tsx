@@ -19,7 +19,7 @@ const contacts = [
 
 export const SectionContacts = () => {
   return (
-    <div className="flex flex-wrap justify-center w-full m-auto max-w-720p">
+    <div className="flex flex-wrap justify-center w-full container">
       <h2 className="w-full font-semibold text-center text-lg lg:text-xl text-primary">
         Contacto
       </h2>

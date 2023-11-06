@@ -13,18 +13,18 @@ interface Strength {
 
 export const strengthsData: Strength[] = [
   {
-    title: "APASIONADO",
-    description:
-      "Apasionado por el desarrollo web y la resolución de problemas. En constante búsqueda de desafíos técnicos para aprender y crecer.",
-    icon: GiSelfLove,
-    color: "third",
-  },
-  {
     title: "INNOVADOR",
     description:
       "Apasionado en las últimas tendencias en el mundo del desarrollo web y aplicarlas de manera creativa en proyectos innovadores.",
     icon: MdSmartToy,
     color: "primary",
+  },
+  {
+    title: "APASIONADO",
+    description:
+      "Apasionado por el desarrollo web y la resolución de problemas. En constante búsqueda de desafíos técnicos para aprender y crecer.",
+    icon: GiSelfLove,
+    color: "third",
   },
   {
     title: "COMPROMETIDO",

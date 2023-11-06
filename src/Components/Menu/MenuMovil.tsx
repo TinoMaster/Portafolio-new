@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { linksScroll } from "../../data/linksMenu";
 import AppContext from "../../context/appContext";
 import { Link, useLocation } from "react-router-dom";
-import { LinksSocial } from "../global/Links Social";
+import { LinksSocial } from "../Links Social";
 
 export const MenuMovil = () => {
   const context = useContext(AppContext);

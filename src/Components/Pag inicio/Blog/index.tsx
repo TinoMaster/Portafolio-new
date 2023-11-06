@@ -1,14 +1,14 @@
 import { sectionsBlogHome } from "../../../data/sectionBlogHome";
 import { ButtonVisitBlog } from "./ButtonVisitBlog";
-import { RenderSection } from "./Render_Section";
+import { RenderSection } from "./Render_InfoBlog_InitialPage";
 
-export const SectionBlog = () => {
+export const SectionBlogHome = () => {
   return (
-    <article className="flex flex-col gap-5">
+    <article className="flex flex-col gap-10 container">
       <h3 className="w-full font-semibold text-center lg:text-start lg:py-10 text-lg lg:text-xl text-primary">
         Ya Conoces Mi Blog?
       </h3>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-28">
         {sectionsBlogHome?.map((section, index) => (
           <RenderSection
             key={index}

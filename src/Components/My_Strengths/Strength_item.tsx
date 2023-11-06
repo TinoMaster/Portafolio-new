@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
-import { Colors } from "../../../models/types/Color";
-import { home_classnames } from "../../../styles/classnames/Home.classnames";
+import { Colors } from "../../models/types/Color";
+import { home_classnames } from "../../styles/classnames/Home.classnames";
 
 interface Strength_itemProps {
   title: string;

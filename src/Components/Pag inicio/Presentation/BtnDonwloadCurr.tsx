@@ -1,5 +1,5 @@
 import { HiOutlineDocumentDownload } from "react-icons/hi";
-import { useCurriculum } from "../../../../Hooks/useCurriculum";
+import { useCurriculum } from "../../../Hooks/useCurriculum";
 
 export const BtnDonwloadCurr = () => {
   const { downloadEngCurr } = useCurriculum();
