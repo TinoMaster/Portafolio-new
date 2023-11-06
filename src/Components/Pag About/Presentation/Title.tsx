@@ -5,7 +5,7 @@ export const Title = () => {
         Sobre Mi
       </h1>
       <p className="mt-4 text-center text-gray-400">
-        Here you can find some of my projects
+        Descubre mas acerca de mi experiencia
       </p>
     </>
   );

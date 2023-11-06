@@ -25,7 +25,10 @@ export const WrapperItemBlog = ({
         visibleSection={visibleSection}
         ajustScrollBlogNavegation={ajustScrollBlogNavegation}
       />
-      <div className="col-span-full lg:col-start-2 lg:col-end-5 flex container lg:px-20 flex-col gap-3 z-10 relative">
+      <div
+        id="view_blog"
+        className="col-span-full lg:col-start-2 lg:col-end-5 flex container lg:px-20 flex-col gap-3 z-10 relative"
+      >
         <ButtonBack />
         <Header
           title={itemBlog.title}

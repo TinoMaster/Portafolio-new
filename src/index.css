@@ -37,8 +37,8 @@
   blockquote {
     @apply border-l-4 border-slate-400 pl-4;
   }
-  a {
-    @apply text-blue-500;
+  #view_blog a {
+    @apply text-blue-500 hover:text-primary;
   }
   code {
     @apply font-mono bg-[#282C34] rounded-md p-1;
