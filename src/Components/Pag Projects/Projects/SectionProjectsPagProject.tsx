@@ -1,8 +1,8 @@
 import { FcSportsMode } from "react-icons/fc";
 import { myProjects } from "../../../data/myProjects";
-import { Project } from "./Item Project";
+import { ProjectCardBig } from "../../ProjectCard_Big";
 
-export const ProjectsSectionPagProject = () => {
+export const SectionProjectsPagProject = () => {
   return (
     <div className="flex flex-wrap gap-5 justify-center w-full pb-10">
       <h2 className="w-full text-center lg:text-start lg:text-xl font-semibold text-third">
@@ -18,7 +18,7 @@ export const ProjectsSectionPagProject = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-10 py-20">
         {myProjects?.map((project) => (
-          <Project key={project.name} project={project} />
+          <ProjectCardBig key={project.name} project={project} />
         ))}
       </div>
     </div>

@@ -1,8 +1,8 @@
-import { sectionsBlogHome } from "../../../data/sectionBlogHome";
-import { ButtonVisitBlog } from "./ButtonVisitBlog";
-import { RenderSection } from "./Render_InfoBlog_InitialPage";
+import { sectionsBlogHome } from "../../data/sectionBlogHome";
+import { ButtonLink } from "../ButtonLink";
+import { Item_ImageTitleDescription } from "../Item_ImageTitleDescription";
 
-export const SectionBlogHome = () => {
+export const SectionBlogPageInit = () => {
   return (
     <article className="flex flex-col gap-10 container z-10 relative">
       <h3 className="w-full font-semibold text-center lg:text-start lg:py-10 text-lg lg:text-xl text-primary">
@@ -10,7 +10,7 @@ export const SectionBlogHome = () => {
       </h3>
       <div className="flex flex-col gap-28">
         {sectionsBlogHome?.map((section, index) => (
-          <RenderSection
+          <Item_ImageTitleDescription
             key={index}
             reverse={section.reverse}
             img={section.img}
@@ -20,7 +20,7 @@ export const SectionBlogHome = () => {
           />
         ))}
       </div>
-      <ButtonVisitBlog />
+      <ButtonLink color="primary" link="/blog" />
     </article>
   );
 };

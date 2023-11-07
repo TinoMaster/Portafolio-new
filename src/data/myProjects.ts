@@ -1,5 +1,7 @@
+import { FaGithub } from "react-icons/fa";
 import { IProject } from "../models/types/Project";
 import { appDebts, appLocal_dark, appMercado } from "../utils/images";
+import { AiOutlineGlobal } from "react-icons/ai";
 
 export const myProjects: IProject[] = [
   {
@@ -8,9 +10,21 @@ export const myProjects: IProject[] = [
       "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente. Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
     image: appDebts,
     links: [
-      "https://github.com/TinoMaster/my_debts",
-      "https://github.com/TinoMaster/debts_api",
-      "https://debts.tinomaster.website/",
+      {
+        title: "Frontend",
+        Icon: FaGithub,
+        url: "https://github.com/TinoMaster/my_debts",
+      },
+      {
+        title: "Backend",
+        Icon: FaGithub,
+        url: "https://github.com/TinoMaster/debts_api",
+      },
+      {
+        title: "Aplicación",
+        Icon: AiOutlineGlobal,
+        url: "https://debts.tinomaster.website/",
+      },
     ],
     tegnologiesF: ["React", "Tailwind"],
     tegnologiesB: ["Nodejs", "Express"],
@@ -22,9 +36,21 @@ export const myProjects: IProject[] = [
       "Esta fue mi primera aplicación completamente funcional y operativa, lleva mas de 3 años funcionando para una empresa. Constituyó un desafío significativo al integrar múltiples funciones, marcando un hito fundamental en mi proceso de aprendizaje y desarrollo.",
     image: appLocal_dark,
     links: [
-      "https://github.com/TinoMaster/apklocal",
-      "https://github.com/TinoMaster/api-local",
-      "https://xn--sueovirtual-3db.com/",
+      {
+        title: "Frontend",
+        Icon: FaGithub,
+        url: "https://github.com/TinoMaster/apklocal",
+      },
+      {
+        title: "Backend",
+        Icon: FaGithub,
+        url: "https://github.com/TinoMaster/api-local",
+      },
+      {
+        title: "Aplicación",
+        Icon: AiOutlineGlobal,
+        url: "https://xn--sueovirtual-3db.com/",
+      },
     ],
     tegnologiesF: ["React", "Tailwind"],
     tegnologiesB: ["Nodejs", "Express"],

@@ -17,7 +17,7 @@ const contacts = [
   },
 ];
 
-export const SectionContacts = () => {
+export const SectionContactsPageInit = () => {
   return (
     <div className="flex flex-wrap justify-center w-full container">
       <h2 className="w-full font-semibold text-center text-lg lg:text-xl text-primary">

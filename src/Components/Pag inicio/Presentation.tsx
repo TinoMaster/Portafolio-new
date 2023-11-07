@@ -1,6 +1,9 @@
+import { BtnDonwloadCurr } from "../BtnDonwloadCurr";
+import { LinksSocialRender } from "../LinksSocialRender";
+import { linksSocial } from "../../data/linksSocial";
 import { GiHand } from "react-icons/gi";
 
-export const Text = () => {
+export const Presentation = () => {
   return (
     <>
       <span className="flex items-center p-1 text-3xl">
@@ -14,7 +17,9 @@ export const Text = () => {
         <span className="text-3xl">Tecnologias</span>
         <span className="text-primary text-3xl">Full Stack</span>
       </span>
-      <span className="text-primary text-3xl">Exp: 4 Años</span>
+      <span className="text-primary text-3xl">4 Años Experiencia</span>
+      <BtnDonwloadCurr />
+      <LinksSocialRender linksSocial={linksSocial} />
     </>
   );
 };

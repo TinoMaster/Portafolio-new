@@ -1,7 +1,7 @@
-import { SectionBlogHome } from "../../../models/types/SectionBlogHome";
-import { LazyImage } from "../../global/LazyImage";
+import { SectionBlogHome } from "../models/types/SectionBlogHome";
+import { LazyImage } from "./Helpers/LazyImage";
 
-export const RenderSection = ({
+export const Item_ImageTitleDescription = ({
   reverse,
   img,
   color,

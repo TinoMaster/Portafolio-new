@@ -1,6 +1,7 @@
-import { LinksSocial } from "../Links Social";
+import { LinksSocialRender } from "../LinksSocialRender";
 import { Copyright } from "./Copyright";
 import { ContactForm } from "./Contact Form/ContactForm";
+import { linksSocial } from "../../data/linksSocial";
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
         <ContactForm />
         <div className="flex justify-between items-center">
           <Copyright />
-          <LinksSocial />
+          <LinksSocialRender linksSocial={linksSocial} />
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import { ProjectsSectionPagProject } from "../../Components/Pag Projects/Projects";
+import { SectionProjectsPagProject } from "../../Components/Pag Projects/Projects/SectionProjectsPagProject";
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag Projects/Presentation";
 import { imagesTechStack } from "../../utils/images";
@@ -18,7 +18,7 @@ export const ProjectsPage = () => {
         <BoxTechs imagesTechStack={imagesTechStack} />
       </div>
       <section className="container py-5">
-        <ProjectsSectionPagProject />
+        <SectionProjectsPagProject />
       </section>
     </div>
   );

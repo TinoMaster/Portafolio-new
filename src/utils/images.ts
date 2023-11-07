@@ -7,6 +7,7 @@ import mi_logo from "../assets/images/Mi_Logo.png";
 import appLocal_dark from "../assets/images/appLocalDark.png";
 import appDebts from "../assets/images/appDebts.png";
 import appMercado from "../assets/images/appMercado.png";
+import blogSoon from "../assets/images/blogSoon.png";
 
 import githubImage from "../assets/images/github.jpg";
 import reactImage from "../assets/images/reactpng.png";
@@ -41,4 +42,5 @@ export {
   fondo_projects,
   fondo_about,
   fondo_blog,
+  blogSoon,
 };

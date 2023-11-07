@@ -13,7 +13,7 @@ export function LazyImage({ src, alt }: LazyImageProps) {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1,
+      threshold: 0.01,
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);

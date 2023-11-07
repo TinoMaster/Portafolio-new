@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
-import { IProject } from "../../../models/types/Project";
-import { LinksProject } from "../../Pag Projects/Projects/Item Project/LinksProject";
-import { LazyImage } from "../../global/LazyImage";
-
+import { IProject } from "../models/types/Project";
+import { LazyImage } from "./Helpers/LazyImage";
+import { LinksSocialRender } from "./LinksSocialRender";
 interface ProjectCardProps {
   project: IProject;
 }
 
-export const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard_Small = ({ project }: ProjectCardProps) => {
   const { name, description, image, links } = project;
   return (
     <div className="w-full lg:w-1/3 overflow-hidden p-2">
@@ -27,7 +26,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             Ver mas
           </Link>
           <div className="flex space-x-2">
-            <LinksProject onlyIcon links={links} />
+            <LinksSocialRender linksSocial={links} />
           </div>
         </div>
       </div>

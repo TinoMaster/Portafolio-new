@@ -1,7 +1,7 @@
 import { HashRouter } from "react-router-dom";
 import { BaseLayout } from "./Components/Layout/BaseLayout";
 import { AppProvider } from "./context/appContext";
-import ScrollToTop from "./Components/global/ScrollToTop";
+import ScrollToTop from "./Components/Helpers/ScrollToTop";
 
 function App() {
   return (

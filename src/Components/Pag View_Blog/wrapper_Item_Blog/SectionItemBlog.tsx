@@ -1,8 +1,8 @@
 import { BlogSection } from "../../../models/types/Blog";
 import { convertSectionTitle } from "../../../utils/convertTilteInId";
-import { FormatCodeFromString } from "../../global/FormatCodeFromString";
-import { FormatInfoMarkdown } from "../../global/FormatInfoMarkdown";
-import { FormatTextWithLinks } from "../../global/FormatTextWithLinks";
+import { FormatCodeFromString } from "../../Helpers/FormatCodeFromString";
+import { FormatInfoMarkdown } from "../../Helpers/FormatInfoMarkdown";
+import { FormatTextWithLinks } from "../../Helpers/FormatTextWithLinks";
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (

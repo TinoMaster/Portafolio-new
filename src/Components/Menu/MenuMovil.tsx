@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { linksScroll } from "../../data/linksMenu";
 import AppContext from "../../context/appContext";
 import { Link, useLocation } from "react-router-dom";
-import { LinksSocial } from "../Links Social";
+import { LinksSocialRender } from "../LinksSocialRender";
+import { linksSocial } from "../../data/linksSocial";
 
 export const MenuMovil = () => {
   const context = useContext(AppContext);
@@ -29,7 +30,7 @@ export const MenuMovil = () => {
           </Link>
         ))}
       </nav>
-      <LinksSocial />
+      <LinksSocialRender linksSocial={linksSocial} />
     </aside>
   );
 };
