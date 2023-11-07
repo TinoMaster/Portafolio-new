@@ -3,7 +3,7 @@ import { SectionAboutMe } from "../../Components/Pag About/About me";
 import { Presentation } from "../../Components/Pag About/Presentation";
 import { svgAbout } from "../../utils/svgs";
 
-export const AboutPage = () => {
+const AboutPage = async () => {
   return (
     <div className="">
       <HeroPage
@@ -20,3 +20,5 @@ export const AboutPage = () => {
     </div>
   );
 };
+
+export default AboutPage;

@@ -1,6 +1,6 @@
 import { BlogsSection } from "../../Components/Pag Blog/blogs";
 
-export const BlogPage = () => {
+const BlogPage = () => {
   return (
     <div className="mt-20">
       <section className="w-full container py-20 px-2 lg:px-0">
@@ -9,3 +9,5 @@ export const BlogPage = () => {
     </div>
   );
 };
+
+export default BlogPage;

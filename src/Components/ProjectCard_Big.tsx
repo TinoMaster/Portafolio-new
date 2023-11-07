@@ -47,9 +47,9 @@ export const ProjectCardBig = ({ project }: ProjectProps) => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-2 mt-4">
+          <div className="flex flex-col gap-2 mt-4">
             <h3 className="font-semibold text-gray-200">Enlaces:</h3>
-            <LinksSocialRender linksSocial={links} />
+            <LinksSocialRender showTitle linksSocial={links} />
           </div>
         </div>
       </div>

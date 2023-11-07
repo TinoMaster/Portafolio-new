@@ -1,7 +1,7 @@
 import { SectionItemBlog } from "./SectionItemBlog";
 import { ButtonBack } from "./ButtonBack";
 import { Header } from "./Header";
-import { Blog, BlogSection } from "../../../models/types/Blog";
+import { Blog, BlogSection } from "../../models/types/Blog";
 import { SectionNavigation } from "./SectionNavigation";
 
 interface WrapperItemBlogProps {

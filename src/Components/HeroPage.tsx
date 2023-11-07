@@ -10,7 +10,7 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="w-full relative pt-16 lg:pt-20 p-3 md:px-10">
+    <section className="flex items-center w-full relative pt-16 lg:pt-20 min-h-screen md:min-h-[60vh] p-3 md:px-10 bg-black/5">
       {/* Seccion principal */}
       <section className="container flex flex-wrap relative flex-row-reverse w-full h-full items-center justify-center py-10">
         {/* Imagen principal */}

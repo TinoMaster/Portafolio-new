@@ -19,7 +19,9 @@ export const Presentation = () => {
       </span>
       <span className="text-primary text-3xl">4 Años Experiencia</span>
       <BtnDonwloadCurr />
-      <LinksSocialRender linksSocial={linksSocial} />
+      <div className="py-3">
+        <LinksSocialRender linksSocial={linksSocial} />
+      </div>
     </>
   );
 };

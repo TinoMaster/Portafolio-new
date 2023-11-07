@@ -1,6 +1,6 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 
-interface AppContextType {
+export interface AppContextType {
   menuMovile: boolean;
   handlerMenuMovile: () => void;
 }

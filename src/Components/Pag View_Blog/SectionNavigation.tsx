@@ -1,6 +1,5 @@
-import React from "react";
-import { convertSectionTitle } from "../../../utils/convertTilteInId";
-import { Blog, BlogSection } from "../../../models/types/Blog";
+import { convertSectionTitle } from "../../utils/convertTilteInId";
+import { Blog, BlogSection } from "../../models/types/Blog";
 
 interface SectionNavigationProps {
   itemBlog: Blog;

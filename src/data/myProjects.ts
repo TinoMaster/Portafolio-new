@@ -11,17 +11,17 @@ export const myProjects: IProject[] = [
     image: appDebts,
     links: [
       {
-        title: "Frontend",
+        title: "APP",
         Icon: FaGithub,
         url: "https://github.com/TinoMaster/my_debts",
       },
       {
-        title: "Backend",
+        title: "API",
         Icon: FaGithub,
         url: "https://github.com/TinoMaster/debts_api",
       },
       {
-        title: "Aplicación",
+        title: "DEMO",
         Icon: AiOutlineGlobal,
         url: "https://debts.tinomaster.website/",
       },
@@ -37,17 +37,17 @@ export const myProjects: IProject[] = [
     image: appLocal_dark,
     links: [
       {
-        title: "Frontend",
+        title: "APP",
         Icon: FaGithub,
         url: "https://github.com/TinoMaster/apklocal",
       },
       {
-        title: "Backend",
+        title: "API",
         Icon: FaGithub,
         url: "https://github.com/TinoMaster/api-local",
       },
       {
-        title: "Aplicación",
+        title: "DEMO",
         Icon: AiOutlineGlobal,
         url: "https://xn--sueovirtual-3db.com/",
       },

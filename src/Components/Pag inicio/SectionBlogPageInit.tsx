@@ -2,7 +2,7 @@ import { sectionsBlogHome } from "../../data/sectionBlogHome";
 import { ButtonLink } from "../ButtonLink";
 import { Item_ImageTitleDescription } from "../Item_ImageTitleDescription";
 
-export const SectionBlogPageInit = () => {
+const SectionBlogPageInit = () => {
   return (
     <article className="flex flex-col gap-10 container z-10 relative">
       <h3 className="w-full font-semibold text-center lg:text-start lg:py-10 text-lg lg:text-xl text-primary">
@@ -24,3 +24,5 @@ export const SectionBlogPageInit = () => {
     </article>
   );
 };
+
+export default SectionBlogPageInit;

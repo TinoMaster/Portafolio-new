@@ -1,7 +1,7 @@
 import { strengthsData } from "../../data/strengths";
 import { Strength_Card } from "../Strength_Card";
 
-export const Strengths = () => {
+const Strengths = () => {
   return (
     <div className="flex flex-wrap w-full justify-around items-start grow relative gap-10 lg:gap-0">
       {strengthsData.map((str) => (
@@ -16,3 +16,5 @@ export const Strengths = () => {
     </div>
   );
 };
+
+export default Strengths;

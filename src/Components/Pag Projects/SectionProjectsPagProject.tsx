@@ -1,6 +1,6 @@
 import { FcSportsMode } from "react-icons/fc";
-import { myProjects } from "../../../data/myProjects";
-import { ProjectCardBig } from "../../ProjectCard_Big";
+import { myProjects } from "../../data/myProjects";
+import { ProjectCardBig } from "../ProjectCard_Big";
 
 export const SectionProjectsPagProject = () => {
   return (

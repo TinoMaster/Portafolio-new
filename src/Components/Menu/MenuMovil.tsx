@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { LinksSocialRender } from "../LinksSocialRender";
 import { linksSocial } from "../../data/linksSocial";
 
-export const MenuMovil = () => {
+const MenuMovil = () => {
   const context = useContext(AppContext);
   const { pathname } = useLocation();
   const regex = /\/\w*/;
@@ -34,3 +34,5 @@ export const MenuMovil = () => {
     </aside>
   );
 };
+
+export default MenuMovil;

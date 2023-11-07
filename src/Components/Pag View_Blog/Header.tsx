@@ -1,8 +1,8 @@
-import { iconsHeadBlog } from "../../../data/iconsHeadBlog";
-import { Blog } from "../../../models/types/Blog";
-import { whatColorIs } from "../../../utils/colorIconBlog";
-import { formatDate } from "../../../utils/formatDate";
-import { FormatTextWithLinks } from "../../Helpers/FormatTextWithLinks";
+import { iconsHeadBlog } from "../../data/iconsHeadBlog";
+import { Blog } from "../../models/types/Blog";
+import { whatColorIs } from "../../utils/colorIconBlog";
+import { formatDate } from "../../utils/formatDate";
+import { FormatTextWithLinks } from "../Helpers/FormatTextWithLinks";
 import { CiCalendarDate } from "react-icons/ci";
 
 interface HeaderItemBlogProps {

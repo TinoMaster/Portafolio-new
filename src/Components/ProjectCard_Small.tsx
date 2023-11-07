@@ -26,7 +26,7 @@ export const ProjectCard_Small = ({ project }: ProjectCardProps) => {
             Ver mas
           </Link>
           <div className="flex space-x-2">
-            <LinksSocialRender linksSocial={links} />
+            <LinksSocialRender showTitle linksSocial={links} />
           </div>
         </div>
       </div>

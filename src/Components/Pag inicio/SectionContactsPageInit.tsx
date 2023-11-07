@@ -17,7 +17,7 @@ const contacts = [
   },
 ];
 
-export const SectionContactsPageInit = () => {
+const SectionContactsPageInit = () => {
   return (
     <div className="flex flex-wrap justify-center w-full container">
       <h2 className="w-full font-semibold text-center text-lg lg:text-xl text-primary">
@@ -60,3 +60,5 @@ export const SectionContactsPageInit = () => {
     </div>
   );
 };
+
+export default SectionContactsPageInit;

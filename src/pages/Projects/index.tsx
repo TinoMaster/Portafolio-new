@@ -1,11 +1,11 @@
-import { SectionProjectsPagProject } from "../../Components/Pag Projects/Projects/SectionProjectsPagProject";
+import { SectionProjectsPagProject } from "../../Components/Pag Projects/SectionProjectsPagProject";
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag Projects/Presentation";
 import { imagesTechStack } from "../../utils/images";
 import { svgFolder } from "../../utils/svgs";
 import { BoxTechs } from "../../Components/BoxTechs";
 
-export const ProjectsPage = () => {
+const ProjectsPage = () => {
   return (
     <div className="flex flex-col">
       <HeroPage
@@ -23,3 +23,5 @@ export const ProjectsPage = () => {
     </div>
   );
 };
+
+export default ProjectsPage;

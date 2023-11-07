@@ -62,7 +62,7 @@ const useViewBlog = (id: Blog["id"]) => {
       const offset = -100; // Ajusta este valor según tus necesidades
       window.scrollTo({
         top: (target as HTMLElement).offsetTop + offset,
-        behavior: "instant",
+        /* behavior: "", */
       });
     }
   };
