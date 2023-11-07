@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useBlog from "../../../../Hooks/useBlog";
-import { ArrValidCategory, BlogCategory } from "../../../../models/types/Blog";
-import { ItemBlog } from "../blog";
-import { ListLoading } from "../../../loaders/listLoader";
-import { blogSoon } from "../../../../utils/images";
+import useBlog from "../../../Hooks/useBlog";
+import { ArrValidCategory, BlogCategory } from "../../../models/types/Blog";
+import { ItemBlog } from "./blog";
+import { ListLoading } from "../../loaders/listLoader";
+import { blogSoon } from "../../../utils/images";
 
-export const WrapperBlogs = () => {
+export const WrapperRendersBlogs = () => {
   const navigate = useNavigate();
   const params = useParams<{ category: BlogCategory }>();
   const { category } = params;

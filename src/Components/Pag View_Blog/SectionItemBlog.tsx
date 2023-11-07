@@ -6,7 +6,7 @@ import { FormatTextWithLinks } from "../Helpers/FormatTextWithLinks";
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (
-    <div className="lg:text-lg text-sm">
+    <section className="lg:text-lg text-sm">
       {section.title ? (
         <h2
           id={convertSectionTitle(section.title, section.id)}
@@ -17,13 +17,13 @@ export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
       ) : null}
 
       {section.type === "image" ? (
-        <div className="w-full p-2 bg-white/5">
+        <figure className="w-full p-2 bg-white/5">
           <img
             src={section.content}
-            alt=""
+            alt="imagen del blog"
             className="w-full h-full object-cover rounded-md"
           />
-        </div>
+        </figure>
       ) : null}
       {section.type === "text" ? (
         <FormatTextWithLinks text={section.content} />
@@ -34,6 +34,6 @@ export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
       {section.type === "markdown" ? (
         <FormatInfoMarkdown info={section.content} />
       ) : null}
-    </div>
+    </section>
   );
 };

@@ -3,7 +3,7 @@ import { SectionAboutMe } from "../../Components/Pag About/About me";
 import { Presentation } from "../../Components/Pag About/Presentation";
 import { svgAbout } from "../../utils/svgs";
 
-const AboutPage = async () => {
+const AboutPage = () => {
   return (
     <div className="">
       <HeroPage

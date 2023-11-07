@@ -50,6 +50,18 @@ const useViewBlog = (id: Blog["id"]) => {
     });
   }, [id]);
 
+  /* useEffect(() => {
+    document.title = itemBlog.description;
+    const metaDescription = document.createElement("meta");
+    metaDescription.name = "description";
+    metaDescription.content = itemBlog.title;
+    document.head.appendChild(metaDescription);
+    return () => {
+      document.title = "TinoMaster | Portafolio";
+      document.head.removeChild(metaDescription);
+    };
+  }, []); */
+
   const ajustScrollBlogNavegation = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     section: BlogSection

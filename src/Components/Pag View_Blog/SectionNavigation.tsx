@@ -16,10 +16,10 @@ export const SectionNavigation = ({
   ajustScrollBlogNavegation,
 }: SectionNavigationProps) => {
   return (
-    <div className="col-span-1 bg-black/5 shadow-md hidden lg:block p-5 relative z-10">
-      <div className="fixed">
+    <aside className="col-span-1 bg-black/5 shadow-md hidden lg:block p-5 relative z-10">
+      <section className="fixed">
         <h4 className="text-center text-slate-400 font-lora">Navegacion</h4>
-        <div className="flex flex-col gap-4 p-5">
+        <nav className="flex flex-col gap-4 p-5">
           {itemBlog.sections
             .filter((el) => el.title)
             .map((section) => (
@@ -37,8 +37,8 @@ export const SectionNavigation = ({
                 <span className="text-sm">{section.title}</span>
               </a>
             ))}
-        </div>
-      </div>
-    </div>
+        </nav>
+      </section>
+    </aside>
   );
 };
