@@ -1,7 +1,7 @@
-import { categories } from "../../../../data/blogs/categories";
+import { categories } from "../../../data/blogs/categories";
 import { Category } from "./Category";
+import { useNavCategoriesBlog } from "../../../Hooks/useNavCategoriesBlog";
 import { motion } from "framer-motion";
-import { useNavCategoriesBlog } from "../../../../Hooks/useNavCategoriesBlog";
 
 export const Categories = () => {
   const { width, element } = useNavCategoriesBlog();

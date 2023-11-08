@@ -1,4 +1,4 @@
-export const Title = () => {
+export const Presentation = () => {
   return (
     <>
       <h1 className="text-5xl font-bold text-center text-secondary/80">

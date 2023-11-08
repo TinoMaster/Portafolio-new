@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
-import { Blog } from "../../../../../models/types/Blog";
-import { whatColorIs } from "../../../../../utils/colorIconBlog";
-import { formatDate } from "../../../../../utils/formatDate";
+import { Blog } from "../../models/types/Blog";
+import { whatColorIs } from "../../utils/colorIconBlog";
+import { formatDate } from "../../utils/formatDate";
 
 interface HeaderBlogProps {
   Icon: IconType;
@@ -9,7 +9,7 @@ interface HeaderBlogProps {
   date: Blog["date"];
 }
 
-export const HeaderBlog = ({ Icon, category, date }: HeaderBlogProps) => {
+export const ItemCardBlogHeader = ({ Icon, category, date }: HeaderBlogProps) => {
   const background = whatColorIs(category);
   const upperCategory = [
     category[0].toUpperCase(),

@@ -1,9 +1,9 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useBlog from "../../../Hooks/useBlog";
-import { ArrValidCategory, BlogCategory } from "../../../models/types/Blog";
-import { ItemBlog } from "./blog";
-import { ListLoading } from "../../loaders/listLoader";
-import { blogSoon } from "../../../utils/images";
+import useBlog from "../../Hooks/useBlog";
+import { ArrValidCategory, BlogCategory } from "../../models/types/Blog";
+import { ItemCardBlog } from "./ItemCardBlog";
+import { ListLoading } from "../loaders/listLoader";
+import { blogSoon } from "../../utils/images";
 
 export const WrapperRendersBlogs = () => {
   const navigate = useNavigate();
@@ -22,10 +22,10 @@ export const WrapperRendersBlogs = () => {
         <ListLoading />
       ) : !blogsFilter.length ? (
         <div className="w-screen flex p-5 justify-center container items-center">
-          <img src={blogSoon} className="max-w-[500px] w-full object-cover"/>
+          <img src={blogSoon} className="max-w-[500px] w-full object-cover" />
         </div>
       ) : (
-        blogsFilter?.map((blog) => <ItemBlog key={blog.id} blog={blog} />)
+        blogsFilter?.map((blog) => <ItemCardBlog key={blog.id} blog={blog} />)
       )}
     </div>
   );

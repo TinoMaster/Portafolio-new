@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Error404 } from "../../pages/404";
-import { WrapperRendersBlogs } from "../Pag Blog/blogs/WrapperRendersBlog";
+import { WrapperRendersBlogs } from "../Pag Blog/WrapperRendersBlog";
 import { Suspense, lazy } from "react";
 import LoadingPage from "../loaders/LoadingPage";
 

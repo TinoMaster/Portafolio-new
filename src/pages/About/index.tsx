@@ -1,5 +1,5 @@
 import { HeroPage } from "../../Components/HeroPage";
-import { SectionAboutMe } from "../../Components/Pag About/About me";
+import { SectionAboutMe } from "../../Components/Pag About/SectionAboutMe";
 import { Presentation } from "../../Components/Pag About/Presentation";
 import { svgAbout } from "../../utils/svgs";
 

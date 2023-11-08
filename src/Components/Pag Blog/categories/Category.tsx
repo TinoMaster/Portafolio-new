@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { BlogCategory } from "../../../../models/types/Blog";
+import { BlogCategory } from "../../../models/types/Blog";
 import { motion } from "framer-motion";
 
 export const Category = ({ category }: { category: BlogCategory | string }) => {
