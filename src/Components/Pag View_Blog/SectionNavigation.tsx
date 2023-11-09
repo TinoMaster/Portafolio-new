@@ -1,8 +1,8 @@
 import { convertSectionTitle } from "../../utils/convertTilteInId";
-import { Blog, BlogSection } from "../../models/types/Blog";
+import { BlogSection } from "../../models/types/Blog";
 
 interface SectionNavigationProps {
-  itemBlog: Blog;
+  sections: BlogSection[];
   visibleSection: string;
   ajustScrollBlogNavegation: (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -11,34 +11,31 @@ interface SectionNavigationProps {
 }
 
 export const SectionNavigation = ({
-  itemBlog,
+  sections,
   visibleSection,
   ajustScrollBlogNavegation,
 }: SectionNavigationProps) => {
   return (
-    <aside className="col-span-1 bg-black/5 shadow-md hidden lg:block p-5 relative z-10">
-      <section className="fixed">
-        <h4 className="text-center text-slate-400 font-lora">Navegacion</h4>
-        <nav className="flex flex-col gap-4 p-5">
-          {itemBlog.sections
-            .filter((el) => el.title)
-            .map((section) => (
-              <a
-                onClick={(e) => ajustScrollBlogNavegation(e, section)}
-                key={section.id}
-                className={`flex items-center gap-2 cursor-pointer ${
-                  visibleSection ===
-                  `${convertSectionTitle(section.title, section.id)}`
-                    ? "text-primary"
-                    : "hover:text-slate-400"
-                }`}
-              >
-                <div className="w-2 h-2 rounded-full bg-slate-300"></div>
-                <span className="text-sm">{section.title}</span>
-              </a>
-            ))}
-        </nav>
-      </section>
-    </aside>
+    <section className="">
+      <nav className="flex flex-col gap-4 p-5">
+        {sections
+          .filter((el) => el.title)
+          .map((section) => (
+            <a
+              onClick={(e) => ajustScrollBlogNavegation(e, section)}
+              key={section.id}
+              className={`flex items-center gap-2 cursor-pointer ${
+                visibleSection ===
+                `${convertSectionTitle(section.title, section.id)}`
+                  ? "text-primary"
+                  : "hover:text-slate-400"
+              }`}
+            >
+              <div className="w-2 h-2 rounded-full bg-slate-300"></div>
+              <span className="text-xs lg:text-sm">{section.title}</span>
+            </a>
+          ))}
+      </nav>
+    </section>
   );
 };
