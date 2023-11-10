@@ -34,7 +34,7 @@ const PagInicio = () => {
         <section className="w-full bg-gradient-to-b from-transparent via-white/5 to-transparent py-5 px-2 lg:px-0">
           <SectionProjectsPageInit />
         </section>
-        <section className="w-full py-20 px-2 lg:px-0">
+        <section className="w-full py-20 px-2 lg:px-0 bg-gradient-to-t from-darkMode/10 via-slate-800/30 to-darkMode/10">
           <SectionContactsPageInit />
         </section>
       </Suspense>

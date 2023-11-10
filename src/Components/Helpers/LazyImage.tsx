@@ -49,7 +49,7 @@ export function LazyImage({ src, alt }: LazyImageProps) {
   };
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <div className="w-full h-full" style={{ position: "relative", display: "inline-block" }}>
       {isLoading && (
         <div
           style={{
@@ -69,8 +69,9 @@ export function LazyImage({ src, alt }: LazyImageProps) {
       )}
       <img
         ref={imgRef}
-        alt=""
-        style={{ opacity: isLoading ? 0 : 1 }}
+        alt={alt}
+        /* style={{ opacity: isLoading ? 0 : 1 }} */
+        className="w-full h-full object-cover"
         onLoad={handleImageLoad}
       />
     </div>

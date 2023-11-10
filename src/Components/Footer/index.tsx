@@ -1,16 +1,12 @@
-import { LinksSocialRender } from "../LinksSocialRender";
 import { Copyright } from "./Copyright";
-import { ContactForm } from "./Contact Form/ContactForm";
-import { linksSocial } from "../../data/linksSocial";
 
 export const Footer = () => {
   return (
     <footer className="w-full p-8 text-lightMode bg-primary/5">
       <div className="flex flex-col container">
-        <ContactForm />
+        {/* <ContactForm /> */}
         <div className="flex justify-between items-center">
           <Copyright />
-          <LinksSocialRender linksSocial={linksSocial} />
         </div>
       </div>
     </footer>

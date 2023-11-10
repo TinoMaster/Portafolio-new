@@ -4,6 +4,7 @@ import { getAllBlogs, getBlogByCategory, getBlogById } from "./blogFunction";
 
 export class BlogService {
   static url = server.production;
+
   static async getBlogs(category: BlogCategory | undefined) {
     if (category) {
       const res = await getBlogByCategory(this.url, category);

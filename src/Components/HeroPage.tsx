@@ -1,3 +1,5 @@
+import { LazyImage } from "./Helpers/LazyImage";
+
 interface HeroPageProps {
   principalImage: string;
   pageName: string;
@@ -10,17 +12,15 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="flex items-center w-full relative pt-16 lg:pt-20 min-h-screen md:min-h-[60vh] p-3 md:px-10 bg-black/5">
+    <section className="flex w-full relative min-h-screen md:min-h-[60vh] px-3 md:px-10 bg-slate-800/5">
       {/* Seccion principal */}
-      <section className="container flex flex-wrap relative flex-row-reverse w-full h-full items-center justify-center py-10">
+      <section className="container flex flex-wrap relative flex-row-reverse w-full h-full">
         {/* Imagen principal */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <div className="w-72 h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden border-2">
-            <img
+          <div className="w-72 h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden relative border">
+            <LazyImage
               src={principalImage}
               alt={`imagen principal de la ${pageName}`}
-              title={`imagen principal de la ${pageName}`}
-              className="w-full h-full"
             />
           </div>
         </div>

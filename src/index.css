@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +11,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #282C34; /* Color del pulgar de la barra de desplazamiento */
+    background-color: #282c34; /* Color del pulgar de la barra de desplazamiento */
     border-radius: 5px; /* Radio de los bordes del pulgar */
   }
 

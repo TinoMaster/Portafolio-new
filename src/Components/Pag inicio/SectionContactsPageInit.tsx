@@ -48,7 +48,7 @@ const SectionContactsPageInit = () => {
                 <span className="font-semibold text-lg">{el.name}</span>
                 <a
                   href={el.link}
-                  className="text-lg text-primary/80 hover:cursor-pointer hover:text-primary/50 transition-all"
+                  className="text-lg text-slate-100 hover:cursor-pointer hover:text-primary/50 transition-all"
                 >
                   {el.description}
                 </a>
