@@ -17,6 +17,7 @@ const SectionBlogPageInit = () => {
             color={section.color}
             description={section.description}
             title={section.title}
+            position="center"
           />
         ))}
       </div>

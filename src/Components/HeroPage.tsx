@@ -12,7 +12,7 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="flex w-full relative min-h-screen md:min-h-[60vh] px-3 md:px-10 bg-slate-800/5">
+    <section className="flex w-full relative min-h-screen md:min-h-[60vh] px-3 md:px-0 bg-black/5">
       {/* Seccion principal */}
       <section className="container flex flex-wrap relative flex-row-reverse w-full h-full">
         {/* Imagen principal */}

@@ -49,28 +49,18 @@ export function LazyImage({ src, alt }: LazyImageProps) {
   };
 
   return (
-    <div className="w-full h-full" style={{ position: "relative", display: "inline-block" }}>
+    <div
+      className="w-full h-full"
+      style={{ position: "relative", display: "inline-block" }}
+    >
       {isLoading && (
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            background: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
+        <div className="w-full h-full min-h-[200px] bg-black/30 absolute flex justify-center items-center rounded-md">
           <p>Cargando...</p>
         </div>
       )}
       <img
         ref={imgRef}
         alt={alt}
-        /* style={{ opacity: isLoading ? 0 : 1 }} */
         className="w-full h-full object-cover"
         onLoad={handleImageLoad}
       />

@@ -1,9 +1,16 @@
+import { aboutMe } from "../../data/aboutMe";
+import { svgAbout } from "../../utils/svgs";
+import { Item_ImageTitleDescription } from "../Item_ImageTitleDescription";
+
 export const SectionAboutMe = () => {
   return (
-    <div className="flex flex-wrap w-full gap-10">
-      <p className="w-full font-semibold text-center lg:text-end lg:text-xl text-primary">
-        Descripción
-      </p>
-    </div>
+    <section className="flex flex-wrap w-full gap-10">
+      <Item_ImageTitleDescription
+        title="Sobre mi"
+        description={aboutMe.description}
+        img={svgAbout}
+        position="start"
+      />
+    </section>
   );
 };

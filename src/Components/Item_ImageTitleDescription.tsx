@@ -1,5 +1,13 @@
-import { SectionBlogHome } from "../models/types/SectionBlogHome";
 import { LazyImage } from "./Helpers/LazyImage";
+
+interface Item_ImageTitleDescriptionProps {
+  reverse?: boolean;
+  img: string;
+  color?: string;
+  description: string;
+  title: string;
+  position: "start" | "center";
+}
 
 export const Item_ImageTitleDescription = ({
   reverse,
@@ -7,7 +15,8 @@ export const Item_ImageTitleDescription = ({
   color,
   description,
   title,
-}: SectionBlogHome) => {
+  position,
+}: Item_ImageTitleDescriptionProps) => {
   return (
     <div
       className={`flex flex-wrap w-full lg:py-10 ${
@@ -17,7 +26,7 @@ export const Item_ImageTitleDescription = ({
       {/* SVG Section */}
       <div className="w-full lg:w-1/2 overflow-hidden">
         <div
-          className={`w-6/12 m-auto rounded-full bg-gradient-to-tr ${
+          className={`w-6/12 h-full m-auto rounded-full bg-gradient-to-tr ${
             color === "primary" ? "from-primary/50 to-white/50" : ""
           } ${color === "secondary" ? "from-secondary/50 to-white/50" : ""} ${
             color === "third" ? "from-third/50 to-white/50" : ""
@@ -28,10 +37,20 @@ export const Item_ImageTitleDescription = ({
       </div>
       {/* TextSection */}
       <div className="w-full lg:w-1/2">
-        <h3 className="font-semibold text-center py-5 text-lg lg:text-2xl">
+        <h3
+          className={`font-semibold ${
+            position === "start" ? "text-start" : "text-center"
+          } py-5 text-lg lg:text-2xl`}
+        >
           {title}
         </h3>
-        <p className="font-light text-center lg:text-xl">{description}</p>
+        <p
+          className={`font-light ${
+            position === "start" ? " text-justify" : "text-center"
+          } text-center lg:text-xl`}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );

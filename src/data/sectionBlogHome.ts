@@ -5,7 +5,7 @@ interface SectionBlogHome {
   title: string;
   description: string;
   img: string;
-  color: Colors;
+  color?: Colors;
   reverse: boolean;
 }
 

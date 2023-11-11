@@ -1,8 +1,4 @@
 import mi_foto2 from "../assets/images/my_image.png";
-import mi_fondo1 from "../assets/images/fondo1.png";
-import fondo_projects from "../assets/images/fondoAmarillo.jpg";
-import fondo_about from "../assets/images/fondoAbout.jpg";
-import fondo_blog from "../assets/images/fondoBlog.jpeg";
 import mi_logo from "../assets/images/Mi_Logo.png";
 import appLocal_dark from "../assets/images/appLocalDark.png";
 import appDebts from "../assets/images/appDebts.png";
@@ -32,15 +28,4 @@ export const imagesTechStack = [
   reduxImage,
   mongoImage,
 ];
-export {
-  mi_fondo1,
-  mi_foto2,
-  appLocal_dark,
-  appDebts,
-  appMercado,
-  mi_logo,
-  fondo_projects,
-  fondo_about,
-  fondo_blog,
-  blogSoon,
-};
+export { mi_foto2, appLocal_dark, appDebts, appMercado, mi_logo, blogSoon };

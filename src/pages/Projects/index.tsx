@@ -13,10 +13,9 @@ const ProjectsPage = () => {
         principalImage={svgFolder}
         pageName="Pagina Proyectos"
       />
-      <div className="w-full container z-10 pb-20 lg:py-20">
-        <h3 className="text-xl lg:text-2xl text-center">Mi Stack</h3>
+      <section className="container py-5">
         <BoxTechs imagesTechStack={imagesTechStack} />
-      </div>
+      </section>
       <section className="container py-5">
         <SectionProjectsPagProject />
       </section>
