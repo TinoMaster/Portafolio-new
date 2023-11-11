@@ -6,7 +6,7 @@ import { HeaderAbout } from "../../Components/Pag About/HeaderAbout";
 
 const AboutPage = () => {
   return (
-    <div className="">
+    <section className="">
       <HeroPage
         ComponentMessage={Presentation}
         principalImage={svgAbout}
@@ -18,7 +18,7 @@ const AboutPage = () => {
       <section className="w-full py-20 px-2 lg:px-0 container">
         <SectionAboutMe />
       </section>
-    </div>
+    </section>
   );
 };
 
