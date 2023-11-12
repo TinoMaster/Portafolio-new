@@ -24,11 +24,11 @@ const PagInicio = () => {
       />
       {/* fortalezas y stack */}
       <Suspense>
-        <div className="container w-full pb-20">
+        <div className="container w-full pb-20 p-1">
           <Strengths />
         </div>
         {/* Secciones de la pagina */}
-        <section className="w-full relative bg-gradient-to-r from-darkMode/5 via-primary/5  to-darkMode/5 py-10 px-2 lg:px-0">
+        <section className="w-full relative bg-gradient-to-t from-transparent via-secondary/5  to-transparent py-10 px-2 lg:px-0">
           <SectionBlogPageInit />
         </section>
         <section className="w-full bg-gradient-to-b from-transparent via-white/5 to-transparent py-5 px-2 lg:px-0">

@@ -12,12 +12,13 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="flex w-full relative min-h-screen md:min-h-[60vh] px-3 md:px-0 bg-black/5">
+    <section className="flex w-full relative mt-[90px] md:mt-[70px] min-h-[60vh] md:min-h-[50vh] px-3 py-4 md:py-0 md:px-0">
+      <div className="gradient" />
       {/* Seccion principal */}
-      <section className="container flex flex-wrap relative flex-row-reverse w-full h-full">
+      <section className="container flex flex-wrap relative flex-row-reverse w-full h-full z-10">
         {/* Imagen principal */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <div className="w-72 h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden relative">
+        <div className="w-full flex justify-center items-center">
+          <div className="w-28 h-28 md:w-60 md:h-60 rounded-full overflow-hidden relative border">
             <LazyImage
               src={principalImage}
               alt={`imagen principal de la ${pageName}`}
@@ -25,7 +26,7 @@ export const HeroPage = ({
           </div>
         </div>
         {/* Mensaje */}
-        <div className="flex flex-col w-full text-2xl md:w-1/2 md:text-2xl xl:text-2xl mt-8 justify-center items-center md:items-start">
+        <div className="w-full flex flex-col text-slate-400 items-center justify-center">
           <ComponentMessage />
         </div>
       </section>

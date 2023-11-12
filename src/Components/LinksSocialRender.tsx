@@ -15,7 +15,7 @@ export const LinksSocialRender = ({
   showTitle,
 }: LinksSocialProps) => {
   return (
-    <div className="w-full flex justify-center lg:justify-start text-2xl">
+    <div className="flex text-2xl">
       {!linksSocial.length ? (
         <p className="text-base m-1">Pronto...</p>
       ) : (
@@ -29,10 +29,10 @@ export const LinksSocialRender = ({
               onClick={() => {
                 window.open(url, "_blank");
               }}
-              className="text-xl transition-all"
+              className="text-lg transition-all"
             />
             {showTitle ? (
-              <span className="w-full text-center absolute -bottom-6 text-s">
+              <span className="w-full text-center absolute -bottom-6 text-[7px]">
                 {title}
               </span>
             ) : null}

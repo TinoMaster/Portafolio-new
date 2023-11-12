@@ -19,7 +19,9 @@ export const ProjectCardBig = ({ project }: ProjectProps) => {
   return (
     <article className="text-white w-full p-7 rounded-md">
       <div className="shadow-lg rounded-lg overflow-hidden">
-        <LazyImage src={image} alt={name} />
+        <div className="px-10">
+          <LazyImage src={image} alt={name} />
+        </div>
         <div className="p-4">
           <h2 className="text-xl font-semibold text-gray-200">{name}</h2>
           <p className="text-gray-400 text-sm mt-2">{description}</p>
