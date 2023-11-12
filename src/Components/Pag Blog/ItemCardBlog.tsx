@@ -14,7 +14,7 @@ export const ItemCardBlog = ({ blog }: { blog: Blog }) => {
       to={`/blog/view_blog/${blog.id}`}
       className="col-span-2 lg:col-span-1"
     >
-      <div className="flex items-center bg-white/5 rounded-md p-4 shadow shadow-black/10 hover:cursor-pointer hover:bg-white/10 transition-colors duration-300">
+      <div className="flex items-center bg-white/10 rounded-md p-4 shadow shadow-black/10 hover:cursor-pointer hover:bg-white/10 transition-colors duration-300">
         <div className="w-full h-full flex flex-col gap-2">
           <ItemCardBlogHeader Icon={icon} category={category} date={date} />
           <div className="flex justify-between items-center min-h-[60px]">

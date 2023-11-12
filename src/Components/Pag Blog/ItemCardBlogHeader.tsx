@@ -9,12 +9,12 @@ interface HeaderBlogProps {
   date: Blog["date"];
 }
 
-export const ItemCardBlogHeader = ({ Icon, category, date }: HeaderBlogProps) => {
+export const ItemCardBlogHeader = ({
+  Icon,
+  category,
+  date,
+}: HeaderBlogProps) => {
   const background = whatColorIs(category);
-  const upperCategory = [
-    category[0].toUpperCase(),
-    ...category.split("").slice(1),
-  ].join("");
   return (
     <div className="w-full">
       <div className="flex flex-wrap justify-between items-center gap-2">
@@ -23,8 +23,9 @@ export const ItemCardBlogHeader = ({ Icon, category, date }: HeaderBlogProps) =>
           <div className={`p-1 rounded-full ${background}`}>
             <Icon className="text-xs lg:text-sm" />
           </div>
-          <span className="text-gray-500 text-xs lg:text-base font-light">
-            {`${upperCategory} • ${formatDate(date)}`}
+          <span className="text-slate-400 text-xs lg:text-sm font-light">
+            <span className="capitalize">{category}</span>
+            <span className="text-xs">{`• ${formatDate(date)}`}</span>
           </span>
         </div>
       </div>

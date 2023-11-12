@@ -5,10 +5,6 @@ import { motion } from "framer-motion";
 export const Category = ({ category }: { category: BlogCategory | string }) => {
   const pathName = useLocation();
   const currentPath = pathName.pathname.slice(6);
-  const linkCategory = [
-    category.split("")[0].toLocaleUpperCase(),
-    ...category.split("").slice(1),
-  ].join("");
 
   if (category === "Todos")
     return (
@@ -19,7 +15,7 @@ export const Category = ({ category }: { category: BlogCategory | string }) => {
             className="absolute w-full h-full border-b"
           ></motion.div>
         ) : null}
-        <span className="text-xs lg:text-xl">{linkCategory}</span>
+        <span className="text-xs lg:text-xl">{category}</span>
       </Link>
     );
 
@@ -31,7 +27,7 @@ export const Category = ({ category }: { category: BlogCategory | string }) => {
           className="absolute w-full h-full border-b"
         ></motion.div>
       ) : null}
-      <span className="text-xs lg:text-xl">{linkCategory}</span>
+      <span className="text-xs lg:text-xl capitalize">{category}</span>
     </Link>
   );
 };

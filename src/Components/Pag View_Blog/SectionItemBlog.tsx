@@ -1,8 +1,12 @@
+import { lazy } from "react";
 import { BlogSection } from "../../models/types/Blog";
 import { convertSectionTitle } from "../../utils/convertTilteInId";
-import { FormatCodeFromString } from "../Helpers/FormatCodeFromString";
-import { FormatInfoMarkdown } from "../Helpers/FormatInfoMarkdown";
 import { FormatTextWithLinks } from "../Helpers/FormatTextWithLinks";
+
+const FormatCodeFromString = lazy(
+  () => import("../Helpers/FormatCodeFromString")
+);
+const FormatInfoMarkdown = lazy(() => import("../Helpers/FormatInfoMarkdown"));
 
 export const SectionItemBlog = ({ section }: { section: BlogSection }) => {
   return (

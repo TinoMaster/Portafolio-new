@@ -5,11 +5,7 @@ const SyntaxHighlighter = lazy(
   () => import("react-syntax-highlighter/dist/cjs/prism-async")
 );
 
-export const FormatCodeFromString = ({
-  codeString,
-}: {
-  codeString: string;
-}) => {
+const FormatCodeFromString = ({ codeString }: { codeString: string }) => {
   const [codeFormatted, setCodeFormatted] = useState<string>("");
 
   useEffect(() => {
@@ -39,3 +35,5 @@ export const FormatCodeFromString = ({
     </Suspense>
   );
 };
+
+export default FormatCodeFromString;

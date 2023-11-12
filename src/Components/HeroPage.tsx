@@ -17,7 +17,7 @@ export const HeroPage = ({
       <section className="container flex flex-wrap relative flex-row-reverse w-full h-full">
         {/* Imagen principal */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <div className="w-72 h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden relative border">
+          <div className="w-72 h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden relative">
             <LazyImage
               src={principalImage}
               alt={`imagen principal de la ${pageName}`}
