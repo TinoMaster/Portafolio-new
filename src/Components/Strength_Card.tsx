@@ -24,14 +24,14 @@ export const Strength_Card = ({
         }`}
       >
         <Icon
-          className={`text-4xl p-2 lg:text-5xl lg:p-3 shadow-lg rounded-full ${
+          className={`text-5xl p-2 lg:text-5xl lg:p-3 shadow-lg rounded-full ${
             color === "primary" ? "shadow-primary/30" : ""
           } ${color === "secondary" ? "shadow-secondary/30" : ""} ${
             color === "third" ? "shadow-third/30" : ""
           }`}
         />
-        <h3 className="text-sm  font-roboto">{title}</h3>
-        <p className="text-sm text-center font-light font-roboto ">
+        <h3 className="text-base">{title}</h3>
+        <p className="text-center font-light">
           {description}
         </p>
       </div>

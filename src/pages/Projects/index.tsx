@@ -13,10 +13,10 @@ const ProjectsPage = () => {
         principalImage={svgFolder}
         pageName="Pagina Proyectos"
       />
-      <section className="container py-5">
+      <section className="container py-10">
         <BoxTechs imagesTechStack={imagesTechStack} />
       </section>
-      <section className="container py-5">
+      <section className="container py-10 lg:py-28">
         <SectionProjectsPagProject />
       </section>
     </div>

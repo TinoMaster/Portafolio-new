@@ -24,9 +24,9 @@ export const Item_ImageTitleDescription = ({
       } `}
     >
       {/* SVG Section */}
-      <div className="w-full lg:w-1/2 overflow-hidden">
+      <div className="w-full lg:w-1/3 overflow-hidden">
         <div
-          className={`w-5/12 h-full m-auto rounded-full bg-gradient-to-tr ${
+          className={`w-7/12 h-full m-auto rounded-full bg-gradient-to-tr ${
             color === "primary" ? "from-primary/50 to-white/50" : ""
           } ${color === "secondary" ? "from-secondary/50 to-white/50" : ""} ${
             color === "third" ? "from-third/50 to-white/50" : ""
@@ -36,11 +36,11 @@ export const Item_ImageTitleDescription = ({
         </div>
       </div>
       {/* TextSection */}
-      <div className="w-full lg:w-1/2">
+      <div className="w-full lg:w-2/3">
         <h3
           className={`font-semibold ${
             position === "start" ? "text-start" : "text-center"
-          } py-5 text-lg lg:text-2xl`}
+          } py-5 text-xl text-slate-200 lg:text-2xl`}
         >
           {title}
         </h3>

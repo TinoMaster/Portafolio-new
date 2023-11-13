@@ -3,7 +3,7 @@ import { Strength_Card } from "../Strength_Card";
 
 const Strengths = () => {
   return (
-    <div className="flex flex-wrap w-full justify-around items-start grow relative gap-10 lg:gap-0">
+    <div className="flex flex-wrap w-full relative gap-10 lg:gap-0">
       {strengthsData.map((str) => (
         <Strength_Card
           key={str.title}

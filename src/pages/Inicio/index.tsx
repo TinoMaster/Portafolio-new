@@ -23,10 +23,13 @@ const PagInicio = () => {
         pageName="Pagina principal"
       />
       {/* fortalezas y stack */}
+      <div className="container w-full pb-20 p-1">
+        <span className="block text-center text-2xl text-slate-200 pt-5">
+          Cualidades
+        </span>
+        <Strengths />
+      </div>
       <Suspense>
-        <div className="container w-full pb-20 p-1">
-          <Strengths />
-        </div>
         {/* Secciones de la pagina */}
         <section className="w-full relative bg-gradient-to-t from-transparent via-secondary/5  to-transparent py-10 px-2 lg:px-0">
           <SectionBlogPageInit />

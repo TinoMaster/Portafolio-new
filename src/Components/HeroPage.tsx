@@ -12,13 +12,13 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="flex w-full relative mt-[90px] md:mt-[70px] min-h-[60vh] md:min-h-[50vh] px-3 py-4 md:py-0 md:px-0">
+    <section className="flex w-full relative mt-[70px] md:mt-[70px] md:min-h-[50vh] px-3 py-5 md:py-0 md:px-0">
       <div className="gradient" />
       {/* Seccion principal */}
-      <section className="container flex flex-wrap relative flex-row-reverse w-full h-full z-10">
+      <section className="lg:containe flex flex-wrap relative flex-row-reverse w-full h-full z-10 gap-3 mt-5">
         {/* Imagen principal */}
         <div className="w-full flex justify-center items-center">
-          <div className="w-28 h-28 md:w-60 md:h-60 rounded-full overflow-hidden relative border">
+          <div className="w-44 h-44 md:w-48 md:h-48 rounded-full overflow-hidden relative border">
             <LazyImage
               src={principalImage}
               alt={`imagen principal de la ${pageName}`}

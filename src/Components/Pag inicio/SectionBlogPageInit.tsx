@@ -5,7 +5,7 @@ import { Item_ImageTitleDescription } from "../Item_ImageTitleDescription";
 const SectionBlogPageInit = () => {
   return (
     <article className="flex flex-col gap-10 container z-10 relative">
-      <h3 className="w-full font-semibold text-center lg:py-10 text-lg lg:text-xl text-primary">
+      <h3 className="w-full text-slate-200 text-center lg:py-10 text-3xl">
         Ya Conoces Mi Blog?
       </h3>
       <div className="flex flex-col gap-28">

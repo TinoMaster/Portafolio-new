@@ -29,7 +29,7 @@ export const LinksSocialRender = ({
               onClick={() => {
                 window.open(url, "_blank");
               }}
-              className="text-lg transition-all"
+              className="text-2xl transition-all"
             />
             {showTitle ? (
               <span className="w-full text-center absolute -bottom-6 text-[7px]">

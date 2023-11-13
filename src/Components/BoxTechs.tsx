@@ -1,19 +1,21 @@
+import { LazyImage } from "./Helpers/LazyImage";
+
 interface BoxTechsProps {
   imagesTechStack: string[];
 }
 
 export const BoxTechs = ({ imagesTechStack }: BoxTechsProps) => {
   return (
-    <article className="w-full container z-10">
-      <h3 className="lg:text-xl text-base text-center">Mi Stack</h3>
-      <article className="flex flex-col w-full">
+    <article className="w-full container">
+      <h3 className="text-2xl text-center">Mi Stack</h3>
+      <article className="flex flex-col w-full gap-2 pt-2">
         <section className="w-full flex justify-around">
           {imagesTechStack.slice(0, 5).map((img) => (
             <div
               key={img}
-              className="rounded-md border-2 border-primary shadow-md shadow-primary/30 relative overflow-hidden w-6 lg:w-8 h-6 lg:h-8 m-1 lg:m-2"
+              className="rounded-md border-2 border-primary shadow-md shadow-primary/30 relative overflow-hidden w-9 h-9 m-1 lg:m-2"
             >
-              <img src={img} alt="imagen de tegnologias que domino" />
+              <LazyImage src={img} alt="imagen de tegnologias que domino" />
             </div>
           ))}
         </section>
@@ -21,9 +23,9 @@ export const BoxTechs = ({ imagesTechStack }: BoxTechsProps) => {
           {imagesTechStack.slice(5).map((img) => (
             <div
               key={img}
-              className="rounded-md border-2 border-primary shadow-md shadow-primary/30 relative overflow-hidden w-6 lg:w-8 h-6 lg:h-8 m-1 lg:m-2"
+              className="rounded-md border-2 border-primary shadow-md shadow-primary/30 relative overflow-hidden w-9 h-9 m-1 lg:m-2"
             >
-              <img src={img} alt="imagen de tegnologias que domino" />
+              <LazyImage src={img} alt="imagen de tegnologias que domino" />
             </div>
           ))}
         </section>
