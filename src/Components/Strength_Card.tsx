@@ -15,7 +15,7 @@ export const Strength_Card = ({
   color,
 }: Strength_CardProps) => {
   return (
-    <div key={title} className="lg:w-1/3">
+    <div key={title} className="lg:w-1/3 max-w-[400px] m-auto">
       <div
         className={`flex flex-col justify-center items-center gap-2 p-3 lg:top-10 relative shadow-2xl rounded-md ${
           color === "primary" ? "shadow-primary/5" : ""

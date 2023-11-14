@@ -17,8 +17,8 @@ export const Presentation = () => {
       <span className="text-3xl lg:text-5xl text-slate-200 mb-2">
         4 Años Experiencia
       </span>
-      <p className="text-center lg:text-xl container">{aboutMe.description}</p>
-      <div className="w-full flex justify-center p-2">
+      <p className="text-center lg:text-xl max-w-[400px] sm:container">{aboutMe.description}</p>
+      <div className="w-full flex justify-center">
         <BtnDonwloadCurr />
       </div>
       <div className="flex justify-center w-full py-3">

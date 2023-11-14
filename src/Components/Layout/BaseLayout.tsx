@@ -1,5 +1,4 @@
 import { Container } from "../Container Page";
-import { Footer } from "../Footer";
 import { Menu } from "../Menu";
 
 export const BaseLayout = () => {
@@ -7,7 +6,7 @@ export const BaseLayout = () => {
     <section className="w-full h-full flex flex-col justify-between min-h-screen overflow-auto bg-darkMode">
       <Menu />
       <Container />
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 };

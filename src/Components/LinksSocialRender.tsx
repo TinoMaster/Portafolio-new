@@ -22,15 +22,12 @@ export const LinksSocialRender = ({
         linksSocial?.map(({ Icon, url, title }) => (
           <small
             key={title}
+            onClick={() => {
+              window.open(url, "_blank");
+            }}
             className="m-2 relative hover:cursor-pointer hover:text-primary/90 "
           >
-            <Icon
-              title={title}
-              onClick={() => {
-                window.open(url, "_blank");
-              }}
-              className="text-2xl transition-all"
-            />
+            <Icon title={title} className="text-2xl transition-all" />
             {showTitle ? (
               <span className="w-full text-center absolute -bottom-6 text-[7px]">
                 {title}

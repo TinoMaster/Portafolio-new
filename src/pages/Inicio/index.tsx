@@ -1,6 +1,7 @@
+import { BoxTechs } from "../../Components/BoxTechs";
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag inicio/Presentation";
-import { mi_foto2 } from "../../utils/images";
+import { imagesTechStack, mi_foto2 } from "../../utils/images";
 import { Suspense, lazy } from "react";
 
 const Strengths = lazy(() => import("../../Components/Pag inicio/Strengths"));
@@ -24,14 +25,14 @@ const PagInicio = () => {
       />
       {/* fortalezas y stack */}
       <div className="container w-full pb-20 p-1">
-        <span className="block text-center text-2xl text-slate-200 pt-5">
-          Cualidades
-        </span>
         <Strengths />
       </div>
+      <section className="py-20 bg-gradient-to-t from-darkMode via-primary/5 to-darkMode shadow-inner shadow-black/10">
+        <BoxTechs imagesTechStack={imagesTechStack} />
+      </section>
       <Suspense>
         {/* Secciones de la pagina */}
-        <section className="w-full relative bg-gradient-to-t from-transparent via-secondary/5  to-transparent py-10 px-2 lg:px-0">
+        <section className="w-full relative bg-gradient-to-t from-transparent via-primary/5  to-transparent py-10 px-2 lg:px-0">
           <SectionBlogPageInit />
         </section>
         <section className="w-full bg-gradient-to-b from-transparent via-white/5 to-transparent py-5 px-2 lg:px-0">

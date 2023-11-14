@@ -9,9 +9,9 @@ interface ProjectCardProps {
 export const ProjectCard_Small = ({ project }: ProjectCardProps) => {
   const { name, description, image, links } = project;
   return (
-    <div className="w-full lg:w-1/3 overflow-hidden p-2">
-      <div className="w-full rounded overflow-hidden shadow-lg">
-        <div className="px-10">
+    <div className="w-full lg:w-1/3 overflow-hidden p-2 max-w-[400px] m-auto">
+      <div className="w-full rounded-md overflow-hidden shadow-lg bg-slate-900/40">
+        <div className="px-10 m-1 rounded-md bg-black/10">
           <LazyImage src={image} alt={`imagen de ${name}`} />
         </div>
 

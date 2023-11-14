@@ -11,8 +11,10 @@ export const ButtonLink = ({ link, color, inline }: ButtonLinkProps) => {
   return (
     <Link
       to={link}
-      className={`transition-colors text-center text-white font-semibold px-4 py-2 rounded-lg ${
-        color === "primary" ? "bg-primary/80 hover:bg-primary" : ""
+      className={`transition-colors text-center text-white font-semibold p-3 rounded-lg ${
+        color === "primary"
+          ? "bg-gradient-to-tr from-primary/80 via-primary/40 to-primary/80 hover:bg-primary"
+          : ""
       } ${color === "secondary" ? "bg-secondary/80 hover:bg-secondary" : ""} ${
         color === "third" ? "bg-third/80 hover:bg-third" : ""
       } ${inline ? "inline m-auto" : "block"}`}
