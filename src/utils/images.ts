@@ -12,7 +12,7 @@ import cssImage from "../assets/images/css.png";
 import htmlImage from "../assets/images/html.png";
 import nodeImage from "../assets/images/node.png";
 import expressImage from "../assets/images/express.png";
-import nextImage from "../assets/images/nextjs.png";
+import nextImage from "../assets/images/tailwind.png";
 import reduxImage from "../assets/images/redux.png";
 import mongoImage from "../assets/images/mongo.png";
 

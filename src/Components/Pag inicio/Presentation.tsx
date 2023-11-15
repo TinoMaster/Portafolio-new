@@ -17,12 +17,21 @@ export const Presentation = () => {
       <span className="text-3xl lg:text-5xl text-slate-200 mb-2">
         4 Años Experiencia
       </span>
-      <p className="text-center lg:text-xl max-w-[400px] sm:container">{aboutMe.description}</p>
       <div className="w-full flex justify-center">
         <BtnDonwloadCurr />
       </div>
       <div className="flex justify-center w-full py-3">
         <LinksSocialRender linksSocial={linksSocial} />
+      </div>
+      <div className="space-y-5 p-4 rounded-md">
+        {aboutMe.description.map((par, index) => (
+          <p
+            key={index}
+            className="text-center lg:text-xl max-w-[400px] md:container"
+          >
+            {par}
+          </p>
+        ))}
       </div>
     </>
   );

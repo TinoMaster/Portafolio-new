@@ -17,12 +17,12 @@ export const ProjectCardBig = ({ project }: ProjectProps) => {
     tegnologiesF,
   } = project;
   return (
-    <article className="text-white w-full p-7 rounded-md">
-      <div className="shadow-lg rounded-lg overflow-hidden">
-        <div className="px-10">
+    <article className="text-white w-full h-full rounded-md">
+      <div className="overflow-hidden">
+        <div className="px-10 max-w-[600px] m-auto">
           <LazyImage src={image} alt={name} />
         </div>
-        <div className="p-4">
+        <div className="flex flex-col p-4">
           <h2 className="text-xl font-semibold text-gray-200">{name}</h2>
           <p className="text-gray-400 text-sm mt-2">{description}</p>
           <div className="mt-4">

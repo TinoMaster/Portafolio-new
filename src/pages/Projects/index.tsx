@@ -2,8 +2,8 @@ import { SectionProjectsPagProject } from "../../Components/Pag Projects/Section
 
 const ProjectsPage = () => {
   return (
-    <div className="flex flex-col">
-      <section className="container py-10 lg:py-28">
+    <div className="flex flex-col h-screen overflow-hidden">
+      <section className="container py-20 lg:py-28">
         <SectionProjectsPagProject />
       </section>
     </div>

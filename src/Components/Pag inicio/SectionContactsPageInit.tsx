@@ -20,7 +20,7 @@ const contacts = [
 const SectionContactsPageInit = () => {
   return (
     <div className="flex flex-wrap justify-center w-full container">
-      <h2 className="w-full font-semibold text-center text-3xl text-slate-200">
+      <h2 className="w-full font-semibold text-center text-2xl text-slate-200">
         Contacto
       </h2>
       <div className="w-full flex flex-col items-center">
