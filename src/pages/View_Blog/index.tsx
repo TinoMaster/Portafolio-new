@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import useViewBlog from "../../Hooks/useViewBlog";
+import useViewBlog from "./useViewBlog.hook";
 import { Blog } from "../../models/types/Blog";
 import LoadingPage from "../../Components/loaders/LoadingPage";
 import { SectionNavigation } from "../../Components/Pag View_Blog/SectionNavigation";
@@ -19,13 +19,11 @@ const PageViewBlog = () => {
       ) : (
         <section className="grid grid-cols-5 p-4 relative text-slate-300 font-normal mt-16 lg:mt-20 font-inter overflow-hidden min-h-screen">
           <MenuViewOptionsBlogMovil childrenName="Navegacion">
-            <div className="w-full">
-              <SectionNavigation
-                sections={itemBlog.sections}
-                visibleSection={visibleSection}
-                ajustScrollBlogNavegation={ajustScrollBlogNavegation}
-              />
-            </div>
+            <SectionNavigation
+              sections={itemBlog.sections}
+              visibleSection={visibleSection}
+              ajustScrollBlogNavegation={ajustScrollBlogNavegation}
+            />
           </MenuViewOptionsBlogMovil>
           <article
             id="view_blog"

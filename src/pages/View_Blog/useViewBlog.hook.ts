@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Blog, BlogSection } from "../models/types/Blog";
-import { BlogService } from "../services/blog";
-import { convertSectionTitle } from "../utils/convertTilteInId";
+import { Blog, BlogSection } from "../../models/types/Blog";
+import { BlogService } from "../../services/blog";
+import { convertSectionTitle } from "../../utils/convertTilteInId";
 
 const initialState: Blog = {
   id: "",
