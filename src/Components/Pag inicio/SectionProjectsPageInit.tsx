@@ -9,7 +9,12 @@ const SectionProjectsPageInit = () => {
       </h3>
       <div className="flex flex-wrap items-center justify-stretch">
         {myProjects.map((pjct) => (
-          <ProjectCard_Small key={pjct.name} project={pjct} />
+          <ProjectCard_Small
+            key={pjct.name}
+            description={pjct.description[0]}
+            image={pjct.image}
+            title={pjct.name}
+          />
         ))}
       </div>
     </div>

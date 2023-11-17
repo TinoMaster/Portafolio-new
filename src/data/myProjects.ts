@@ -6,8 +6,11 @@ import { AiOutlineGlobal } from "react-icons/ai";
 export const myProjects: IProject[] = [
   {
     name: "Manejo de deudas",
-    description:
+    description: [
+      "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente.",
+      "Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
       "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente. Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
+    ],
     image: appDebts,
     links: [
       {
@@ -28,12 +31,14 @@ export const myProjects: IProject[] = [
     ],
     tegnologiesF: ["React", "Tailwind"],
     tegnologiesB: ["Nodejs", "Express"],
-    dataBase: "MongoDB",
+    dataBase: ["MongoDB"],
   },
   {
     name: "Manejo de ventas",
-    description:
-      "Esta fue mi primera aplicación completamente funcional y operativa, lleva mas de 3 años funcionando para una empresa. Constituyó un desafío significativo al integrar múltiples funciones, marcando un hito fundamental en mi proceso de aprendizaje y desarrollo.",
+    description: [
+      "Esta fue mi primera aplicación completamente funcional y operativa, lleva mas de 3 años funcionando para una empresa.",
+      "Constituyó un desafío significativo al integrar múltiples funciones, marcando un hito fundamental en mi proceso de aprendizaje y desarrollo.",
+    ],
     image: appLocal_dark,
     links: [
       {
@@ -54,16 +59,18 @@ export const myProjects: IProject[] = [
     ],
     tegnologiesF: ["React", "Tailwind"],
     tegnologiesB: ["Nodejs", "Express"],
-    dataBase: "MongoDB",
+    dataBase: ["MongoDB"],
   },
   {
     name: "Mercado Virtual",
-    description:
-      "Esta aplicación se creó debido a la necesidad de establecer una plataforma en la que las imágenes desempeñaran un papel central en el proyecto. Proporcionó una oportunidad para elevar mi experiencia en el manejo de imágenes en todos los aspectos del desarrollo web. Además, sirvió como una prueba de mi capacidad para construir un proyecto que, a pesar de mis conocimientos técnicos, desafiara los límites de mis habilidades estéticas",
+    description: [
+      "Esta aplicación se creó debido a la necesidad de establecer una plataforma en la que las imágenes desempeñaran un papel central en el proyecto.",
+      "Proporcionó una oportunidad para elevar mi experiencia en el manejo de imágenes en todos los aspectos del desarrollo web. Además, sirvió como una prueba de mi capacidad para construir un proyecto que, a pesar de mis conocimientos técnicos, desafiara los límites de mis habilidades estéticas.",
+    ],
     image: appMercado,
     links: [],
     tegnologiesF: ["Next13", "Typescript", "Tailwind"],
     tegnologiesB: ["Nestjs", "Typescript"],
-    dataBase: "MongoDB",
+    dataBase: ["MongoDB"],
   },
 ];

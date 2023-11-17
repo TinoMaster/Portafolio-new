@@ -8,10 +8,10 @@ interface LinksProps {
 
 export interface IProject {
   name: string;
-  description: string;
+  description: string[];
   image: string;
   links: LinksProps[];
   tegnologiesF: string[];
   tegnologiesB: string[];
-  dataBase: string;
+  dataBase: string[];
 }

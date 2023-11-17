@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 
 interface LinkProp {
-  Icon: IconType;
+  Icon?: IconType;
   url: string;
   title: string;
 }
@@ -17,7 +17,7 @@ export const LinksSocialRender = ({
   return (
     <div className="flex text-2xl">
       {!linksSocial.length ? (
-        <p className="text-base m-1">Pronto...</p>
+        <p className="text-base m-2">Pronto...</p>
       ) : (
         linksSocial?.map(({ Icon, url, title }) => (
           <small
@@ -27,7 +27,10 @@ export const LinksSocialRender = ({
             }}
             className="m-2 relative hover:cursor-pointer hover:text-primary/90 "
           >
-            <Icon title={title} className="text-2xl transition-all" />
+            {Icon ? (
+              <Icon title={title} className="text-2xl transition-all" />
+            ) : null}
+
             {showTitle ? (
               <span className="w-full text-center absolute -bottom-6 text-[7px]">
                 {title}

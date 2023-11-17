@@ -17,7 +17,7 @@ export const Presentation = () => {
       <span className="text-3xl lg:text-5xl text-slate-200 mb-2">
         4 Años Experiencia
       </span>
-      <div className="w-full flex justify-center">
+      <div className="w-full px-5 flex justify-center">
         <BtnDonwloadCurr />
       </div>
       <div className="flex justify-center w-full py-3">
@@ -27,7 +27,7 @@ export const Presentation = () => {
         {aboutMe.description.map((par, index) => (
           <p
             key={index}
-            className="text-center lg:text-xl max-w-[400px] md:container"
+            className="text-center text-sm lg:text-xl max-w-[400px] md:container"
           >
             {par}
           </p>
