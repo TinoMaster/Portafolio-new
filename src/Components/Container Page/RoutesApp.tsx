@@ -6,7 +6,6 @@ import LoadingPage from "../loaders/LoadingPage";
 
 const PagInicio = lazy(() => import("../../pages/Inicio"));
 const ProjectsPage = lazy(() => import("../../pages/Projects"));
-/* const AboutPage = lazy(() => import("../../pages/About")); */
 const BlogPage = lazy(() => import("../../pages/Blog"));
 const PageViewBlog = lazy(() => import("../../pages/View_Blog"));
 
@@ -15,7 +14,6 @@ export const RoutesApp = () => (
     <Routes>
       <Route path="/" element={<PagInicio />} />
       <Route path="/projects" element={<ProjectsPage />} />
-      {/* <Route path="/about" element={<AboutPage />} /> */}
       <Route path="/blog" element={<BlogPage />}>
         <Route index element={<WrapperRendersBlogs />} />
         <Route path=":category" element={<WrapperRendersBlogs />} />

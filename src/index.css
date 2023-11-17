@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    scroll-behavior: smooth;
+  }
   /* Estilo de la barra de desplazamiento vertical */
   ::-webkit-scrollbar {
     width: 3px; /* Ancho de la barra de desplazamiento */
