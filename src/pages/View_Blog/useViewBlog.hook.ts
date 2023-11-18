@@ -57,6 +57,28 @@ const useViewBlog = (id: Blog["id"]) => {
     };
   }, [itemBlog.title]);
 
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: itemBlog.title,
+          text: itemBlog.description,
+          url: window.location.href,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      const el = document.createElement("textarea");
+      el.value = window.location.href;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      alert("Link copiado en el portapapeles");
+    }
+  };
+
   const ajustScrollBlogNavegation = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     section: BlogSection
@@ -74,7 +96,13 @@ const useViewBlog = (id: Blog["id"]) => {
     }
   };
 
-  return { itemBlog, loading, ajustScrollBlogNavegation, visibleSection };
+  return {
+    itemBlog,
+    loading,
+    ajustScrollBlogNavegation,
+    visibleSection,
+    handleShare,
+  };
 };
 
 export default useViewBlog;

@@ -25,7 +25,7 @@ export const Header = ({
   const Icon = iconsHeadBlog[category];
   const background = whatColorIs(category);
   return (
-    <header className="flex flex-col gap-2 pt-[40px] text-sm lg:text-lg">
+    <header className="flex flex-col gap-2 text-sm lg:text-lg">
       <h1 className="text-2xl lg:text-3xl font-bold">{title}</h1>
       <span className="text-xs flex items-center gap-1">
         <CiCalendarDate className="text-lg" /> {formatDate(date)}
@@ -35,11 +35,11 @@ export const Header = ({
         <Icon className={`p-1 rounded-full ${background}`} />
         <span className="text-sm font-medium text-slate-300">{category}</span>
       </section>
-      <figure className="w-full my-4">
+      <figure className="w-full py-3">
         <img
           src={image}
           alt={`imagen de ${category}`}
-          className="w-full object-cover"
+          className="max-w-full h-auto object-cover"
         />
       </figure>
       <FormatTextWithLinks text={content} />
