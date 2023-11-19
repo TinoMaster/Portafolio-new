@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Blog, BlogSection } from "../../models/types/Blog";
 import { BlogService } from "../../services/blog";
 import { convertSectionTitle } from "../../utils/convertTilteInId";
+import { useSEO } from "../../Hooks/UseSEO";
 
 const initialState: Blog = {
   id: "",
@@ -50,12 +51,11 @@ const useViewBlog = (id: Blog["id"]) => {
     });
   }, [id]);
 
-  useEffect(() => {
-    document.title = itemBlog.title;
-    return () => {
-      document.title = "TinoMaster | Portafolio";
-    };
-  }, [itemBlog.title]);
+  useSEO({
+    title: itemBlog.title,
+    description: itemBlog.description,
+    image: itemBlog.image,
+  });
 
   const handleShare = async () => {
     if (navigator.share) {

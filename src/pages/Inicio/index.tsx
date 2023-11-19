@@ -1,6 +1,7 @@
 import { BoxTechs } from "../../Components/BoxTechs";
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag inicio/Presentation";
+import { useSEO } from "../../Hooks/UseSEO";
 import { imagesTechStack, mi_foto1, mi_foto2 } from "../../utils/images";
 import { Suspense, lazy } from "react";
 
@@ -16,6 +17,9 @@ const SectionContactsPageInit = lazy(
 );
 
 const PagInicio = () => {
+  useSEO({
+    title: "TinoMaster | Inicio",
+  });
   return (
     <section className="w-full flex flex-col relative">
       <HeroPage
