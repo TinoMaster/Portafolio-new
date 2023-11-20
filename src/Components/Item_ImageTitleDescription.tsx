@@ -24,7 +24,7 @@ export const Item_ImageTitleDescription = ({
       } `}
     >
       {/* SVG Section */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full lg:w-1/2 overflow-hidden">
         <div
           className={`w-7/12 h-full max-w-[200px] m-auto rounded-full bg-gradient-to-tr ${
             color === "primary" ? "from-primary/50 to-white/50" : ""
@@ -36,7 +36,7 @@ export const Item_ImageTitleDescription = ({
         </div>
       </div>
       {/* TextSection */}
-      <div className="w-full">
+      <div className="w-full lg:w-1/2">
         <h3
           className={`font-semibold ${
             position === "start" ? "text-start" : "text-center"

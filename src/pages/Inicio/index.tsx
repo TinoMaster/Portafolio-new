@@ -32,12 +32,12 @@ const PagInicio = () => {
       <div className="container w-full pb-20 p-1">
         <Strengths />
       </div>
-      <section className="py-20 bg-gradient-to-t from-darkMode via-primary/5 to-darkMode shadow-inner shadow-black/10">
+      <section className="py-20 bg-gradient-to-t from-transparent to-transparent">
         <BoxTechs imagesTechStack={imagesTechStack} />
       </section>
       <Suspense>
         {/* Secciones de la pagina */}
-        <section className="w-full relative bg-gradient-to-t from-transparent via-primary/5  to-transparent py-10 px-2 lg:px-0">
+        <section className="w-full relative bg-gradient-to-t from-black/10 via-white/5 to-black/10 py-20 px-2 lg:px-0">
           <SectionBlogPageInit />
         </section>
         <section className="w-full bg-gradient-to-b from-transparent via-white/5 to-transparent py-5 px-2 lg:px-0">
