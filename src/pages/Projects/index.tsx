@@ -7,7 +7,8 @@ const ProjectsPage = () => {
   });
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      <section className="container">
+      <div className="gradient"></div>
+      <section className="container z-20">
         <SectionProjectsPagProject />
       </section>
     </div>

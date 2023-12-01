@@ -16,7 +16,7 @@ export const SectionProjectsPagProject = () => {
   } = projectSelected;
 
   return (
-    <section className="flex flex-col gap-2 justify-center w-full h-screen">
+    <section className="flex flex-col gap-2 justify-center w-full min-h-screen">
       <h2 className="w-full text-center text-2xl font-semibold text-slate-200 pt-20">
         Lista de Proyectos
       </h2>
@@ -32,7 +32,7 @@ export const SectionProjectsPagProject = () => {
           onChangeLink={onChangeProject}
         />
       </ul>
-      <div className="grow bg-black/10 rounded-md overflow-auto">
+      <div className="grow overflow-auto">
         <ProjectCardBig
           description={description}
           image={image}

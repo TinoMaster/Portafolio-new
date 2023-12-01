@@ -37,7 +37,7 @@ export const ProjectCardBig = ({
         {description.map((text, index) => (
           <p
             key={index}
-            className="text-gray-400 text-sm mt-2 max-h-[300px] text-center overflow-auto"
+            className="text-gray-400 text-sm mt-2 max-h-[300px] max-w-[500px] m-auto text-center overflow-auto"
           >
             {text}
           </p>

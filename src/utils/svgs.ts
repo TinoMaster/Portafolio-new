@@ -2,6 +2,7 @@ import svgReact from "../assets/svgs/react.svg";
 import svgFolder from "../assets/svgs/svgFolder.svg";
 import svgAbout from "../assets/svgs/svgAbout.svg";
 import svgBlog from "../assets/svgs/svgBlog.svg";
+import svgProjects from "../assets/svgs/svg-projects.svg";
 /* Blogs pag inicio */
 import knowMyBlog from "../assets/svgs/nowmyblog.svg";
 import comentBlog from "../assets/svgs/comentBlog.svg";
@@ -15,4 +16,5 @@ export {
   knowMyBlog,
   comentBlog,
   createBlog,
+  svgProjects,
 };

@@ -7,7 +7,7 @@ export default {
         primary: "#544AF4",
         secondary: "#63f861ff",
         third: "#ea4f18",
-        darkMode: "#17212D",
+        darkMode: "#262626",
         lightMode: "#F1F5F9",
       },
       fontFamily: {
@@ -21,7 +21,7 @@ export default {
       },
       maxWidth: {
         "1080p": "1920px",
-        "720p": "1000px",
+        "720p": "1200px",
         "Web-view": "1800px",
       },
       fontSize: {

@@ -1,20 +1,11 @@
-import { BoxTechs } from "../../Components/BoxTechs";
+import { ContactUs } from "../../Components/ContactUs";
+import { Features } from "../../Components/Features";
 import { HeroPage } from "../../Components/HeroPage";
 import { Presentation } from "../../Components/Pag inicio/Presentation";
+import { SectionProjects } from "../../Components/SectionProjects";
+import Strengths from "../../Components/Pag inicio/Strengths";
 import { useSEO } from "../../Hooks/UseSEO";
-import { imagesTechStack, mi_foto1, mi_foto2 } from "../../utils/images";
-import { Suspense, lazy } from "react";
-
-const Strengths = lazy(() => import("../../Components/Pag inicio/Strengths"));
-const SectionBlogPageInit = lazy(
-  () => import("../../Components/Pag inicio/SectionBlogPageInit")
-);
-const SectionProjectsPageInit = lazy(
-  () => import("../../Components/Pag inicio/SectionProjectsPageInit")
-);
-const SectionContactsPageInit = lazy(
-  () => import("../../Components/Pag inicio/SectionContactsPageInit")
-);
+import { mi_foto1, mi_foto2 } from "../../utils/images";
 
 const PagInicio = () => {
   useSEO({
@@ -28,25 +19,10 @@ const PagInicio = () => {
         ComponentMessage={Presentation}
         pageName="Pagina principal"
       />
-      {/* fortalezas y stack */}
-      <div className="container w-full pb-20 p-1">
-        <Strengths />
-      </div>
-      <section className="py-20 bg-gradient-to-t from-transparent to-transparent">
-        <BoxTechs imagesTechStack={imagesTechStack} />
-      </section>
-      <Suspense>
-        {/* Secciones de la pagina */}
-        <section className="w-full relative bg-gradient-to-t from-black/10 via-white/5 to-black/10 py-20 px-2 lg:px-0">
-          <SectionBlogPageInit />
-        </section>
-        <section className="w-full bg-gradient-to-b from-transparent via-white/5 to-transparent py-5 px-2 lg:px-0">
-          <SectionProjectsPageInit />
-        </section>
-        <section className="w-full py-20 px-2 lg:px-0 bg-gradient-to-t from-darkMode/10 via-slate-800/30 to-darkMode/10">
-          <SectionContactsPageInit />
-        </section>
-      </Suspense>
+      <Strengths />
+      <Features />
+      <SectionProjects />
+      <ContactUs />
     </section>
   );
 };

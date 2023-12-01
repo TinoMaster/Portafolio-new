@@ -7,15 +7,18 @@ import { aboutMe } from "../../data/aboutMe";
 export const Presentation = () => {
   return (
     <>
-      <span className="flex items-center p-1 text-xl lg:text-2xl gap-1">
+      <span className="flex items-center py-2 text-xl lg:text-2xl gap-1">
         Hola <GiHand className="text-yellow-400" />, Soy Oscar
       </span>
       <div className="flex flex-wrap text-3xl lg:text-4xl justify-center">
         <span className="block text-slate-200">Desarrollador Web</span>
         <span className="block text-slate-200 ml-2">Full Stack</span>
       </div>
-      <span className="text-3xl lg:text-4xl text-slate-200 mb-4">
+      <span className="text-3xl lg:text-3xl text-primary mb-4">
         4 Años Experiencia
+      </span>
+      <span className="text-slate-200 mb-4 text-center lg:text-start">
+        HTML | CSS | JAVASCRYPT | REACT | NEXTJS | NODEJS | TAILWINDCSS
       </span>
       <div className="space-y-1 rounded-md">
         {aboutMe.description.map((par, index) => (

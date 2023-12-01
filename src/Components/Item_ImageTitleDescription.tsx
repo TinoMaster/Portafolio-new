@@ -38,15 +38,15 @@ export const Item_ImageTitleDescription = ({
       {/* TextSection */}
       <div className="w-full lg:w-1/2">
         <h3
-          className={`font-semibold ${
-            position === "start" ? "text-start" : "text-center"
+          className={`font-semibold text-center ${
+            position === "start" ? "lg:text-start" : ""
           } py-5 text-xl text-slate-200 lg:text-2xl`}
         >
           {title}
         </h3>
         <p
-          className={`font-light ${
-            position === "start" ? " text-justify" : "text-center"
+          className={`font-light text-center ${
+            position === "start" ? "lg:text-start" : ""
           } text-center lg:text-xl`}
         >
           {description}

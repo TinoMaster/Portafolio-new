@@ -15,7 +15,7 @@ export const Links = ({ linksScroll }: LinksProps) => {
       {linksScroll?.map((link) => (
         <Link
           className={`flex items-baseline transition-colors relative ${
-            route[0] === link.path ? "text-primary" : "hover:text-slate-400"
+            route[0] === link.path ? "border-b" : "hover:text-slate-400"
           }`}
           key={link.name}
           to={link.path}
