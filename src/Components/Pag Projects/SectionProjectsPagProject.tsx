@@ -2,7 +2,7 @@ import { myProjects } from "../../data/myProjects";
 import { MenuLinksWithFollowMotion } from "../MenuLinksWithFollowMotion";
 import { usePagProject } from "./usePagProject.hook";
 import { ProjectCard } from "../ProjectCard";
-import { ParagraphsWithPoints } from "../ParagraphsWithPoints";
+import { ParagraphsWithPoints } from "../Helpers/ParagraphsWithPoints";
 
 export const SectionProjectsPagProject = () => {
   const { projectSelected, onChangeProject } = usePagProject();
