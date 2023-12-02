@@ -12,12 +12,12 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="flex items-center w-full relative h-screen max-h-[900px] md:max-h-[600px]  px-3 pt-10 md:py-0 md:pt-5 md:px-0">
+    <section className="flex items-center w-full relative h-screen max-h-[900px] md:max-h-[700px] px-3 pt-5 md:pt-16">
      {/*  <div className="gradient" /> */}
       {/* Seccion principal */}
       <section className="lg:container flex flex-wrap relative flex-row-reverse justify-start items-center w-full h-full z-10 mt-5">
         {/* Imagen principal */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center pt-4 md:pt-0 md:-translate-y-14">
+        <div className="w-full lg:w-1/2 lg:flex justify-center lg:justify-end items-center pt-4 md:pt-0 md:-translate-y-14 hidden">
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden relative border">
             <picture>
               <source

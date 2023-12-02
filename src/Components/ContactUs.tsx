@@ -4,7 +4,7 @@ import { LinksSocialRender } from "./LinksSocialRender";
 
 export const ContactUs = () => {
   return (
-    <section className="text-gray-300 body-font relative bg-black/5 z-20">
+    <section className="text-gray-300 body-font relative bg-black/5 z-20 py-24">
       <div className="container px-5 py-14">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-3xl text-2xl font-medium mb-4 text-white">

@@ -13,7 +13,7 @@ const PagInicio = () => {
   });
   return (
     <section className="w-full flex flex-col relative">
-      <div className="md:h-screen md:max-h-[900px]">
+      <div className="md:h-screen md:max-h-[1350px] lg:max-h-[950px]">
         <HeroPage
           principalImageMovil={mi_foto1}
           principalImageDesktop={mi_foto2}
