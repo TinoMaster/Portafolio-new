@@ -3,7 +3,6 @@ import { features } from "../data/feautures";
 export const Features = () => {
   return (
     <section className="py-24 lg:py-56 bg-slate-700/5">
-      <div className="gradient" />
       <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-300 md:px-8">
         <div className="max-w-2xl mx-auto">
           <h3 className="text-secondary/80 text-3xl font-semibold sm:text-4xl">

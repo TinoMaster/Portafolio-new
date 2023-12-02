@@ -15,7 +15,7 @@ export const LinksSocialRender = ({
   showTitle,
 }: LinksSocialProps) => {
   return (
-    <div className="flex text-2xl">
+    <div className="flex text-2xl items-start">
       {!linksSocial.length ? (
         <p className="text-base m-2">Pronto...</p>
       ) : (

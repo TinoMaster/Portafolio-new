@@ -7,7 +7,7 @@ import { mi_foto2 } from "../../utils/images";
 
 export const Presentation = () => {
   return (
-    <>
+    <div className="w-full lg:w-1/2 flex flex-col text-slate-400 items-center justify-center lg:items-start">
       <span className="flex items-center pb-1 text-lg lg:text-2xl gap-1">
         Hola <GiHand className="text-yellow-400" />, Soy Oscar
       </span>
@@ -18,7 +18,7 @@ export const Presentation = () => {
       <span className="text-xl lg:text-3xl text-primary mb-4">
         4 Años Experiencia
       </span>
-      <div className="w-full flex lg:hidden justify-center items-center py-10 md:pt-0">
+      <div className="w-full flex lg:hidden justify-center items-center py-10">
         <div className="w-36 h-36 m-auto lg:w-72 lg:h-72 rounded-full overflow-hidden relative border">
           <picture>
             <img
@@ -43,12 +43,10 @@ export const Presentation = () => {
           </p>
         ))}
       </div>
-      <div className="w-full px-5 flex justify-center lg:justify-start lg:px-0">
+      <div className="flex flex-wrap justify-center lg:justify-start gap-2 w-full items-baseline">
         <BtnDonwloadCurr />
-      </div>
-      <div className="flex justify-center lg:justify-start w-full py-3">
         <LinksSocialRender linksSocial={linksSocial} />
       </div>
-    </>
+    </div>
   );
 };

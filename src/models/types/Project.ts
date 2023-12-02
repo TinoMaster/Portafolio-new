@@ -1,5 +1,9 @@
 import { IconType } from "react-icons";
 
+export interface Tegnologies {
+  name: string;
+  description: string;
+}
 interface LinksProps {
   title: string;
   url: string;
@@ -11,7 +15,5 @@ export interface IProject {
   description: string[];
   image: string;
   links: LinksProps[];
-  tegnologiesF: string[];
-  tegnologiesB: string[];
-  dataBase: string[];
+  tegnologies: Tegnologies[];
 }

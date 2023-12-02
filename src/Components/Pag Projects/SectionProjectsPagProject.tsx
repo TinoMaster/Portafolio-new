@@ -3,18 +3,12 @@ import { MenuLinksWithFollowMotion } from "../MenuLinksWithFollowMotion";
 import { usePagProject } from "./usePagProject.hook";
 import { ProjectCard } from "../ProjectCard";
 import { ParagraphsWithPoints } from "../Helpers/ParagraphsWithPoints";
+import { RenderTegnologies } from "../Helpers/RenderTegnologies";
+import { LinksSocialRender } from "../LinksSocialRender";
 
 export const SectionProjectsPagProject = () => {
   const { projectSelected, onChangeProject } = usePagProject();
-  const {
-    description,
-    dataBase,
-    links,
-    image,
-    name,
-    tegnologiesB,
-    tegnologiesF,
-  } = projectSelected;
+  const { description, links, image, name, tegnologies } = projectSelected;
 
   return (
     <section className="flex flex-col gap-2 justify-center w-full min-h-screen">
@@ -43,6 +37,8 @@ export const SectionProjectsPagProject = () => {
               description={description[0]}
               pointers={description}
             />,
+            <RenderTegnologies tegnologies={tegnologies} />,
+            <LinksSocialRender linksSocial={links} showTitle />,
           ]}
           brand="TinoMaster"
         />

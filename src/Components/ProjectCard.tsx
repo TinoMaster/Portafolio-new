@@ -29,9 +29,7 @@ export const ProjectCard = ({
             <h3 className="text-sm title-font text-gray-500 tracking-widest">
               {brand}
             </h3>
-            <h1 className="text-white text-3xl font-medium mb-4">
-              {title}
-            </h1>
+            <h1 className="text-white text-3xl font-medium mb-4">{title}</h1>
             <div className="flex mb-4">
               {sections.map((sect) => (
                 <span
@@ -45,7 +43,9 @@ export const ProjectCard = ({
                 </span>
               ))}
             </div>
-            {components && components[sections.indexOf(section)]}
+            <div className="flex justify-center min-h-[500px]">
+              {components && components[sections.indexOf(section)]}
+            </div>
           </div>
         </div>
       </div>

@@ -28,9 +28,29 @@ export const myProjects: IProject[] = [
         url: "https://debts.tinomaster.website/",
       },
     ],
-    tegnologiesF: ["React", "Tailwind"],
-    tegnologiesB: ["Nodejs", "Express"],
-    dataBase: ["MongoDB"],
+    tegnologies: [
+      { name: "React", description: "Prueba" },
+      {
+        name: "Tailwind",
+        description:
+          "CSS Framework para crear componentes de manera rapida y sencilla.",
+      },
+      {
+        name: "Nodejs",
+        description:
+          "Servidor backend que se encarga de la gestión de las peticiones del cliente.",
+      },
+      {
+        name: "Express",
+        description:
+          "Servidor web que permite realizar operaciones en el servidor como autenticación o conexiones a bases de datos.",
+      },
+      {
+        name: "MongoDB",
+        description:
+          "Base de datos NoSQL en donde se guardan los usuarios y sus respectivas transacciones.",
+      },
+    ],
   },
   {
     name: "Manejo de ventas",
@@ -56,9 +76,29 @@ export const myProjects: IProject[] = [
         url: "https://xn--sueovirtual-3db.com/",
       },
     ],
-    tegnologiesF: ["React", "Tailwind"],
-    tegnologiesB: ["Nodejs", "Express"],
-    dataBase: ["MongoDB"],
+    tegnologies: [
+      { name: "React", description: "Prueba" },
+      {
+        name: "Tailwind",
+        description:
+          "CSS Framework para crear componentes de manera rapida y sencilla.",
+      },
+      {
+        name: "Nodejs",
+        description:
+          "Servidor backend que se encarga de la gestión de las peticiones del cliente.",
+      },
+      {
+        name: "Express",
+        description:
+          "Servidor web que permite realizar operaciones en el servidor como autenticación o conexiones a bases de datos.",
+      },
+      {
+        name: "MongoDB",
+        description:
+          "Base de datos NoSQL en donde se guardan los usuarios y sus respectivas transacciones.",
+      },
+    ],
   },
   {
     name: "Mercado Virtual",
@@ -68,8 +108,28 @@ export const myProjects: IProject[] = [
     ],
     image: appMercado,
     links: [],
-    tegnologiesF: ["Next13", "Typescript", "Tailwind"],
-    tegnologiesB: ["Nestjs", "Typescript"],
-    dataBase: ["MongoDB"],
+    tegnologies: [
+      { name: "React", description: "Prueba" },
+      {
+        name: "Tailwind",
+        description:
+          "CSS Framework para crear componentes de manera rapida y sencilla.",
+      },
+      {
+        name: "Nodejs",
+        description:
+          "Servidor backend que se encarga de la gestión de las peticiones del cliente.",
+      },
+      {
+        name: "Express",
+        description:
+          "Servidor web que permite realizar operaciones en el servidor como autenticación o conexiones a bases de datos.",
+      },
+      {
+        name: "MongoDB",
+        description:
+          "Base de datos NoSQL en donde se guardan los usuarios y sus respectivas transacciones.",
+      },
+    ],
   },
 ];

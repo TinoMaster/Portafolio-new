@@ -8,9 +8,9 @@ export const ParagraphsWithPoints = ({
   pointers,
 }: DescriptionProjectProps) => {
   return (
-    <>
+    <div className="">
       <p className="py-2 leading-relaxed">{description}</p>
       <ul>{pointers?.map((point, index) => <li key={index} className="pl-4">{point}</li>)}</ul>
-    </>
+    </div>
   );
 };
