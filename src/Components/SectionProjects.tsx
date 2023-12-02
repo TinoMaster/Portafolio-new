@@ -22,7 +22,7 @@ export const SectionProjects = () => {
             <FaArrowRight />
           </Link>
         </div>
-        <div className="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto translate-x-8 lg:translate-x-0">
+        <div className="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto translate-x-8 lg:translate-x-16">
           <img src={svgProjects} width={30} height={30} alt="" className="w-full" />
         </div>
       </div>

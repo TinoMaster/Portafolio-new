@@ -6,7 +6,7 @@ const ProjectsPage = () => {
     title: "TinoMaster | Proyectos",
   });
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <div className="gradient"></div>
       <section className="container z-20">
         <SectionProjectsPagProject />

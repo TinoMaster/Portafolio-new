@@ -12,7 +12,7 @@ export const HeroPage = ({
   pageName,
 }: HeroPageProps) => {
   return (
-    <section className="flex items-center w-full relative h-screen max-h-[900px] md:max-h-[600px]  px-3 py-5 md:py-0 md:pt-5 md:px-0">
+    <section className="flex items-center w-full relative h-screen max-h-[900px] md:max-h-[600px]  px-3 pt-10 md:py-0 md:pt-5 md:px-0">
      {/*  <div className="gradient" /> */}
       {/* Seccion principal */}
       <section className="lg:container flex flex-wrap relative flex-row-reverse justify-start items-center w-full h-full z-10 mt-5">

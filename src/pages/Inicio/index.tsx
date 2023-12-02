@@ -13,13 +13,15 @@ const PagInicio = () => {
   });
   return (
     <section className="w-full flex flex-col relative">
-      <HeroPage
-        principalImageMovil={mi_foto1}
-        principalImageDesktop={mi_foto2}
-        ComponentMessage={Presentation}
-        pageName="Pagina principal"
-      />
-      <Strengths />
+      <div className="md:h-screen md:max-h-[900px]">
+        <HeroPage
+          principalImageMovil={mi_foto1}
+          principalImageDesktop={mi_foto2}
+          ComponentMessage={Presentation}
+          pageName="Pagina principal"
+        />
+        <Strengths />
+      </div>
       <Features />
       <SectionProjects />
       <ContactUs />

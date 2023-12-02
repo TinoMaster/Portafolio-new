@@ -9,7 +9,6 @@ export const myProjects: IProject[] = [
     description: [
       "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente.",
       "Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
-      "Esta aplicación surgió de la necesidad recurrente de gestionar deudas con un amigo de manera eficiente. Permitió un control compartido de las deudas, enriqueciendo mi comprensión. Rastrea deudas con permisos, facilitando ajustes según las circunstancias.",
     ],
     image: appDebts,
     links: [

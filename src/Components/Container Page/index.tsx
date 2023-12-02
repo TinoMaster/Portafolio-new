@@ -3,7 +3,7 @@ import { RoutesApp } from "./RoutesApp";
 
 export const Container = () => {
   return (
-    <main className="w-full relative min-h-screen overflow-hidden">
+    <main className="w-full relative min-h-screen overflow-x-hidden">
       <MenuMovil />
       <RoutesApp />
     </main>

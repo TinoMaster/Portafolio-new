@@ -1,7 +1,8 @@
 import { myProjects } from "../../data/myProjects";
-import { ProjectCardBig } from "../ProjectCard_Big";
 import { MenuLinksWithFollowMotion } from "../MenuLinksWithFollowMotion";
 import { usePagProject } from "./usePagProject.hook";
+import { ProjectCard } from "../ProjectCard";
+import { ParagraphsWithPoints } from "../ParagraphsWithPoints";
 
 export const SectionProjectsPagProject = () => {
   const { projectSelected, onChangeProject } = usePagProject();
@@ -17,10 +18,10 @@ export const SectionProjectsPagProject = () => {
 
   return (
     <section className="flex flex-col gap-2 justify-center w-full min-h-screen">
-      <h2 className="w-full text-center text-2xl font-semibold text-slate-200 pt-20">
+      <h2 className="w-full text-center text-2xl font-semibold text-slate-200 pt-24">
         Lista de Proyectos
       </h2>
-      <ul className="flex gap-2 justify-center py-5">
+      <ul className="flex gap-2 justify-center py-5 px-2">
         <MenuLinksWithFollowMotion
           links={myProjects.map((el) => {
             return {
@@ -32,15 +33,18 @@ export const SectionProjectsPagProject = () => {
           onChangeLink={onChangeProject}
         />
       </ul>
-      <div className="grow overflow-auto">
-        <ProjectCardBig
-          description={description}
+      <div className="grow">
+        <ProjectCard
           image={image}
-          techDB={dataBase}
-          linksProject={links}
-          techBackend={tegnologiesB}
-          techFronted={tegnologiesF}
           title={name}
+          sections={["Descripcion", "tegnologias", "links"]}
+          components={[
+            <ParagraphsWithPoints
+              description={description[0]}
+              pointers={description}
+            />,
+          ]}
+          brand="TinoMaster"
         />
       </div>
     </section>
