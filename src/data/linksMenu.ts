@@ -5,11 +5,11 @@ export interface LinksScroll {
 
 const linksScroll: LinksScroll[] = [
   {
-    name: "Inicio",
+    name: "home",
     path: "/",
   },
   {
-    name: "Proyectos",
+    name: "projects",
     path: "/projects",
   },
   /* {
@@ -17,10 +17,10 @@ const linksScroll: LinksScroll[] = [
     path: "/about",
   }, */
 
-  {
+  /* {
     name: "Blog",
     path: "/blog",
-  },
+  }, */
 ];
 
 export { linksScroll };

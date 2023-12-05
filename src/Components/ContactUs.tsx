@@ -1,78 +1,91 @@
-import { linksSocial } from "../data/linksSocial";
-import { Input } from "./Imput";
-import { LinksSocialRender } from "./LinksSocialRender";
+import { useTranslation } from "react-i18next";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+
+const contactMethods = [
+  {
+    icon: <FaLinkedin />,
+    i18: "first",
+    href: "https://www.linkedin.com/in/oscarmarcosmallon/",
+  },
+  {
+    icon: <FaTwitter />,
+    i18: "second",
+    href: "https://twitter.com/Oscar16015874/",
+  },
+];
 
 export const ContactUs = () => {
+  const [t] = useTranslation("global");
   return (
     <section className="text-gray-300 body-font relative bg-black/5 z-20 py-24">
-      <div className="container px-5 py-14">
-        <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium mb-4 text-white">
-            Contactame
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            A que esperas 👇
-          </p>
-        </div>
-        <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <div className="flex flex-wrap -m-2">
-            <div className="p-2 w-1/2">
-              <div className="relative">
-                <label
-                  htmlFor="name"
-                  className="leading-7 text-sm text-gray-400"
-                >
-                  Nombre
-                </label>
-                <Input type="text" id="name" name="name" />
-              </div>
-            </div>
-            <div className="p-2 w-1/2">
-              <div className="relative">
-                <label
-                  htmlFor="email"
-                  className="leading-7 text-sm text-gray-400"
-                >
-                  Correo
-                </label>
-                <Input type="email" id="email" name="email" />
-              </div>
-            </div>
-            <div className="p-2 w-full">
-              <div className="relative">
-                <label
-                  htmlFor="message"
-                  className="leading-7 text-sm text-gray-400"
-                >
-                  Mensaje
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                ></textarea>
-              </div>
-            </div>
-            <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-third/80 border-0 py-2 px-8 focus:outline-none hover:bg-third rounded text-lg">
-                Enviar
-              </button>
-            </div>
-            <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a href="mailto:ommallono@gmail.com" className="text-third">
-                ommallono@gmail.com
-              </a>
-              <p className="leading-normal my-5">
-                Italia
-                <br />
-                Francavilla al Mare
+      <div className="flex flex-wrap container px-2 lg:px-0">
+        <section className="py-14 md:px-6 lg:px-0">
+          <div className="text-gray-300 gap-12 lg:flex">
+            <div className="max-w-md m-auto">
+              <h3 className="text-third text-3xl text-center lg:text-start font-semibold sm:text-4xl">
+                {t("contactsHome.title")}
+              </h3>
+              <p className="mt-3 text-center lg:text-start">
+                {t("contactsHome.subtitle")}
               </p>
-              <div className="flex justify-center">
-                <LinksSocialRender linksSocial={linksSocial} />
-              </div>
+            </div>
+            <div>
+              <ul className="mt-12 gap-y-6 gap-x-12 items-center md:flex lg:mt-0">
+                {contactMethods.map((item, idx) => (
+                  <li
+                    key={idx}
+                    className="space-y-3 py-6 md:max-w-sm md:py-0 flex flex-col justify-center items-center lg:items-start lg:border-l md:px-3"
+                  >
+                    <div className="w-8 h-8 rounded-full border flex items-center justify-center text-gray-300">
+                      {item.icon}
+                    </div>
+                    <h4 className="text-third text-lg font-medium xl:text-xl">
+                      {t(`contactsHome.${item.i18}.title`)}
+                    </h4>
+                    <p className="text-center text-gray-300 opacity-80 px-5 lg:text-start md:px-0">
+                      {t(`contactsHome.${item.i18}.description`)}
+                    </p>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      className="flex items-center gap-1 text-sm text-orange-600 duration-150 hover:text-orange-500 font-medium"
+                    >
+                      {t(`contactsHome.${item.i18}.button`)}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="w-5 h-5"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
+        <section className="w-full flex flex-col items-center justify-center">
+          <p className="text-sm opacity-70">{t("contactsHome.or")}</p>
+          <div className="py-10">
+            <a
+              href="mailto:ommallono@gmail.com"
+              className="text-gray-300 border border-slate-200 hover:border-third transition-colors py-3 px-6 rounded-full"
+            >
+              {t("contactsHome.email")}
+            </a>
+          </div>
+          <p className="leading-normal my-5 text-center">
+            {t("contactsHome.country")}
+            <br />
+            Francavilla al Mare
+          </p>
+        </section>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 interface ProjectCardBigProps {
@@ -16,9 +17,16 @@ export const ProjectCard = ({
   components,
 }: ProjectCardBigProps) => {
   const [section, setSection] = useState(sections[0]);
+
   return (
     <section className="text-gray-400">
-      <div className="container px-4 py-5 mx-auto">
+      <motion.div
+        initial={{ opacity: 0, x: 10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        key={image}
+        className="container px-4 py-5 mx-auto"
+      >
         <div className="max-w-[600px] mx-auto flex gap-3 flex-col">
           <img
             alt={`imagen del projecto ${title}`}
@@ -48,7 +56,7 @@ export const ProjectCard = ({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "home": "inicio",
+    "projects": "proyectos"
+  },
+  "hero": {
+    "greet": "Hola 🖐️, Soy Oscar",
+    "charge": "Desarrollador Web Full Stack",
+    "experience": "4 Años Experiencia",
+    "about": {
+      "first": "Mi enfoque es autónomo y apasionado en todo lo que hago. Gran capacidad de asumir la responsabilidad de proyectos y adaptarme fácilmente a entornos diferentes.",
+      "second": "Siempre enfrento desafíos con una actitud positiva y estoy en constante búsqueda de desafíos que me impulsen, anhelo rodearme de personas que comparten la misma ambición de mejora continua."
+    },
+    "cv": "Descargar cv"
+  },
+  "strengths": {
+    "first": {
+      "title": "INNOVADOR",
+      "description": "Apasionado en las últimas tendencias en el mundo del desarrollo web y aplicarlas de manera creativa en proyectos innovadores."
+    },
+    "second": {
+      "title": "APASIONADO",
+      "description": "Apasionado por el desarrollo web y la resolución de problemas. En constante búsqueda de desafíos técnicos para aprender y crecer."
+    },
+    "third": {
+      "title": "COMPROMETIDO",
+      "description": "Enfocado y dedicado a alcanzar metas, entregando soluciones de calidad y superando desafíos con determinación."
+    }
+  },
+  "features": {
+    "title": "Razones para contratar mis servicios",
+    "subtitle": "Ofrezco soluciones digitales excepcionales y personalizadas que no solo cumplen con los estandares, sino que también superan expectativas",
+    "first": {
+      "title": "Rendimiento",
+      "description": "Desarrollo aplicaciones web de alto rendimiento, optimizando cada línea de código para garantizar una experiencia fluida y rápida para los usuarios."
+    },
+    "second": {
+      "title": "Código Limpio",
+      "description": "Mi enfoque se centra en escribir código limpio y fácilmente mantenible, lo que facilita futuras actualizaciones y colaboraciones con otros desarrolladores."
+    },
+    "third": {
+      "title": "Eficiencia",
+      "description": "Utilizo metodologías ágiles y herramientas avanzadas para asegurar un desarrollo eficiente, cumpliendo con plazos y entregando resultados de alta calidad."
+    },
+    "four": {
+      "title": "Immovacion",
+      "description": "Abordo los desafíos con creatividad, proponiendo soluciones innovadoras y pensando fuera de lo convencional para proporcionar resultados que destaquen."
+    },
+    "five": {
+      "title": "Diseño",
+      "description": "Desarrollo sitios web con diseño responsivo y accesibilidad para garantizar una experiencia óptima en diversas pantallas y para usuarios con diferentes necesidades."
+    },
+    "six": {
+      "title": "Seguridad",
+      "description": "Implemento medidas sólidas de seguridad en mis proyectos para proteger la información del usuario y garantizar la integridad de los datos."
+    }
+  },
+  "projectsHome": {
+    "title": "Conoce mis proyectos",
+    "subtitle": "Cada línea de código que escribo está impregnada de un deseo incansable de ofrecer experiencias excepcionales.",
+    "buttom": "Visitar"
+  },
+  "contactsHome": {
+    "title": "Conectemos",
+    "subtitle": "Estoy aquí para ayudarte y responder cualquier pregunta que pueda tener. Espero tener noticias suyas.",
+    "first": {
+      "title": "Linkedin",
+      "description": "Explora mi mundo digital: Desarrollador web apasionado por JavaScript. ¡Conéctate y descubre más!",
+      "button": "Visitar"
+    },
+    "second": {
+      "title": "Twitter",
+      "description": "¡Sígueme para no perderte ninguna publicación de esta travesía!",
+      "button": "Visitar"
+    },
+    "or": "o bien",
+    "email": "Envia un email",
+    "country": "Italia"
+  }
+}

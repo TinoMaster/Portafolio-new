@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { myProjects } from "../../data/myProjects";
+import { myProjects } from "../data/myProjects";
 
 export const usePagProject = () => {
   const [indexSelected, setIndexSelected] = useState(0);

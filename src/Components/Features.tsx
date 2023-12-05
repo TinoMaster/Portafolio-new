@@ -1,17 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { features } from "../data/feautures";
 
 export const Features = () => {
+  const [t] = useTranslation("global");
   return (
     <section className="py-24 lg:py-56 bg-slate-700/5">
       <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-300 md:px-8">
         <div className="max-w-2xl mx-auto">
-          <h3 className="text-secondary/80 text-3xl font-semibold sm:text-4xl">
-            Razones para contratar mis servicios
+          <h3 className="text-white text-3xl font-semibold sm:text-4xl">
+            {t(`features.title`)}
           </h3>
           <p className="mt-3">
-            Ofrezco soluciones digitales excepcionales y personalizadas que no
-            solo cumplen con los estandares, sino que también superan
-            expectativas
+            {t(`features.subtitle`)}
           </p>
         </div>
         <div className="mt-12">
@@ -22,9 +22,9 @@ export const Features = () => {
                   {item.icon}
                 </div>
                 <h4 className="text-base sm:text-lg text-secondary/80 font-semibold">
-                  {item.title}
+                  {t(`features.${item.i18}.title`)}
                 </h4>
-                <p>{item.desc}</p>
+                <p className="leading-relaxed">{t(`features.${item.i18}.description`)}</p>
               </li>
             ))}
           </ul>

@@ -3,7 +3,7 @@ import { LinksSocialRender } from "./LinksSocialRender";
 
 export const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font bg-primary/5">
+    <footer className="text-gray-600 body-font bg-darkMode">
       <div className="container px-5 py-8 mx-auto gap-4 flex justify-between items-center sm:flex-row flex-col">
         <div className="flex items-center">
           <a className="flex items-center">

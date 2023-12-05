@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#544AF4",
+        primary: "#6366F1",
         secondary: "#63f861ff",
         third: "#ea4f18",
         darkMode: "#262626",
@@ -26,6 +26,9 @@ export default {
       },
       fontSize: {
         s: "9px",
+      },
+      screens: {
+        xs: "426px",
       },
     },
   },
