@@ -41,7 +41,7 @@ export const Presentation = () => {
           {t("hero.about.second")}
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center lg:justify-start gap-2 w-full lg:flex-row lg:items-baseline">
+      <div className="flex flex-col-reverse justify-center items-center lg:justify-start gap-2 mt-4 lg:mt-0 w-full lg:flex-row lg:items-baseline md:pb-10 xl:pb-0">
         <BtnDonwloadCurr />
         <LinksSocialRender linksSocial={linksSocial} />
       </div>

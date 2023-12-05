@@ -16,7 +16,7 @@ export const Links = ({ linksScroll }: LinksProps) => {
     <ul className="md:flex relative hidden pr-2 gap-4 last:mr-5">
       {linksScroll?.map((link) => (
         <Link
-          className={`flex items-baseline transition-colors relative capitalize ${
+          className={`flex items-baseline transition-colors relative capitalize font-siliguri font-light ${
             route[0] === link.path ? "border-b" : "hover:text-slate-400"
           }`}
           key={link.name}

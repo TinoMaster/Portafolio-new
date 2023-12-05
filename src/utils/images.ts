@@ -5,6 +5,8 @@ import appLocal_dark from "../assets/images/appLocalDark.png";
 import appDebts from "../assets/images/appDebts.png";
 import appMercado from "../assets/images/appMercado.png";
 import blogSoon from "../assets/images/blogSoon.png";
+import en_icon from "../assets/images/estados-unidos.png";
+import es_icon from "../assets/images/espana.png";
 
 import githubImage from "../assets/images/github.jpg";
 import reactImage from "../assets/images/reactpng.png";
@@ -37,4 +39,6 @@ export {
   appMercado,
   mi_logo,
   blogSoon,
+  en_icon,
+  es_icon,
 };
