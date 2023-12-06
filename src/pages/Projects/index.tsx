@@ -9,7 +9,7 @@ import { myProjects } from "../../data/myProjects";
 
 const ProjectsPage = () => {
   const { projectSelected, onChangeProject } = usePagProject();
-  const { description, links, image, name, tegnologies } = projectSelected;
+  const { links, image, name, tegnologies } = projectSelected;
   useSEO({
     title: "TinoMaster | Proyectos",
   });
@@ -37,12 +37,9 @@ const ProjectsPage = () => {
             <ProjectCard
               image={image}
               title={name}
-              sections={["Descripcion", "tegnologias", "links"]}
+              sections={["description", "technologies", "links"]}
               components={[
-                <ParagraphsWithPoints
-                  description={description[0]}
-                  pointers={description}
-                />,
+                <ParagraphsWithPoints project={name} />,
                 <RenderTegnologies tegnologies={tegnologies} />,
                 <LinksSocialRender linksSocial={links} showTitle />,
               ]}

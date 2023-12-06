@@ -1,18 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LuLanguages } from "react-icons/lu";
 import { en_icon, es_icon } from "../../utils/images";
-import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import i18next from "i18next";
 
 export const SelectLanguage = () => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(window.localStorage.getItem("lang"));
   const [selectLang, setSelectLang] = useState(false);
-  const [t, i18n] = useTranslation("global");
+
+  const selectLanguage = (
+    event: React.MouseEvent<HTMLLIElement, MouseEvent>
+  ) => {
+    setLanguage(event.currentTarget.getAttribute("data-lang"));
+    window.localStorage.setItem(
+      "lang",
+      event.currentTarget.getAttribute("data-lang") || ""
+    );
+    i18next.changeLanguage(event.currentTarget.getAttribute("data-lang") || "en");
+    setSelectLang((select) => !select);
+  };
+  useEffect(() => {
+    if (!window.localStorage.getItem("lang")) {
+      window.localStorage.setItem("lang", "en");
+    }
+  }, []);
+
   return (
-    <div className="flex items-center gap-1 relative">
+    <div className="flex items-center gap-1 relative select-none">
       <LuLanguages />
       <p
-        onClick={() => setSelectLang(true)}
+        onClick={() => setSelectLang((select) => !select)}
         className="flex gap-1 items-center hover:cursor-pointer min-w-[40px]"
       >
         <img
@@ -30,11 +47,8 @@ export const SelectLanguage = () => {
         >
           {language === "es" ? (
             <li
-              onClick={() => {
-                setLanguage("en");
-                i18n.changeLanguage("en");
-                setSelectLang(false);
-              }}
+              onClick={(e) => selectLanguage(e)}
+              data-lang="en"
               className="list-none flex items-center justify-end w-[50px] gap-1 mx-3"
             >
               <LuLanguages />
@@ -47,11 +61,8 @@ export const SelectLanguage = () => {
             </li>
           ) : (
             <li
-              onClick={() => {
-                setLanguage("es");
-                i18n.changeLanguage("es");
-                setSelectLang(false);
-              }}
+              onClick={(e) => selectLanguage(e)}
+              data-lang="es"
               className="list-none flex items-center justify-end w-[50px] gap-1 mx-3"
             >
               <LuLanguages />

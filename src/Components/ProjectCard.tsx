@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardBigProps {
   image: string;
@@ -17,6 +18,7 @@ export const ProjectCard = ({
   components,
 }: ProjectCardBigProps) => {
   const [section, setSection] = useState(sections[0]);
+  const [t] = useTranslation("projects");
 
   return (
     <section className="text-gray-400">
@@ -37,23 +39,31 @@ export const ProjectCard = ({
             <h3 className="text-sm title-font text-gray-500 tracking-widest">
               {brand}
             </h3>
-            <h1 className="text-white text-3xl font-medium mb-4">{title}</h1>
+            <h1 className="text-white text-3xl font-medium mb-4">
+              {t(`${title}.title`)}
+            </h1>
             <div className="flex mb-4">
               {sections.map((sect) => (
                 <span
                   onClick={() => setSection(sect)}
                   key={sect}
-                  className={`flex-grow text-indigo-400 border-b-2 ${
+                  className={`flex-grow text-indigo-400 border-b-2 capitalize ${
                     section === sect ? "border-indigo-500" : ""
                   } py-2 text-lg px-1 hover:cursor-pointer`}
                 >
-                  {sect}
+                  {t(`sections.${sect}`)}
                 </span>
               ))}
             </div>
-            <div className="flex justify-center min-h-[500px]">
+            <motion.div
+              key={section}
+              initial={{ opacity: 0, x: 10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="flex justify-center min-h-[500px]"
+            >
               {components && components[sections.indexOf(section)]}
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.div>

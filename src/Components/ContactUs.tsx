@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-
 const contactMethods = [
   {
     icon: <FaLinkedin />,
@@ -22,7 +22,7 @@ export const ContactUs = () => {
         <section className="py-14 md:px-6 lg:px-0">
           <div className="text-gray-300 gap-12 lg:flex">
             <div className="max-w-md m-auto">
-              <h3 className="text-gray-50 text-3xl text-center lg:text-start font-semibold sm:text-4xl">
+              <h3 className="text-third text-2xl text-center lg:text-start font-semibold sm:text-4xl">
                 {t("contactsHome.title")}
               </h3>
               <p className="mt-3 text-center lg:text-start text-gray-300 opacity-80">
@@ -34,21 +34,22 @@ export const ContactUs = () => {
                 {contactMethods.map((item, idx) => (
                   <li
                     key={idx}
-                    className="space-y-3 py-6 md:max-w-sm md:py-0 flex flex-col justify-center items-center lg:items-start lg:border-l md:px-3 md:w-1/2"
+                    className="space-y-3 border-t border-gray-700 py-6 md:max-w-sm md:py-0 flex flex-col justify-center items-center lg:items-start lg:border-t-0 lg:border-l md:px-3 md:w-1/2"
                   >
-                    <div className="w-8 h-8 rounded-full border flex items-center justify-center text-gray-300">
+                    <div className="w-8 h-8 rounded-full shadow-md shadow-third/20 flex items-center justify-center text-gray-300">
                       {item.icon}
                     </div>
-                    <h4 className="text-gray-50 text-lg font-medium xl:text-xl">
+                    <h4 className="text-third/80 text-lg font-medium xl:text-xl">
                       {t(`contactsHome.${item.i18}.title`)}
                     </h4>
-                    <p className="text-center text-gray-300 opacity-80 px-5 lg:text-start md:px-0 min-h-[100px]">
+                    <p className="text-center text-gray-300 opacity-80 px-5 lg:text-start md:px-0">
                       {t(`contactsHome.${item.i18}.description`)}
                     </p>
-                    <a
+                    <motion.a
+                      whileHover={{ x: 10 }}
                       href={item.href}
                       target="_blank"
-                      className="flex items-center gap-1 text-sm text-orange-600 duration-150 hover:text-orange-500 font-medium"
+                      className="flex items-center gap-1 lowercase translate-x-2 lg:translate-x-0 text-third duration-150 hover:text-orange-500 font-medium"
                     >
                       {t(`contactsHome.${item.i18}.button`)}
                       <svg
@@ -63,7 +64,7 @@ export const ContactUs = () => {
                           clipRule="evenodd"
                         />
                       </svg>
-                    </a>
+                    </motion.a>
                   </li>
                 ))}
               </ul>
@@ -72,14 +73,14 @@ export const ContactUs = () => {
         </section>
         <section className="w-full flex flex-col items-center justify-center">
           <p className="text-sm opacity-70">{t("contactsHome.or")}</p>
-          <div className="py-10">
-            <a
-              href="mailto:ommallono@gmail.com"
-              className="text-gray-300 border border-slate-200 hover:border-third transition-colors py-3 px-6 rounded-full"
-            >
-              {t("contactsHome.email")}
-            </a>
-          </div>
+          <motion.a
+            whileHover={{ scale: 0.9 }}
+            transition={{ type: "tween", duration: 0.2 }}
+            href="mailto:ommallono@gmail.com"
+            className="text-gray-300 bg-third/80 py-3 px-6 rounded-full my-5"
+          >
+            {t("contactsHome.email")}
+          </motion.a>
           <p className="leading-normal my-5 text-center">
             {t("contactsHome.country")}
             <br />

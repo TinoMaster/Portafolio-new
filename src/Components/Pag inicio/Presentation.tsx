@@ -15,10 +15,10 @@ export const Presentation = () => {
       <div className="flex flex-wrap text-2xl lg:text-4xl justify-center">
         <span className="block text-slate-200">{t("hero.charge")}</span>
       </div>
-      <span className="text-xl lg:text-3xl text-indigo-500 mb-4">
+      <span className="text-xl lg:text-3xl text-indigo-500">
         {t("hero.experience")}
       </span>
-      <div className="w-full flex lg:hidden justify-center items-center py-10">
+      <div className="w-full flex lg:hidden justify-center items-center py-20">
         <div className="w-36 h-36 m-auto lg:w-72 lg:h-72 rounded-full overflow-hidden relative border">
           <picture>
             <img

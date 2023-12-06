@@ -17,7 +17,7 @@ export const Strength_Card = ({
   return (
     <div className="lg:w-1/3 max-w-[400px] m-auto">
       <div
-        className={`flex flex-col min-h-[200px] bg-darkMode justify-cente items-center gap-2 p-3 lg:top-10 relative shadow-2xl rounded-md ${
+        className={`flex flex-col min-h-[200px] bg-darkMode justify-cente items-center gap-2 py-4 px-5 lg:top-10 relative shadow-2xl rounded-md ${
           color === "primary" ? "shadow-primary/5" : ""
         } ${color === "secondary" ? "shadow-secondary/5" : ""} ${
           color === "third" ? "shadow-third/5" : ""
@@ -30,7 +30,7 @@ export const Strength_Card = ({
             color === "third" ? "shadow-third/30" : ""
           }`}
         />
-        <h3 className="text-base">{t(`strengths.${translate}.title`)}</h3>
+        <h3 className="text-sm">{t(`strengths.${translate}.title`)}</h3>
         <p className="text-center font-light">
           {t(`strengths.${translate}.description`)}
         </p>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface LinksProps {
   title: string;
@@ -67,8 +68,12 @@ const LinkRender = ({
   onChangeLink,
   index,
 }: LinkProps) => {
+  const [t] = useTranslation("projects");
   return (
-    <article onClick={() => onChangeLink(index)} className="relative min-w-[150px] flex gap-2 items-center">
+    <article
+      onClick={() => onChangeLink(index)}
+      className="relative min-w-[150px] flex gap-2 items-center"
+    >
       {title === selectedLink ? (
         <motion.div
           layoutId="active"
@@ -76,9 +81,7 @@ const LinkRender = ({
         ></motion.div>
       ) : null}
       {image ? <img src={image} className="w-10 h-10 pb-1" alt="" /> : null}
-      <h3 className="text-xs font-semibold">
-        {title}
-      </h3>
+      <h3 className="text-xs font-semibold">{t(`${title}.title`)}</h3>
     </article>
   );
 };
