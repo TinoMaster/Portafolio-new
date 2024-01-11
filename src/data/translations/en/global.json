@@ -76,5 +76,8 @@
     "or": "or",
     "email": "Send an email",
     "country": "Italy"
+  },
+  "pageProjects": {
+    "title": "Projects List"
   }
 }

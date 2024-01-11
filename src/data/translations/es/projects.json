@@ -1,30 +1,43 @@
 {
-  "sections": {
-    "description": "descripción",
-    "technologies": "tecnologías",
-    "links": "enlaces"
-  },
-  "debtManagement": {
-    "title": "Manejo de deudas",
-    "description": "Esta aplicación surgió de la necesidad recurrente de gestionar deudas de manera eficiente.",
-    "pointers": {
-      "0": "La aplicación tiene la capacidad de otorgar permisos o no, dependiendo de quién haya creado la deuda.",
-      "1": "Cuenta con un sistema de autenticación. Solo así, los usuarios que generen deudas con otros deben estar registrados en la aplicación y ser contactos directos mediante solicitudes de amistad implementadas.",
-      "2": "La aplicación dispone de un sistema de estadísticas donde el usuario puede visualizar, tanto de manera global como para deudas específicas, cuál es el balance de sus deudas.",
-      "3": "Cada deuda cuenta con sistemas de notas, pagos ya implementados, entre otras funcionalidades."
-    }
-  },
-  "sellManagement": {
-    "title": "Manejo de ventas",
-    "description": "Esta aplicación surgió de la necesidad de gestionar un negocio dedicado a la venta de artículos, así como a la impresión de fotografías y documentos en papel.",
-    "pointers": {
-      "0": "La aplicación, entre otras funciones, cuenta con un sistema de gestión de trabajadores. Estos empleados están registrados en la aplicación y mantienen un historial no solo de sus datos personales, sino también de todos sus logros a lo largo de su tiempo en el negocio.",
-      "1": "Dispone de un registro diario de ventas que incluye información sobre los trabajadores del día, ventas, pagos con tarjeta, pago de salarios y mucho más.",
-      "2": "Cuenta con un sistema de notas para llevar un control de los pedidos de clientes, incluyendo aquellos que han sido completados, entre otros detalles.",
-      "3": "Dispone de una sección de control de inventario donde se realiza un seguimiento riguroso de la disponibilidad tanto en el negocio como en el almacenamiento.",
-      "4": "Cuenta con controles de rutas, donde los trabajadores registrados solo tienen acceso a partes específicas de la aplicación.",
-      "5": "Cuenta con un sistema que, al cargar un archivo Excel proporcionado por un programa de escritorio utilizado en el local, es capaz de procesar todos esos datos en el backend y guardar en la base de datos la información formateada para su visualización en la página.",
-      "6": "Otros detalles hacen de esta página una plataforma bastante completa."
-    }
-  }
+   "sections": {
+      "description": "descripción",
+      "technologies": "tecnologías",
+      "links": "enlaces"
+   },
+   "debtManagement": {
+      "title": "Manejo de deudas",
+      "description": "Esta aplicación surgió de la necesidad recurrente de gestionar deudas de manera eficiente.",
+      "pointers": {
+         "0": "La aplicación tiene la capacidad de otorgar permisos o no, dependiendo de quién haya creado la deuda.",
+         "1": "Cuenta con un sistema de autenticación. Solo así, los usuarios que generen deudas con otros deben estar registrados en la aplicación y ser contactos directos mediante solicitudes de amistad implementadas.",
+         "2": "La aplicación dispone de un sistema de estadísticas donde el usuario puede visualizar, tanto de manera global como para deudas específicas, cuál es el balance de sus deudas.",
+         "3": "Cada deuda cuenta con sistemas de notas, pagos ya implementados, entre otras funcionalidades."
+      }
+   },
+   "sellManagement": {
+      "title": "Manejo de ventas",
+      "description": "Esta aplicación surgió de la necesidad de gestionar un negocio dedicado a la venta de artículos, así como a la impresión de fotografías y documentos en papel.",
+      "pointers": {
+         "0": "La aplicación, entre otras funciones, cuenta con un sistema de gestión de trabajadores. Estos empleados están registrados en la aplicación y mantienen un historial no solo de sus datos personales, sino también de todos sus logros a lo largo de su tiempo en el negocio.",
+         "1": "Dispone de un registro diario de ventas que incluye información sobre los trabajadores del día, ventas, pagos con tarjeta, pago de salarios y mucho más.",
+         "2": "Cuenta con un sistema de notas para llevar un control de los pedidos de clientes, incluyendo aquellos que han sido completados, entre otros detalles.",
+         "3": "Dispone de una sección de control de inventario donde se realiza un seguimiento riguroso de la disponibilidad tanto en el negocio como en el almacenamiento.",
+         "4": "Cuenta con controles de rutas, donde los trabajadores registrados solo tienen acceso a partes específicas de la aplicación.",
+         "5": "Cuenta con un sistema que, al cargar un archivo Excel proporcionado por un programa de escritorio utilizado en el local, es capaz de procesar todos esos datos en el backend y guardar en la base de datos la información formateada para su visualización en la página.",
+         "6": "Otros detalles hacen de esta página una plataforma bastante completa."
+      }
+   },
+   "restaurant": {
+      "title": "Restaurante",
+      "description": "Esta aplicación surgió de la necesidad de gestionar un restaurante. La aplicación dispone de diferentes funcionalidades como inventario, pedidos, entre otras.",
+      "pointers": {
+         "0": "La aplicación tiene un sistema de registro e inicio de sesión. Solo los usuarios que hayan iniciado sesión en la aplicación pueden acceder a las funciones de gestión en general.",
+         "1": "Cuenta también con un sistema edición de información, registros de pedidos, sistemas de facturación, panel de administración donde el usuario administrados pueden gestionar todas las entradas de la aplicación mas estadisticas en general de toda la pagina entre otras funcionalidades.",
+         "2": "La aplicación tiene un sistema de estadísticas donde el usuario puede ver, tanto de manera global como para pedidos específicos, cuál es el balance de sus pedidos.",
+         "3": "Cada pedido tiene sistemas de notas, pagos ya implementados, entre otras funcionalidades.",
+         "4": "Cuenta con un sistema de gestión de inventario donde se realiza un seguimiento riguroso de la disponibilidad tanto en el local como en el backend.",
+         "5": "Cuenta con controles de rutas, donde los usuarios registrados solo tienen acceso a partes específicas de la aplicación.",
+         "6": "Implementacion de IA para la creación de menus, pedidos entre otras funcionalidades."
+      }
+   }
 }

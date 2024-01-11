@@ -1,17 +1,18 @@
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons'
 
 export interface Tegnologies {
-  name: string;
+   name: string
 }
 interface LinksProps {
-  title: string;
-  url: string;
-  Icon: IconType;
+   title: string
+   url: string
+   Icon: IconType
 }
 
 export interface IProject {
-  name: string;
-  image: string;
-  links: LinksProps[];
-  tegnologies: Tegnologies[];
+   name: string
+   image: string
+   links: LinksProps[]
+   tegnologies: Tegnologies[]
+   inConstruction?: boolean
 }

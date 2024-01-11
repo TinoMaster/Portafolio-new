@@ -1,30 +1,43 @@
 {
-  "sections": {
-    "description": "description",
-    "technologies": "technologies",
-    "links": "links"
-  },
-  "debtManagement": {
-    "title": "Debt Management",
-    "description": "This application arose from the recurring need to manage debts efficiently.",
-    "pointers": {
-      "0": "The application has the ability to grant permissions or not, depending on who created the debt.",
-      "1": "It features an authentication system. Only users who create debts with others must be registered users of the application and be direct contacts through implemented friend requests.",
-      "2": "The application has a statistics system where the user can see, both globally and for specific debts, what the balance of their debts is.",
-      "3": "Each debt has note systems, payments already implemented, among other features."
-    }
-  },
-  "sellManagement": {
-    "title": "Sell Management",
-    "description": "This application arose from the need to manage a business focused on selling items and printing photos and documents on paper.",
-    "pointers": {
-      "0": "The application, among other features, includes a worker management system. These employees are registered in the application and maintain a record, not only of their personal data, but also of all their achievements throughout their time in the business.",
-      "1": "It has a daily sales record that includes information about the day's workers, sales, card payments, salary payments, and much more.",
-      "2": "It features a note system to keep track of customer orders, completed orders, and various other details.",
-      "3": "It has an inventory control section where a strict monitoring is kept on the availability, both in the business and in storage.",
-      "4": "It has route controls, where registered workers only have access to specific parts of the application.",
-      "5": "It features a system that, upon uploading an Excel file provided by a desktop program used in the local setup, can process all that data in the backend, saving the formatted information in the database for display on the webpage.",
-      "6": "Additional details make this webpage a quite comprehensive platform."
-    }
-  }
+   "sections": {
+      "description": "description",
+      "technologies": "technologies",
+      "links": "links"
+   },
+   "debtManagement": {
+      "title": "Debt Management",
+      "description": "This application arose from the recurring need to manage debts efficiently.",
+      "pointers": {
+         "0": "The application has the ability to grant permissions or not, depending on who created the debt.",
+         "1": "It features an authentication system. Only users who create debts with others must be registered users of the application and be direct contacts through implemented friend requests.",
+         "2": "The application has a statistics system where the user can see, both globally and for specific debts, what the balance of their debts is.",
+         "3": "Each debt has note systems, payments already implemented, among other features."
+      }
+   },
+   "sellManagement": {
+      "title": "Sell Management",
+      "description": "This application arose from the need to manage a business focused on selling items and printing photos and documents on paper.",
+      "pointers": {
+         "0": "The application, among other features, includes a worker management system. These employees are registered in the application and maintain a record, not only of their personal data, but also of all their achievements throughout their time in the business.",
+         "1": "It has a daily sales record that includes information about the day's workers, sales, card payments, salary payments, and much more.",
+         "2": "It features a note system to keep track of customer orders, completed orders, and various other details.",
+         "3": "It has an inventory control section where a strict monitoring is kept on the availability, both in the business and in storage.",
+         "4": "It has route controls, where registered workers only have access to specific parts of the application.",
+         "5": "It features a system that, upon uploading an Excel file provided by a desktop program used in the local setup, can process all that data in the backend, saving the formatted information in the database for display on the webpage.",
+         "6": "Additional details make this webpage a quite comprehensive platform."
+      }
+   },
+   "restaurant": {
+      "title": "Restaurant",
+      "description": "This application arose from the need to manage a restaurant. The application has different features such as inventory management, orders, and more.",
+      "pointers": {
+         "0": "The application has a login and registration system. Only users who are logged in to the application can access the general management functions.",
+         "1": "It also has an editing system, order records, billing systems, and admin panel where the administrator can manage all the entries in the application, as well as general statistics.",
+         "2": "The application has a statistics system where the user can see, both globally and for specific orders, what the balance of their orders is.",
+         "3": "Each order has note systems, payments already implemented, among other features.",
+         "4": "It has an inventory control section where a strict monitoring is kept on the availability, both in the business and in storage.",
+         "5": "It has route controls, where registered users only have access to specific parts of the application.",
+         "6": "It has an implementation of artificial intelligence for the creation of menus, orders, and other features."
+      }
+   }
 }

@@ -30,7 +30,7 @@ export const Presentation = () => {
           </picture>
         </div>
       </div>
-      <span className="text-slate-200 mb-4 text-center text-sm lg:text-start">
+      <span className="text-slate-200 mb-4 lg:my-4 text-center text-sm lg:text-start">
         HTML | CSS | JAVASCRYPT | REACT | NEXTJS | NODEJS | TAILWINDCSS
       </span>
       <div className="space-y-1 rounded-md max-w-[600px]">
