@@ -44,7 +44,7 @@ export const ProjectCard = ({
                   <h1 className="text-white text-3xl font-medium mb-4">
                      {t(`${title}.title`)}
                      {inConstruction && (
-                        <p className="leading-relaxed text-sm p-2 bg-red-400/90 rounded-md text-center">
+                        <p className="leading-relaxed text-sm p-2 bg-sec-900/20 rounded-md text-center">
                            in construction
                         </p>
                      )}
@@ -54,8 +54,8 @@ export const ProjectCard = ({
                         <span
                            onClick={() => setSection(sect)}
                            key={sect}
-                           className={`flex-grow text-indigo-400 border-b-2 capitalize ${
-                              section === sect ? 'border-indigo-500' : ''
+                           className={`flex-grow text-secondary/80 border-b-2 capitalize ${
+                              section === sect ? 'border-secondary' : ''
                            } py-2 text-lg px-1 hover:cursor-pointer`}
                         >
                            {t(`sections.${sect}`)}

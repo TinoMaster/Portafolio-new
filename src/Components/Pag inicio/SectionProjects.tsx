@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { svgProjects } from "../utils/svgs";
+import { svgProjects } from "../../utils/svgs";
 import { FaArrowRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -19,14 +19,14 @@ export const SectionProjects = () => {
           <Link to={"/projects"}>
             <motion.button
               whileHover={{ scaleX: 1.1 }}
-              className="mt-5 px-4 py-2 text-white font-medium bg-third/80 rounded-full flex gap-1 items-center m-auto lg:mx-0"
+              className="mt-5 px-4 py-2 text-white font-medium bg-secondary/80 rounded-full flex gap-1 items-center m-auto lg:mx-0"
             >
               {t("projectsHome.buttom")}
               <FaArrowRight />
             </motion.button>
           </Link>
         </div>
-        <div className="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto translate-x-8 lg:translate-x-16">
+        <div className="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto translate-x-8 lg:translate-x-16 bg-gradient-to-r from-transparent via-secondary/10 to-transparent p-2 rounded-lg">
           <img
             src={svgProjects}
             width={30}

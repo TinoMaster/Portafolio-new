@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
 import { linksSocial } from '../../data/linksSocial'
-import { mi_foto2 } from '../../utils/images'
 import { BtnDonwloadCurr } from '../BtnDonwloadCurr'
 import { LinksSocialRender } from '../LinksSocialRender'
 
@@ -8,40 +7,31 @@ export const Presentation = () => {
    const [t] = useTranslation('global')
 
    return (
-      <div className="w-full h-full lg:w-1/2 flex flex-col text-slate-400 items-center mt-10 lg:items-start">
-         <span className="flex items-center pb-1 text-lg lg:text-2xl gap-1">
+      <div className="w-full h-full flex flex-col text-slate-400 items-center">
+         <span className="flex items-center pb-1 text-3xl lg:text-4xl gap-1">
             {t('hero.greet')}
          </span>
-         <div className="flex flex-wrap text-2xl lg:text-4xl justify-center">
+         <div className="flex flex-wrap text-4xl text-center lg:text-6xl justify-center">
             <span className="block text-slate-200">{t('hero.charge')}</span>
          </div>
-         <span className="text-xl lg:text-3xl text-indigo-500">
+         <span className="text-3xl lg:text-4xl text-secondary/80">
             {t('hero.experience')}
          </span>
-         <div className="w-full flex lg:hidden justify-center py-10">
-            <div className="w-36 h-36 rounded-full overflow-hidden relative border">
-               <picture>
-                  <img
-                     loading="lazy"
-                     className="w-full h-full object-cover"
-                     src={mi_foto2}
-                     alt={`Imagen banner`}
-                  />
-               </picture>
-            </div>
-         </div>
-         <div className="space-y-1 rounded-md max-w-[600px] pt-2">
-            <p className="text-center lg:text-start text-sm max-w-[400px] md:container">
+         <div className="space-y-4 text-xl rounded-md max-w-[600px] py-8">
+            <p className="text-center max-w-[400px] md:container">
                {t('hero.about.first')}
             </p>
-            <p className="text-center lg:text-start text-sm max-w-[400px] md:container">
+            <p className="text-center max-w-[400px] md:container">
                {t('hero.about.second')}
             </p>
          </div>
-         <div className="flex flex-col-reverse justify-center items-center lg:justify-start gap-2 mt-4 lg:mt-0 w-full lg:flex-row lg:items-baseline md:pb-10 xl:pb-0">
-            <BtnDonwloadCurr />
+         <div className="flex flex-col w-full justify-center items-center gap-4">
             <LinksSocialRender linksSocial={linksSocial} />
+            <BtnDonwloadCurr />
          </div>
+         {/* <div className="container">
+            <Tegnologies />
+         </div> */}
       </div>
    )
 }

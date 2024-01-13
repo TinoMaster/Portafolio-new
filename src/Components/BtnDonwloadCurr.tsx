@@ -1,8 +1,7 @@
-import { HiOutlineDocumentDownload } from 'react-icons/hi'
-import { useCurriculum } from '../Hooks/useCurriculum'
-import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useCurriculum } from '../Hooks/useCurriculum'
 
 export const BtnDonwloadCurr = () => {
    const [selectCurr, setSelectCurr] = useState(false)
@@ -11,9 +10,8 @@ export const BtnDonwloadCurr = () => {
    return (
       <div
          onClick={() => setSelectCurr((val) => !val)}
-         className="flex w-full justify-center items-center rounded-md relative bg-gradient-to-tr max-w-[400px] lg:max-w-[500px] from-secondary/80 via-secondary/60 to-secondary/80 text-white gap-2 font-light p-2 shadow-lg shadow-black/10 md:w-[150px] lg:mt-4 z-10 hover:bg-secondary/80 hover:shadow-lg hover:shadow-primbg-primary/20 hover:cursor-pointer transition-all select-none"
+         className="flex w-full justify-center items-center rounded-md relative text-lg bg-gradient-to-tr max-w-[400px] lg:max-w-[500px] from-secondary/80 via-secondary/60 to-secondary/80 text-white gap-2 font-semibold font-inter px-2 py-3 shadow-lg shadow-black/10 md:w-[150px] z-10 hover:bg-secondary/80 hover:shadow-lg hover:shadow-primbg-primary/20 hover:cursor-pointer transition-all select-none"
       >
-         <HiOutlineDocumentDownload className="text-2xl rounded-full bg-slate-200 text-slate-700/80 p-1 shadow border border-primary select-none" />
          {t('hero.cv')}
          <AnimatePresence>
             {selectCurr ? (
@@ -32,7 +30,7 @@ export const BtnDonwloadCurr = () => {
                      whileHover={{ x: 10 }}
                      exit={{ y: -10, opacity: 0 }}
                      key={1}
-                     className="py-1 px-6 shadow-lg shadow-primary/30 rounded-full border border-primary"
+                     className="py-1 px-6 shadow-lg shadow-secondary/30 rounded-full border border-secondary"
                   >
                      Spanish
                   </motion.button>
@@ -52,7 +50,7 @@ export const BtnDonwloadCurr = () => {
                      whileHover={{ x: 10 }}
                      exit={{ y: -10, opacity: 0 }}
                      key={2}
-                     className="py-1 px-6 shadow-lg shadow-primary/30 rounded-full border border-primary"
+                     className="py-1 px-6 shadow-lg shadow-secondary/30 rounded-full border border-secondary"
                   >
                      English
                   </motion.button>

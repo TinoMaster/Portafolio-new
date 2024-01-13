@@ -1,44 +1,35 @@
-import { Tegnologies } from './Pag inicio/Tegnologies'
+import { banner_back, mi_foto2 } from '../utils/images'
 
 interface HeroPageProps {
-   principalImageMovil: string
-   principalImageDesktop: string
-   pageName: string
    ComponentMessage: React.FC
 }
 
-export const HeroPage = ({
-   principalImageMovil,
-   principalImageDesktop,
-   ComponentMessage,
-   pageName,
-}: HeroPageProps) => {
+export const HeroPage = ({ ComponentMessage }: HeroPageProps) => {
    return (
-      <section className="flex flex-wrap items-center w-full relative max-h-[900px] md:max-h-[750px] xl:max-h-[600px] px-3 mt-10 lg:py-0 md:mt-16 xl:px-0 bg-gradient-to-t lg:bg-gradient-to-r from-indigo-900/5 lg:via-orange-900/5 via-transparent to-green-800/5">
+      <section className="flex flex-wrap items-center w-full relative h-screen max-h-[850px]">
+         <div className="w-full h-full absolute bg-gradient-to-t lg:bg-gradient-to-r from-indigo-900/5 lg:via-orange-900/5 via-transparent to-green-800/5">
+            <img
+               src={banner_back}
+               alt=""
+               className="w-full h-full object-cover brightness-25"
+            />
+         </div>
+         <div className="w-full h-full absolute bg-gradient-to-r from-secondary/20 to-darkMode/20 z-10" />
+         <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" />
          {/* Seccion principal */}
-         <section className="lg:container flex flex-wrap relative flex-row-reverse w-full h-full z-10 mt-5">
-            {/* Imagen principal */}
-            <div className="w-full lg:w-1/2 lg:flex justify-center lg:justify-end pt-4 md:pt-10 md:pr-5 md:-translate-y-5 hidden">
-               <div className="w-56 h-56 md:w-60 md:h-60 rounded-full overflow-hidden relative">
-                  <picture>
-                     <source
-                        media="(min-width: 768px)"
-                        srcSet={principalImageDesktop}
-                     />
-                     <img
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                        src={principalImageMovil}
-                        alt={`Imagen banner ${pageName}`}
-                     />
-                  </picture>
-               </div>
+         <section className="lg:container flex gap-5 flex-wrap relative flex-row-reverse w-full h-full justify-center pt-[150px] z-30">
+            <div className="w-16 h-16 rounded-full overflow-hidden relative border">
+               <picture>
+                  <img
+                     loading="lazy"
+                     className="w-full h-full object-cover"
+                     src={mi_foto2}
+                     alt={`Imagen banner`}
+                  />
+               </picture>
             </div>
             <ComponentMessage />
          </section>
-         <div className="container">
-            <Tegnologies />
-         </div>
       </section>
    )
 }
