@@ -28,7 +28,7 @@ export const LinksSocialRender = ({
             className="m-2 relative hover:cursor-pointer hover:text-primary/90 "
           >
             {Icon ? (
-              <Icon title={title} className="text-2xl transition-all" />
+              <Icon title={title} className="text-xl transition-all" />
             ) : null}
 
             {showTitle ? (

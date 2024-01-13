@@ -1,83 +1,84 @@
 {
-  "nav": {
-    "home": "home",
-    "projects": "projects"
-  },
-  "hero": {
-    "greet": "Hi 🖐️, I'am Oscar",
-    "charge": "Full Stack Web Developer",
-    "experience": "4 Years Experience",
-    "about": {
-      "first": "My approach is autonomous and passionate in everything I do. I have a great ability to take responsibility for projects and adapt easily to different environments.",
-      "second": "I always face challenges with a positive attitude and am constantly seeking challenges that drive me. I crave to surround myself with people who share the same ambition for continuous improvement."
-    },
-    "cv": "Download cv"
-  },
-  "strengths": {
-    "first": {
-      "title": "INNOVATIVE",
-      "description": "Passionate about the latest trends in the world of web development and applying them creatively in innovative projects."
-    },
-    "second": {
-      "title": "PASSIONATE",
-      "description": "Passionate about web development and problem-solving. Constantly seeking technical challenges to learn and grow."
-    },
-    "third": {
-      "title": "ENGAGED",
-      "description": "Focused and dedicated to achieving goals, delivering quality solutions, and overcoming challenges with determination."
-    }
-  },
-  "features": {
-    "title": "Reasons to hire my services",
-    "subtitle": "I offer exceptional and customized digital solutions that not only meet standards, but also exceed expectations.",
-    "first": {
-      "title": "Performance",
-      "description": "I develop high-performance web applications, optimizing each line of code to ensure a smooth and fast experience for users."
-    },
-    "second": {
-      "title": "Clean Code",
-      "description": "My focus is on writing clean and easily maintainable code, making future updates and collaborations with other developers seamless."
-    },
-    "third": {
-      "title": "Efficiency",
-      "description": "I employ agile methodologies and advanced tools to ensure efficient development, meeting deadlines, and delivering high-quality results."
-    },
-    "four": {
-      "title": "Immovation",
-      "description": "I tackle challenges with creativity, proposing innovative solutions and thinking outside the conventional to deliver standout results."
-    },
-    "five": {
-      "title": "Design",
-      "description": "I develop websites with responsive design and accessibility to ensure an optimal experience on various screens and for users with different needs."
-    },
-    "six": {
-      "title": "Security",
-      "description": "I implement robust and proactive security measures in my projects to protect user information and ensure data integrity."
-    }
-  },
-  "projectsHome": {
-    "title": "Visit my projects",
-    "subtitle": "Every line of code I write is infused with a relentless desire to deliver exceptional experiences.",
-    "buttom": "Go there"
-  },
-  "contactsHome": {
-    "title": "Let’s connect",
-    "subtitle": "I am here to help you and answer any questions you may have. I hope to get news from you.",
-    "first": {
-      "title": "Linkedin",
-      "description": "Explore my digital world: Web developer passionate about JavaScript. Connect and discover more!",
-      "button": "Visit me"
-    },
-    "second": {
-      "title": "Twitter",
-      "description": "Follow me so you don't miss any posts from this journey! Become a spectator of my progress.",
-      "button": "Visit me"
-    },
-    "or": "or",
-    "email": "Send an email",
-    "country": "Italy"
-  },
-  "pageProjects": {
-    "title": "Projects List"
-  }
+   "nav": {
+      "home": "home",
+      "projects": "projects"
+   },
+   "hero": {
+      "greet": "Hi 🖐️, I'am Oscar",
+      "charge": "Full Stack Web Developer",
+      "experience": "4 Years Experience",
+      "about": {
+         "first": "My approach is autonomous and passionate in everything I do. I have a great ability to take responsibility for projects and adapt easily to different environments.",
+         "second": "I always face challenges with a positive attitude and am constantly seeking challenges that drive me. I crave to surround myself with people who share the same ambition for continuous improvement."
+      },
+      "cv": "Download cv",
+      "tegnologiesTitle": "My Stack"
+   },
+   "strengths": {
+      "first": {
+         "title": "INNOVATIVE",
+         "description": "Passionate about the latest trends in the world of web development and applying them creatively in innovative projects."
+      },
+      "second": {
+         "title": "PASSIONATE",
+         "description": "Passionate about web development and problem-solving. Constantly seeking technical challenges to learn and grow."
+      },
+      "third": {
+         "title": "ENGAGED",
+         "description": "Focused and dedicated to achieving goals, delivering quality solutions, and overcoming challenges with determination."
+      }
+   },
+   "features": {
+      "title": "Reasons to hire my services",
+      "subtitle": "I offer exceptional and customized digital solutions that not only meet standards, but also exceed expectations.",
+      "first": {
+         "title": "Performance",
+         "description": "I develop high-performance web applications, optimizing each line of code to ensure a smooth and fast experience for users."
+      },
+      "second": {
+         "title": "Clean Code",
+         "description": "My focus is on writing clean and easily maintainable code, making future updates and collaborations with other developers seamless."
+      },
+      "third": {
+         "title": "Efficiency",
+         "description": "I employ agile methodologies and advanced tools to ensure efficient development, meeting deadlines, and delivering high-quality results."
+      },
+      "four": {
+         "title": "Immovation",
+         "description": "I tackle challenges with creativity, proposing innovative solutions and thinking outside the conventional to deliver standout results."
+      },
+      "five": {
+         "title": "Design",
+         "description": "I develop websites with responsive design and accessibility to ensure an optimal experience on various screens and for users with different needs."
+      },
+      "six": {
+         "title": "Security",
+         "description": "I implement robust and proactive security measures in my projects to protect user information and ensure data integrity."
+      }
+   },
+   "projectsHome": {
+      "title": "Visit my projects",
+      "subtitle": "Every line of code I write is infused with a relentless desire to deliver exceptional experiences.",
+      "buttom": "Go there"
+   },
+   "contactsHome": {
+      "title": "Let’s connect",
+      "subtitle": "I am here to help you and answer any questions you may have. I hope to get news from you.",
+      "first": {
+         "title": "Linkedin",
+         "description": "Explore my digital world: Web developer passionate about JavaScript. Connect and discover more!",
+         "button": "Visit me"
+      },
+      "second": {
+         "title": "Twitter",
+         "description": "Follow me so you don't miss any posts from this journey! Become a spectator of my progress.",
+         "button": "Visit me"
+      },
+      "or": "or",
+      "email": "Send an email",
+      "country": "Italy"
+   },
+   "pageProjects": {
+      "title": "Projects List"
+   }
 }
