@@ -24,13 +24,13 @@ const ProjectsPage = () => {
                <source media="(min-width: 768px)" srcSet={banner_back} />
                <img
                   loading="lazy"
-                  className="w-full h-full object-cover scale-125 lg:scale-100 brightness-10"
+                  className="w-full h-full object-cover brightness-10"
                   src={banner_backMovil}
                   alt={`Imagen banner back`}
                />
             </picture>
          </div>
-         <div className="w-full h-full absolute bg-gradient-to-br from-secondary/10 via-third/10 to-primary/10 z-10" />
+         <div className="w-full h-full absolute bg-gradient-to-br from-darkMode/5 via-third/5 to-primary/5 z-10" />
          <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" />
          <section className="container z-20">
             <section className="flex flex-col gap-2 justify-center w-full min-h-screen">

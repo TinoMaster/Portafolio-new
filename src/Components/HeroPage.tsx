@@ -21,7 +21,7 @@ export const HeroPage = ({ ComponentMessage }: HeroPageProps) => {
          <div className="w-full h-full absolute bg-gradient-to-br from-secondary/10 via-third/10 to-primary/10 z-10" />
          <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" />
          {/* Seccion principal */}
-         <section className="lg:container flex gap-5 flex-wrap relative flex-row-reverse w-full h-full justify-center pt-[150px] z-30">
+         <section className="container flex gap-5 flex-wrap relative flex-row-reverse w-full h-full px-2 justify-center pt-[100px] z-30">
             <div className="w-16 h-16 rounded-full overflow-hidden relative border">
                <picture>
                   <img
