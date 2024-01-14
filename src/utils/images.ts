@@ -8,7 +8,8 @@ import appRestaurant from '../assets/images/img_projectRestaurant.png'
 import blogSoon from '../assets/images/blogSoon.png'
 import en_icon from '../assets/images/estados-unidos.png'
 import es_icon from '../assets/images/espana.png'
-import banner_back from '../assets/images/banner_back.jpg'
+import banner_back from '../assets/images/banner-back-desktop.jpg'
+import banner_backMovil from '../assets/images/banner-back-movil.jpg'
 
 import githubImage from '../assets/images/github.jpg'
 import reactImage from '../assets/images/reactpng.png'
@@ -37,6 +38,7 @@ export {
    mi_foto2,
    mi_foto1,
    banner_back,
+   banner_backMovil,
    appLocal_dark,
    appDebts,
    appMercado,

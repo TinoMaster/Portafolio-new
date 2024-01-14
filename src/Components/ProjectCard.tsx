@@ -67,7 +67,7 @@ export const ProjectCard = ({
                      initial={{ opacity: 0, x: 10 }}
                      animate={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.5 }}
-                     className="flex justify-center min-h-[500px]"
+                     className="flex justify-center min-h-[500px] text-gray-300"
                   >
                      {components && components[sections.indexOf(section)]}
                   </motion.div>

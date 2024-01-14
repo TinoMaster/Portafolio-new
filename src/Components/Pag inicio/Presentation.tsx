@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { linksSocial } from '../../data/linksSocial'
 import { BtnDonwloadCurr } from '../BtnDonwloadCurr'
 import { LinksSocialRender } from '../LinksSocialRender'
+import { Tegnologies } from './Tegnologies'
 
 export const Presentation = () => {
    const [t] = useTranslation('global')
@@ -14,10 +15,10 @@ export const Presentation = () => {
          <div className="flex flex-wrap text-4xl text-center lg:text-6xl justify-center">
             <span className="block text-slate-200">{t('hero.charge')}</span>
          </div>
-         <span className="text-3xl lg:text-4xl text-secondary/80">
+         <span className="text-3xl lg:text-4xl text-sec-400">
             {t('hero.experience')}
          </span>
-         <div className="space-y-4 text-xl rounded-md max-w-[600px] py-8">
+         <div className="space-y-4 text-xl rounded-md w-full max-w-[1100px] py-8">
             <p className="text-center max-w-[400px] md:container">
                {t('hero.about.first')}
             </p>
@@ -29,9 +30,9 @@ export const Presentation = () => {
             <LinksSocialRender linksSocial={linksSocial} />
             <BtnDonwloadCurr />
          </div>
-         {/* <div className="container">
+         <div className="container py-28">
             <Tegnologies />
-         </div> */}
+         </div>
       </div>
    )
 }

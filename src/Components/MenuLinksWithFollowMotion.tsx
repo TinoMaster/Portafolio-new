@@ -72,12 +72,12 @@ const LinkRender = ({
   return (
     <article
       onClick={() => onChangeLink(index)}
-      className="relative min-w-[150px] flex gap-2 items-center"
+      className="relative min-w-[150px] flex gap-2 items-center bg-black/10 rounded-md cursor-pointer"
     >
       {title === selectedLink ? (
         <motion.div
           layoutId="active"
-          className="absolute w-full h-full border-b peer-first:bg-black"
+          className="absolute w-full h-full border-b border-sec-100 peer-first:bg-black"
         ></motion.div>
       ) : null}
       {image ? <img src={image} className="w-10 h-10 pb-1" alt="" /> : null}

@@ -14,7 +14,7 @@ export const strengthsData: Strength[] = [
   {
     translate: "first",
     icon: MdSmartToy,
-    color: "primary",
+    color: "secondary",
   },
   {
     translate: "second",
@@ -24,6 +24,6 @@ export const strengthsData: Strength[] = [
   {
     translate: "third",
     icon: FaStudiovinari,
-    color: "secondary",
+    color: "primary",
   },
 ];

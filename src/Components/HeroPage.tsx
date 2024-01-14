@@ -1,4 +1,4 @@
-import { banner_back, mi_foto2 } from '../utils/images'
+import { banner_back, banner_backMovil, mi_foto2 } from '../utils/images'
 
 interface HeroPageProps {
    ComponentMessage: React.FC
@@ -6,15 +6,19 @@ interface HeroPageProps {
 
 export const HeroPage = ({ ComponentMessage }: HeroPageProps) => {
    return (
-      <section className="flex flex-wrap items-center w-full relative h-screen max-h-[850px]">
+      <section className="flex flex-wrap items-center w-full relative overflow-hidden">
          <div className="w-full h-full absolute bg-gradient-to-t lg:bg-gradient-to-r from-indigo-900/5 lg:via-orange-900/5 via-transparent to-green-800/5">
-            <img
-               src={banner_back}
-               alt=""
-               className="w-full h-full object-cover brightness-25"
-            />
+            <picture>
+               <source media="(min-width: 768px)" srcSet={banner_back} />
+               <img
+                  loading="lazy"
+                  className="w-full h-full object-cover scale-125 lg:scale-100 brightness-10"
+                  src={banner_backMovil}
+                  alt={`Imagen banner back`}
+               />
+            </picture>
          </div>
-         <div className="w-full h-full absolute bg-gradient-to-r from-secondary/20 to-darkMode/20 z-10" />
+         <div className="w-full h-full absolute bg-gradient-to-br from-secondary/10 via-third/10 to-primary/10 z-10" />
          <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" />
          {/* Seccion principal */}
          <section className="lg:container flex gap-5 flex-wrap relative flex-row-reverse w-full h-full justify-center pt-[150px] z-30">

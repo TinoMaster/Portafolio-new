@@ -11,7 +11,7 @@ const PagInicio = () => {
       title: 'TinoMaster | Inicio',
    })
    return (
-      <section className="w-full flex flex-col relative bg-gradient-to-br from-pri-900/5 via-transparent to-sec-900/5">
+      <section className="w-full flex flex-col relative">
          <div className="">
             <HeroPage ComponentMessage={Presentation} />
             <div className='w-full bg-gradient-to-b from-darkMode to-transparent'>
