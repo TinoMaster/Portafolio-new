@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { features } from "../data/feautures";
+import { features } from "../../data/feautures";
 
 export const Features = () => {
   const [t] = useTranslation("global");
@@ -10,12 +10,12 @@ export const Features = () => {
           <h3 className="text-white text-2xl font-semibold sm:text-4xl">
             {t(`features.title`)}
           </h3>
-          <p className="mt-3">
+          <p className="mt-3 text-pretty">
             {t(`features.subtitle`)}
           </p>
         </div>
         <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-12 grid-cols-2 lg:grid-cols-3 text-xs sm:text-base">
+          <ul className="grid gap-y-8 gap-x-5 grid-cols-2 lg:grid-cols-3 text-xs sm:text-base">
             {features.map((item, idx) => (
               <li key={idx} className="space-y-3">
                 <div className="w-12 h-12 mx-auto bg-white text-sec-800 rounded-full flex items-center justify-center text-2xl">
@@ -24,7 +24,7 @@ export const Features = () => {
                 <h4 className="text-base sm:text-lg text-secondary/80 font-semibold">
                   {t(`features.${item.i18}.title`)}
                 </h4>
-                <p className="leading-relaxed">{t(`features.${item.i18}.description`)}</p>
+                <p className="leading-relaxed text-balance">{t(`features.${item.i18}.description`)}</p>
               </li>
             ))}
           </ul>

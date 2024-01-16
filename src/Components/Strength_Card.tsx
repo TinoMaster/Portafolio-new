@@ -31,7 +31,7 @@ export const Strength_Card = ({
                }`}
             />
             <h3 className="text-xs">{t(`strengths.${translate}.title`)}</h3>
-            <p className="text-center font-light text-sm">
+            <p className="text-center font-light text-sm text-balance max-w-[260px]">
                {t(`strengths.${translate}.description`)}
             </p>
          </div>

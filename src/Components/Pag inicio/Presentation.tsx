@@ -18,7 +18,7 @@ export const Presentation = () => {
          <span className="text-2xl lg:text-4xl text-sec-400">
             {t('hero.experience')}
          </span>
-         <div className="space-y-4 text-lg rounded-md leading-relaxed w-full max-w-[1100px] py-8">
+         <div className="space-y-4 text-lg rounded-md leading-relaxed w-full max-w-[390px]  sm:max-w-[1100px] py-8 text-balance">
             <p className="text-center md:container">
                {t('hero.about.first')}
             </p>

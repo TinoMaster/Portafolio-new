@@ -10,7 +10,7 @@ export const BtnDonwloadCurr = () => {
    return (
       <div
          onClick={() => setSelectCurr((val) => !val)}
-         className="flex w-full justify-center items-center rounded-md relative text-lg bg-gradient-to-tr max-w-[400px] lg:max-w-[500px] from-secondary/80 via-secondary/60 to-secondary/80 text-white gap-2 font-semibold font-inter px-2 py-3 shadow-lg shadow-black/10 md:w-[150px] z-10 hover:bg-secondary/80 hover:shadow-lg hover:shadow-primbg-primary/20 hover:cursor-pointer transition-all select-none"
+         className="flex w-full justify-center items-center rounded-md relative text-lg bg-gradient-to-tr max-w-[380px] lg:max-w-[500px] from-secondary/80 via-secondary/60 to-secondary/80 text-white gap-2 font-semibold font-inter px-2 py-3 shadow-lg shadow-black/10 md:w-[150px] z-10 hover:bg-secondary/80 hover:shadow-lg hover:shadow-primbg-primary/20 hover:cursor-pointer transition-all select-none"
       >
          {t('hero.cv')}
          <AnimatePresence>
