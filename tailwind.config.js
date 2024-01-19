@@ -38,6 +38,7 @@ export default {
          brightness: {
             25: '.20',
             10: '.1',
+            5: '.05',
          },
          fontFamily: {
             lora: ['Lora', 'serif'],

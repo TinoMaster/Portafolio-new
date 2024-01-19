@@ -5,7 +5,7 @@ import { SelectLanguage } from "./SelectLenguage";
 
 export const Menu = () => {
   return (
-    <header className="flex h-[70px] justify-between items-center w-full px-3 lg:px-10 py-3 lg:py-5 fixed z-50 bg-gradient-to-br from-sec-950 to-darkMode">
+    <header className="flex h-[70px] justify-between items-center w-full px-3 lg:px-10 py-3 lg:py-5 absolute z-50 ">
       <header className="flex items-center gap-1">
         {/* <Logo /> */}
         <h1 className="text-2xl font-inter">TinoMaster</h1>

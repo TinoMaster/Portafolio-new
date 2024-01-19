@@ -15,7 +15,7 @@ export const Presentation = () => {
          <div className="flex flex-wrap text-3xl text-center lg:text-6xl justify-center">
             <span className="block text-slate-200">{t('hero.charge')}</span>
          </div>
-         <span className="text-2xl lg:text-4xl text-sec-400">
+         <span className="text-2xl lg:text-4xl bg-gradient-to-r from-sec-600 to-pri-800/80 bg-clip-text text-transparent">
             {t('hero.experience')}
          </span>
          <div className="space-y-4 text-lg rounded-md leading-relaxed w-full max-w-[390px]  sm:max-w-[1100px] py-8 text-balance">

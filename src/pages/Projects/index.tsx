@@ -24,7 +24,7 @@ const ProjectsPage = () => {
                <source media="(min-width: 768px)" srcSet={banner_back} />
                <img
                   loading="lazy"
-                  className="w-full h-full object-cover brightness-10"
+                  className="w-full h-full object-cover brightness-5"
                   src={banner_backMovil}
                   alt={`Imagen banner back`}
                />
