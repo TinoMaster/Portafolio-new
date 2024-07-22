@@ -7,7 +7,7 @@ import { ProjectCard } from '../../Components/ProjectCard'
 import { useSEO } from '../../Hooks/UseSEO'
 import { myProjects } from '../../data/myProjects'
 import { useTranslation } from 'react-i18next'
-import { banner_back, banner_backMovil } from '../../utils/images'
+/* import { banner_back, banner_backMovil } from '../../utils/images' */
 
 const ProjectsPage = () => {
    const { projectSelected, onChangeProject } = usePagProject()
@@ -19,7 +19,7 @@ const ProjectsPage = () => {
 
    return (
       <div className="flex flex-col min-h-screen overflow-hidden">
-         <div className="w-full h-full absolute">
+         {/* <div className="w-full h-full absolute">
             <picture>
                <source media="(min-width: 768px)" srcSet={banner_back} />
                <img
@@ -29,9 +29,9 @@ const ProjectsPage = () => {
                   alt={`Imagen banner back`}
                />
             </picture>
-         </div>
-         <div className="w-full h-full absolute bg-gradient-to-br from-darkMode/5 via-third/5 to-primary/5 z-10" />
-         <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" />
+         </div> */}
+         {/* <div className="w-full h-full absolute bg-gradient-to-br from-darkMode/5 via-third/5 to-primary/5 z-10" />
+         <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" /> */}
          <section className="container z-20">
             <section className="flex flex-col gap-2 justify-center w-full min-h-screen">
                <h2 className="w-full text-center text-2xl font-semibold font-serif text-slate-200 pt-24">

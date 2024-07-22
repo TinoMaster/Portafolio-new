@@ -57,6 +57,10 @@ export const myStacks: Tegnology[] = [
       img: 'https://img.shields.io/badge/MongoDB-05122A%3Fstyle%3Dflat%26logo%3DHTML5?style=social&logo=mongodb',
    },
    {
+      name: 'MySQL',
+      img: 'https://img.shields.io/badge/sql-black?style=social&logo=mysql&logoColor=%234479A1',
+   },
+   {
       name: 'Mongoose',
       img: 'https://img.shields.io/badge/Mongoose-05122A%3Fstyle%3Dflat%26logo%3DHTML5?style=social&logo=mongoose',
    },
@@ -69,7 +73,7 @@ export const myStacks: Tegnology[] = [
       img: 'https://img.shields.io/badge/Docker-05122A%3Fstyle%3Dflat%26logo%3DHTML5?style=social&logo=docker',
    },
    {
-      name: 'Socket.io',
-      img: 'https://img.shields.io/badge/Socket.io-05122A%3Fstyle%3Dflat%26logo%3DHTML5?style=social&logo=socketdotio',
+      name: 'C',
+      img: 'https://img.shields.io/badge/C-black?style=social&logo=c&logoColor=%23A8B9CC',
    },
 ]
