@@ -6,7 +6,7 @@ import { Tegnologies } from './Tegnologies'
 
 export const Presentation = () => {
    const [t] = useTranslation('global')
-
+   /* C */
    return (
       <div className="w-full h-full flex flex-col text-slate-400 items-center">
          <span className="flex items-center pb-1 text-xl lg:text-4xl gap-1">
