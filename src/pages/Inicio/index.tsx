@@ -11,17 +11,13 @@ const PagInicio = () => {
       title: 'TinoMaster | Inicio',
    })
    return (
-      <section className="w-full flex flex-col relative">
-         <div className="">
-            <HeroPage ComponentMessage={Presentation} />
-            <div className='w-full bg-gradient-to-b from-darkMode to-transparent'>
-               <Strengths />
-            </div>
-         </div>
+      <div className="w-full flex flex-col">
+         <HeroPage ComponentMessage={Presentation} />
+         <Strengths />
          <Features />
          <SectionProjects />
          <ContactUs />
-      </section>
+      </div>
    )
 }
 

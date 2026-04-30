@@ -3,36 +3,65 @@ import { linksSocial } from '../../data/linksSocial'
 import { BtnDonwloadCurr } from '../BtnDonwloadCurr'
 import { LinksSocialRender } from '../LinksSocialRender'
 import { Tegnologies } from './Tegnologies'
+import { useTypewriter } from '../../Hooks/useTypewriter'
+import { motion } from 'framer-motion'
+import { fadeUp } from '../../animation/framers'
+
+const rolesEn = [
+   'Full Stack Developer',
+   'Backend Engineer',
+   'Mobile Developer',
+   'AI Agent Engineer',
+   'React & Next.js',
+   'Java & Spring Boot',
+]
+const rolesEs = [
+   'Desarrollador Full Stack',
+   'Ingeniero Backend',
+   'Desarrollador Mobile',
+   'Ingeniero AI Agents',
+   'React & Next.js',
+   'Java & Spring Boot',
+]
 
 export const Presentation = () => {
-   const [t] = useTranslation('global')
-   /* C */
+   const [t, i18n] = useTranslation('global')
+   const isEs = i18n.language?.startsWith('es')
+   const typedRole = useTypewriter({
+      words: isEs ? rolesEs : rolesEn,
+      typeSpeed: 70,
+      deleteSpeed: 35,
+      delayBetweenWords: 2000,
+   })
+
    return (
-      <div className="w-full h-full flex flex-col text-slate-400 items-center">
-         <span className="flex items-center pb-1 text-xl lg:text-4xl gap-1">
+      <motion.div
+         variants={fadeUp}
+         initial="hidden"
+         animate="visible"
+         className="w-full flex flex-col items-center px-4"
+      >
+         <span className="text-slate-400 text-lg md:text-xl mb-3 tracking-wide">
             {t('hero.greet')}
          </span>
-         <div className="flex flex-wrap text-3xl text-center lg:text-6xl justify-center">
-            <span className="block text-slate-200">{t('hero.charge')}</span>
+         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-lora text-gradient text-center mb-3">
+            {t('hero.charge')}
+         </h1>
+         <div className="h-10 flex items-center mb-8">
+            <span className="text-xl md:text-2xl text-secondary font-medium">
+               {typedRole}
+               <span className="animate-pulse ml-0.5 text-secondary">|</span>
+            </span>
          </div>
-         <span className="text-2xl lg:text-4xl bg-gradient-to-r from-sec-600 to-pri-800/80 bg-clip-text text-transparent">
-            {t('hero.experience')}
-         </span>
-         <div className="space-y-4 text-lg rounded-md leading-relaxed w-full max-w-[390px]  sm:max-w-[1100px] py-8 text-balance">
-            <p className="text-center md:container">
-               {t('hero.about.first')}
-            </p>
-            <p className="text-center md:container">
-               {t('hero.about.second')}
-            </p>
+         <div className="max-w-2xl space-y-3 text-slate-400 text-base md:text-lg leading-relaxed text-center mb-8">
+            <p>{t('hero.about.first')}</p>
+            <p>{t('hero.about.second')}</p>
          </div>
-         <div className="flex flex-col w-full justify-center items-center gap-4">
+         <div className="flex flex-col items-center gap-6 mb-16">
             <LinksSocialRender linksSocial={linksSocial} />
             <BtnDonwloadCurr />
          </div>
-         <div className="container py-28">
-            <Tegnologies />
-         </div>
-      </div>
+         <Tegnologies />
+      </motion.div>
    )
 }

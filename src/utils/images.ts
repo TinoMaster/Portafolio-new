@@ -5,7 +5,6 @@ import appLocal_dark from '../assets/images/appLocalDark.png'
 import appDebts from '../assets/images/appDebts.png'
 import appMercado from '../assets/images/appMercado.png'
 import appRestaurant from '../assets/images/img_projectRestaurant.png'
-import blogSoon from '../assets/images/blogSoon.png'
 import en_icon from '../assets/images/estados-unidos.png'
 import es_icon from '../assets/images/espana.png'
 import banner_back from '../assets/images/banner-back-desktop.jpg'
@@ -44,7 +43,6 @@ export {
    appMercado,
    appRestaurant,
    mi_logo,
-   blogSoon,
    en_icon,
    es_icon,
 }

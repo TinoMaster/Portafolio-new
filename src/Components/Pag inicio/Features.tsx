@@ -1,35 +1,43 @@
-import { useTranslation } from "react-i18next";
-import { features } from "../../data/feautures";
+import { useTranslation } from 'react-i18next'
+import { features } from '../../data/feautures'
+import { motion } from 'framer-motion'
+import { staggerContainer, staggerItem } from '../../animation/framers'
 
 export const Features = () => {
-  const [t] = useTranslation("global");
-  return (
-    <section className="py-24 lg:py-56 bg-gradient-to-b ">
-      <div className="max-w-screen-xl mx-auto px-4 text-center text-gray-300 md:px-8">
-        <div className="max-w-2xl mx-auto">
-          <h3 className="text-white text-2xl font-semibold sm:text-4xl">
-            {t(`features.title`)}
-          </h3>
-          <p className="mt-3 text-pretty">
-            {t(`features.subtitle`)}
-          </p>
-        </div>
-        <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-5 grid-cols-2 lg:grid-cols-3 text-xs sm:text-base">
-            {features.map((item, idx) => (
-              <li key={idx} className="space-y-3">
-                <div className="w-12 h-12 mx-auto bg-white text-sec-800 rounded-full flex items-center justify-center text-2xl">
-                  {item.icon}
-                </div>
-                <h4 className="text-base sm:text-lg text-secondary/80 font-semibold">
-                  {t(`features.${item.i18}.title`)}
-                </h4>
-                <p className="leading-relaxed text-balance">{t(`features.${item.i18}.description`)}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </section>
-  );
-};
+   const [t] = useTranslation('global')
+   return (
+      <section className="section bg-gradient-to-b from-transparent via-surface/30 to-transparent">
+         <div className="container">
+            <div className="section-heading">
+               <h2>{t('features.title')}</h2>
+               <p>{t('features.subtitle')}</p>
+            </div>
+            <motion.ul
+               variants={staggerContainer}
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true }}
+               className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            >
+               {features.map((item) => (
+                  <motion.li
+                     key={item.i18}
+                     variants={staggerItem}
+                     className="glass glass-hover p-6 rounded-2xl text-center group"
+                  >
+                     <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300">
+                        {item.icon}
+                     </div>
+                     <h4 className="text-lg font-semibold text-slate-200 mb-2">
+                        {t(`features.${item.i18}.title`)}
+                     </h4>
+                     <p className="text-sm text-slate-400 leading-relaxed">
+                        {t(`features.${item.i18}.description`)}
+                     </p>
+                  </motion.li>
+               ))}
+            </motion.ul>
+         </div>
+      </section>
+   )
+}

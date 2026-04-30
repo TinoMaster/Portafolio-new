@@ -26,6 +26,14 @@
       "third": {
          "title": "ENGAGED",
          "description": "Focused and dedicated to achieving goals, delivering quality solutions, and overcoming challenges with determination."
+      },
+      "four": {
+         "title": "AI-DRIVEN",
+         "description": "I integrate artificial intelligence agents into my workflow, designing custom skills and automations to boost productivity and code quality."
+      },
+      "five": {
+         "title": "SCALABLE ARCHITECTURE",
+         "description": "I design multi-tenant systems, microservices, and SaaS platforms with circuit breakers, caching, and high availability patterns."
       }
    },
    "features": {

@@ -1,4 +1,5 @@
-import { /* banner_back, banner_backMovil, */ mi_foto2 } from '../utils/images'
+import { mi_foto2 } from '../utils/images'
+import { motion } from 'framer-motion'
 
 interface HeroPageProps {
    ComponentMessage: React.FC
@@ -6,34 +7,33 @@ interface HeroPageProps {
 
 export const HeroPage = ({ ComponentMessage }: HeroPageProps) => {
    return (
-      <section className="flex flex-wrap items-center w-full relative overflow-hidden">
-        {/*  <div className="w-full h-full absolute bg-gradient-to-t lg:bg-gradient-to-r from-indigo-900/5 lg:via-orange-900/5 via-transparent to-green-800/5">
-            <picture>
-               <source media="(min-width: 768px)" srcSet={banner_back} />
-               <img
-                  loading="lazy"
-                  className="w-full h-full object-cover scale-125 lg:scale-100 brightness-10 lg:brightness-25"
-                  src={banner_backMovil}
-                  alt={`Imagen banner back`}
-               />
-            </picture>
-         </div> */}
-         {/* <div className="w-full h-full absolute bg-gradient-to-br from-secondary/10 via-third/10 to-primary/10 z-10" />
-         <div className="w-full h-full absolute bg-gradient-to-b from-secondary/5 to-darkMode z-20" /> */}
-         {/* Seccion principal */}
-         <section className="container flex gap-5 flex-wrap relative flex-row-reverse w-full h-full px-2 justify-center pt-[100px] z-30">
-            <div className="w-16 h-16 rounded-full overflow-hidden relative border">
-               <picture>
-                  <img
-                     loading="lazy"
-                     className="w-full h-full object-cover"
-                     src={mi_foto2}
-                     alt={`Imagen banner`}
-                  />
-               </picture>
-            </div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+         {/* Fondo con gradiente sutil */}
+         <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent pointer-events-none" />
+         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/[0.03] rounded-full blur-3xl pointer-events-none" />
+         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/[0.03] rounded-full blur-3xl pointer-events-none" />
+
+         <div className="container relative z-10 flex flex-col items-center pt-24 md:pt-32 pb-16">
+            {/* Foto de perfil */}
+            <motion.div
+               initial={{ opacity: 0, scale: 0.8 }}
+               animate={{ opacity: 1, scale: 1 }}
+               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+               className="mb-10"
+            >
+               <div className="border-gradient rounded-full p-[3px]">
+                  <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden bg-surface">
+                     <img
+                        className="w-full h-full object-cover"
+                        src={mi_foto2}
+                        alt="Oscar Mallón"
+                     />
+                  </div>
+               </div>
+            </motion.div>
+
             <ComponentMessage />
-         </section>
+         </div>
       </section>
    )
 }

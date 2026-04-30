@@ -26,6 +26,14 @@
       "third": {
          "title": "COMPROMETIDO",
          "description": "Enfocado y dedicado a alcanzar metas, entregando soluciones de calidad y superando desafíos con determinación."
+      },
+      "four": {
+         "title": "AI-DRIVEN",
+         "description": "Integro agentes de inteligencia artificial en mi flujo de trabajo, diseñando skills personalizadas y automatizaciones para potenciar la productividad y calidad del código."
+      },
+      "five": {
+         "title": "ARQUITECTURA ESCALABLE",
+         "description": "Diseño sistemas multi-tenant, microservicios y plataformas SaaS con circuit breakers, caching y patrones de alta disponibilidad."
       }
    },
    "features": {

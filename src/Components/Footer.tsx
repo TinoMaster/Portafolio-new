@@ -9,7 +9,7 @@ export const Footer = () => {
           <a className="flex items-center">
             <span className="ml-3 text-lg text-slate-300 font-semibold">
               TinoMaster |{" "}
-              <span className="text-sm text-gray-300">© 2023</span>
+              <span className="text-sm text-gray-300">© 2026</span>
             </span>
           </a>
         </div>
