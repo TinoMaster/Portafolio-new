@@ -17,7 +17,7 @@ const ProjectsPage = () => {
       onChangeProject,
       onToggleFilter,
    } = usePagProject()
-   const { links, image, name, tegnologies } = projectSelected
+   const { links, name, tegnologies, category } = projectSelected
    const [t] = useTranslation('global')
    useSEO({
       title: 'TinoMaster | Proyectos',
@@ -75,7 +75,7 @@ const ProjectsPage = () => {
                <MenuLinksWithFollowMotion
                   links={filteredProjects.map((el) => ({
                      title: el.name,
-                     image: el.image,
+                     image: '',
                   }))}
                   selectedLink={projectSelected.name}
                   onChangeLink={onChangeProject}
@@ -88,8 +88,8 @@ const ProjectsPage = () => {
             inConstruction={
                projectSelected?.inConstruction ? true : false
             }
-            image={image}
             title={name}
+            brand={category}
             sections={['description', 'technologies', 'links']}
             components={[
                <ParagraphsWithPoints project={name} key="desc" />,
@@ -112,7 +112,6 @@ const ProjectsPage = () => {
                   </p>
                ),
             ]}
-            brand="TinoMaster"
          />
       </div>
    )
