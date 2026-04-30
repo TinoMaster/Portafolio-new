@@ -4,7 +4,7 @@ import { Menu } from "../Menu";
 
 export const BaseLayout = () => {
   return (
-    <section className="w-full h-full min-h-screen bg-[#0a0f0e]">
+    <section className="w-full h-full min-h-screen bg-[#0a0f0e]" id="main-content">
       <Menu />
       <Container />
       <Footer />

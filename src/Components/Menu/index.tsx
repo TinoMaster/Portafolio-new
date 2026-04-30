@@ -5,12 +5,12 @@ import { SelectLanguage } from "./SelectLenguage";
 
 export const Menu = () => {
   return (
-    <header className="flex h-[70px] justify-between items-center w-full px-3 lg:px-10 py-3 lg:py-5 absolute z-50 ">
+   <header className="flex h-[70px] justify-between items-center w-full px-3 lg:px-10 py-3 lg:py-5 absolute z-50" role="banner">
       <header className="flex items-center gap-1">
-        {/* <Logo /> */}
-        <h1 className="text-2xl font-inter">TinoMaster</h1>
+         {/* <Logo /> */}
+         <h1 className="text-2xl font-inter text-slate-200">TinoMaster</h1>
       </header>
-      <nav className="flex gap-4 lg:gap-10">
+      <nav className="flex gap-4 lg:gap-10" role="navigation" aria-label="Navegación principal">
         <Links linksScroll={linksScroll} />
         <SelectLanguage />
         <BtnMenuMovil />

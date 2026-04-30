@@ -1,8 +1,8 @@
 export const dataSEOPrincipal = {
-  title: "TinoMaster | Portafolio",
-  description:
-    "Portafolio de TinoMaster, desarrollador web, programador, javascript, react, node, typescript, tailwindcss, html, css, blog",
-  keywords:
-    "TinoMaster, Portafolio, desarrollo web, javascript, programacion, react, node, nodejs, typescript, tailwindcss, tailwind, tailwindCSS, html, css, blog",
-  image: "https://tinomaster.website/assets/my_image-0adb4e2f.png",
-};
+   title: 'Oscar Mallón | Full Stack Developer',
+   description:
+      'Full Stack Developer & AI Agent Engineer con 4+ años de experiencia. Especializado en React, Next.js, Java, Spring Boot, React Native y arquitecturas cloud.',
+   keywords:
+      'Oscar Mallón, Full Stack Developer, React, Next.js, Java, Spring Boot, TypeScript, React Native, AI Agents, Portfolio, desarrollo web',
+   image: 'https://tinomaster.website/assets/my_image-0adb4e2f.png',
+}

@@ -14,11 +14,14 @@ const MenuMovil = () => {
    const route = pathname.match(regex) ?? ''
    return (
       <aside
+         role="dialog"
+         aria-modal="true"
+         aria-label="Menú de navegación móvil"
          className={`w-screen h-screen flex flex-col gap-5 justify-center items-center transition-all bg-gradient-to-br z-40 from-sec-950 via-darkMode to-darkMode text-lightMode fixed ${
             context?.menuMovile ? 'translate-x-0' : '-translate-x-full'
          } z-20`}
       >
-         <nav className="p-4 flex flex-col justify-center items-center gap-10 text-xl md:hidden font-siliguri font-bold">
+         <nav className="p-4 flex flex-col justify-center items-center gap-10 text-xl md:hidden font-siliguri font-bold" role="navigation" aria-label="Navegación principal">
             {linksScroll?.map((link) => (
                <Link
                   className={`flex items-baseline transition-colors relative uppercase ${

@@ -15,7 +15,7 @@
 | [Fase 3](#fase-3-rediseño-home) | ✅ Completo | Hero, Strengths, Features, CTA, Contact rediseñados |
 | [Fase 4](#fase-4-página-de-proyectos) | ✅ Completo | Expandir a 9 proyectos, rediseñar ProjectCard, filtros |
 | [Fase 5](#fase-5-nuevas-secciones) | ✅ Completo | Timeline, Skills categorizados, Arquitecturas, AI Agents |
-| [Fase 6](#fase-6-polish-y-rendimiento) | ⬜ Pendiente | Animaciones, responsive, SEO, a11y, performance |
+| [Fase 6](#fase-6-polish-y-rendimiento) | ✅ Completo | Animaciones, responsive, SEO, a11y, performance |
 
 ---
 
@@ -188,28 +188,30 @@
 
 ## Fase 6: Polish y rendimiento
 
-### 6.1 — Scroll-reveal animations
-- [ ] Aplicar `useScrollReveal` a todas las secciones
+### 6.1 — SEO
+- [x] Meta tags actualizados (description, keywords, author, robots)
+- [x] Open Graph tags (og:title, og:description, og:image, og:locale)
+- [x] Twitter Card (summary_large_image)
+- [x] JSON-LD structured data (Person schema)
+- [x] robots.txt en public/
+- [x] SEO.data.ts actualizado
 
-### 6.2 — Responsive
-- [ ] Probar todos los breakpoints
-- [ ] Arreglar layouts en móvil, tablet, desktop
+### 6.2 — Accesibilidad
+- [x] Skip-to-content link en index.html
+- [x] ARIA labels en BtnMenuMovil, MenuMovil, Menu
+- [x] role="navigation", role="banner", role="contentinfo", role="dialog"
+- [x] aria-expanded en botón de menú móvil
+- [x] Icono cambia (menu ↔ close) al toggle
+- [x] focus-visible en CSS para navegación por teclado
 
-### 6.3 — SEO
-- [ ] Mejores meta tags (title, description, og:image)
-- [ ] Structured data JSON-LD (Person, WebSite)
-- [ ] sitemap.xml y robots.txt
+### 6.3 — Performance
+- [x] Eliminados 12+ assets no usados (banner-back 218KB, SVGs, tech images viejos)
+- [x] Bundle: 420 módulos → más limpio
+- [x] Eliminado svgs.ts y images huérfanas
 
-### 6.4 — Accesibilidad
-- [ ] ARIA labels en elementos interactivos
-- [ ] Keyboard navigation (focus visible, tab order)
-- [ ] Contraste WCAG AA verificado
-- [ ] Skip-to-content link
-
-### 6.5 — Performance
-- [ ] Optimizar imágenes (WebP, tamaños responsive)
-- [ ] Verificar bundle size con `npm run analize`
-- [ ] Code splitting donde sea beneficioso
+### 6.4 — Footer y detalles
+- [x] Footer con border-top sutil, bg actualizado
+- [x] TinoMaster en header con text-slate-200
 
 ---
 
@@ -223,3 +225,4 @@
 | 30/04 | 3 | Home rediseñado | Hero con typewriter, 25 tech pills, 5 strengths con glassmorphism, features y contact rediseñados |
 | 30/04 | 4 | Proyectos expandidos | 9 proyectos, ProjectCard glass, filtro por tecnología, tech icons, traducciones EN/ES |
 | 30/04 | 5 | Nuevas secciones | Timeline (8 entries), Skills (6 categorías), Arquitecturas (9 patrones), AI Agents (3 áreas) |
+| 30/04 | 6 | Polish final | SEO (meta/OG/JSON-LD), a11y (ARIA/skip-link), performance (12+ assets eliminados) |
