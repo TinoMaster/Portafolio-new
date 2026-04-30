@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
 
 const contactMethods = [
@@ -10,9 +10,9 @@ const contactMethods = [
       href: 'https://www.linkedin.com/in/oscarmarcosmallon/',
    },
    {
-      icon: <FaTwitter />,
+      icon: <FaGithub />,
       i18: 'second',
-      href: 'https://twitter.com/Oscar16015874/',
+      href: 'https://github.com/TinoMaster',
    },
 ]
 

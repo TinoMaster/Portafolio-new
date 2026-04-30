@@ -1,17 +1,32 @@
 export const useCurriculum = () => {
-  const downloadEngCurr = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/curriculum/OscarMallonEnglishCurriculum.pdf";
-    link.download = "OscarMallonEnglishCurriculum.pdf";
-    link.click();
-  };
+   const downloadCurr = (path: string, filename: string) => {
+      const link = document.createElement('a')
+      link.href = path
+      link.download = filename
+      link.target = '_blank'
+      link.rel = 'noopener noreferrer'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+   }
 
-  const downloadEspCurr = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/curriculum/OscarMallonSpanishCurriculum.pdf";
-    link.download = "OscarMallonSpanishCurriculum.pdf";
-    link.click();
-  };
+   const downloadEngCurr = () =>
+      downloadCurr(
+         '/assets/curriculum/OscarMallonEnglishCurriculum.pdf',
+         'OscarMallonEnglishCurriculum.pdf'
+      )
 
-  return { downloadEspCurr, downloadEngCurr };
-};
+   const downloadEspCurr = () =>
+      downloadCurr(
+         '/assets/curriculum/OscarMallonSpanishCurriculum.pdf',
+         'OscarMallonSpanishCurriculum.pdf'
+      )
+
+   const downloadItaCurr = () =>
+      downloadCurr(
+         '/assets/curriculum/OscarMallonItalianCurriculum.pdf',
+         'OscarMallonItalianCurriculum.pdf'
+      )
+
+   return { downloadEspCurr, downloadEngCurr, downloadItaCurr }
+}

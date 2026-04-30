@@ -1,0 +1,196 @@
+{
+   "nav": {
+      "home": "home",
+      "projects": "progetti"
+   },
+   "hero": {
+      "greet": "Ciao 🖐️, sono Oscar",
+      "charge": "Sviluppatore Web Full Stack",
+      "experience": "4 Anni di Esperienza",
+      "about": {
+         "first": "Il mio approccio è autonomo e passionale in tutto ciò che faccio. Ho una grande capacità di assumermi la responsabilità dei progetti e adattarmi facilmente a diversi ambienti.",
+         "second": "Affronto sempre le sfide con un atteggiamento positivo e cerco costantemente sfide che mi spingano. Desidero circondarmi di persone che condividono la stessa ambizione di miglioramento continuo."
+      },
+      "cv": "Scarica CV",
+      "tegnologiesTitle": "Il mio Stack"
+   },
+   "strengths": {
+      "first": {
+         "title": "INNOVATIVO",
+         "description": "Appassionato delle ultime tendenze nel mondo dello sviluppo web e della loro applicazione creativa in progetti innovativi."
+      },
+      "second": {
+         "title": "PASSIONALE",
+         "description": "Appassionato di sviluppo web e problem-solving. Costantemente alla ricerca di sfide tecniche per imparare e crescere."
+      },
+      "third": {
+         "title": "DEDICATO",
+         "description": "Concentrato e dedicato al raggiungimento degli obiettivi, fornendo soluzioni di qualità e superando le sfide con determinazione."
+      },
+      "four": {
+         "title": "GUIDATO DALL'IA",
+         "description": "Integro agenti di intelligenza artificiale nel mio flusso di lavoro, progettando skill personalizzate e automazioni per aumentare la produttività e la qualità del codice."
+      },
+      "five": {
+         "title": "ARCHITETTURA SCALABILE",
+         "description": "Progetto sistemi multi-tenant, microservizi e piattaforme SaaS con circuit breaker, caching e pattern di alta disponibilità."
+      }
+   },
+   "features": {
+      "title": "Motivi per assumere i miei servizi",
+      "subtitle": "Offro soluzioni digitali eccezionali e personalizzate che non solo soddisfano gli standard, ma superano le aspettative.",
+      "first": {
+         "title": "Performance",
+         "description": "Sviluppo applicazioni web ad alte prestazioni, ottimizzando ogni linea di codice per garantire un'esperienza fluida e veloce agli utenti."
+      },
+      "second": {
+         "title": "Codice Pulito",
+         "description": "Il mio focus è scrivere codice pulito e facilmente manutenibile, rendendo gli aggiornamenti futuri e le collaborazioni con altri sviluppatori senza intoppi."
+      },
+      "third": {
+         "title": "Efficienza",
+         "description": "Utilizzo metodologie agili e strumenti avanzati per garantire uno sviluppo efficiente, rispettando le scadenze e fornendo risultati di alta qualità."
+      },
+      "four": {
+         "title": "Innovazione",
+         "description": "Affronto le sfide con creatività, proponendo soluzioni innovative e pensando fuori dagli schemi per ottenere risultati eccezionali."
+      },
+      "five": {
+         "title": "Design",
+         "description": "Utilizzo design responsivo e accessibilità per garantire un'esperienza ottimale su vari schermi e per utenti con diverse esigenze."
+      },
+      "six": {
+         "title": "Sicurezza",
+         "description": "Implemento misure di sicurezza robuste e proattive nei miei progetti per proteggere le informazioni degli utenti e garantire l'integrità dei dati."
+      }
+   },
+   "projectsHome": {
+      "title": "Visita i miei progetti",
+      "subtitle": "Ogni linea di codice che scrivo è infusa con un desiderio incessante di offrire esperienze eccezionali.",
+      "buttom": "Vai lì"
+   },
+   "contactsHome": {
+      "title": "Connettiamoci",
+      "subtitle": "Sono qui per aiutarti e rispondere a qualsiasi domanda tu possa avere. Spero di avere tue notizie.",
+      "first": {
+         "title": "Linkedin",
+         "description": "Esplora il mio mondo digitale: sviluppatore web appassionato di JavaScript. Connettiti e scopri di più!",
+         "button": "Visitami"
+      },
+      "or": "o",
+      "email": "Invia un'email",
+      "country": "Italia"
+   },
+   "pageProjects": {
+      "title": "Lista Progetti"
+   },
+   "timeline": {
+      "title": "Il mio Percorso",
+      "subtitle": "Una linea temporale di progetti e ruoli che hanno plasmato la mia carriera.",
+      "myPay": {
+         "role": "Middleware Engineer",
+         "desc": "Sviluppatore unico del middleware di pagamento per Regione Lombardia. Ha orchestrato oltre 40 operazioni SOAP, progettato autenticazione OAuth2/JWT e implementato pattern circuit breaker."
+      },
+      "petFarmacy": {
+         "role": "Sviluppatore Full Stack",
+         "desc": "Ha architettato e costruito una piattaforma SaaS veterinaria multi-tenant con gestione abbonamenti, notifiche WhatsApp e un'app mobile complementare."
+      },
+      "food4You": {
+         "role": "Sviluppatore Mobile",
+         "desc": "Ha costruito un'app di food delivery multipiattaforma con tracciamento degli ordini in tempo reale tramite WebSocket ed esperienze basate sui ruoli."
+      },
+      "beachGo": {
+         "role": "Sviluppatore Mobile",
+         "desc": "Ha sviluppato un'app di gestione spiagge con mappe interattive, prenotazioni drag-and-drop e sistema di prenotazione stagionale."
+      },
+      "control": {
+         "role": "Sviluppatore Full Stack",
+         "desc": "Ha costruito un ecosistema completo di gestione aziendale da solo (oltre 1.100 commit). Backend monolitico Spring Boot con dashboard Angular."
+      },
+      "europCar": {
+         "role": "Sviluppatore Backend",
+         "desc": "Ha sviluppato un sistema di gestione noleggio veicoli con tracciamento flotta e pianificazione prenotazioni su database Oracle."
+      },
+      "ecommerce": {
+         "role": "Sviluppatore Full Stack",
+         "desc": "Ha costruito una piattaforma e-commerce full-stack su AWS con Spring Boot, React, pagamenti Stripe e PostgreSQL."
+      },
+      "freelance": {
+         "role": "Sviluppatore Web",
+         "desc": "Ha iniziato la carriera come sviluppatore web freelance, costruendo applicazioni MERN stack e imparando Java enterprise."
+      }
+   },
+   "skills": {
+      "title": "Competenze e Abilità",
+      "subtitle": "Tecnologie e strumenti che padroneggio, organizzati per dominio.",
+      "categories": {
+         "frontend": "Frontend",
+         "backend": "Backend",
+         "databases": "Database",
+         "devops": "DevOps & Cloud",
+         "testing": "Testing",
+         "ai": "AI & Agenti"
+      }
+   },
+   "architectures": {
+      "title": "Pattern Architetturali",
+      "subtitle": "Pattern di design e stili architetturali che applico nei miei progetti.",
+      "patterns": {
+         "microservices": {
+            "title": "Microservizi",
+            "desc": "Sistemi distribuiti con servizi distribuibili indipendentemente"
+         },
+         "multitenancy": {
+            "title": "Multi-tenancy",
+            "desc": "Infrastruttura condivisa con dati tenant isolati"
+         },
+         "circuitBreaker": {
+            "title": "Circuit Breaker",
+            "desc": "Tolleranza ai guasti e pattern di degradazione graduale"
+         },
+         "featureBased": {
+            "title": "Feature-based",
+            "desc": "Architettura modulare organizzata per funzionalità di business"
+         },
+         "jwtOAuth2": {
+            "title": "JWT & OAuth2",
+            "desc": "Autenticazione basata su token con rotazione dei refresh token"
+         },
+         "websockets": {
+            "title": "WebSockets",
+            "desc": "Canali di comunicazione bidirezionale in tempo reale"
+         },
+         "monorepo": {
+            "title": "Monorepo",
+            "desc": "Gestione del codice multi-app basata su Turborepo"
+         },
+         "saas": {
+            "title": "SaaS",
+            "desc": "Architettura cloud multi-tenant basata su abbonamenti"
+         },
+         "middleware": {
+            "title": "Middleware",
+            "desc": "Layer di routing dinamico e trasformazione dei protocolli"
+         }
+      }
+   },
+   "aiAgents": {
+      "title": "AI & Agent Engineering",
+      "subtitle": "Non uso solo l'IA — la ingegnerizzo. Agenti personalizzati, skill e workflow.",
+      "promptEngineering": {
+         "0": "Progetto prompt strutturati con workflow definiti, alberi decisionali e formati di output",
+         "1": "Creo catene di agenti multi-step che analizzano, pianificano, implementano e verificano autonomamente",
+         "2": "Ottimizzo l'uso dei token e le finestre di contesto per conversazioni efficienti con gli agenti"
+      },
+      "customSkills": {
+         "0": "Costruisco oltre 20 skill personalizzate per agenti (SEO, accessibilità, diagnostica, PRD)",
+         "1": "Blocco le versioni delle skill esterne con hash SHA-256 per un comportamento deterministico",
+         "2": "Progetto architetture di skill componibili con pattern di divulgazione progressiva"
+      },
+      "integrations": {
+         "0": "Integro più provider AI (Claude, GPT, DeepSeek) in workflow unificati",
+         "1": "Connetto le skill degli agenti con gli strumenti di progetto: issue tracker, PRD, pipeline CI/CD",
+         "2": "Costruisco documentazione orientata agli agenti (AGENTS.md) che serve sia umani che AI"
+      }
+   }
+}

@@ -1,0 +1,105 @@
+{
+   "sections": {
+      "description": "descrizione",
+      "technologies": "tecnologie",
+      "links": "link"
+   },
+   "myPay": {
+      "title": "myPay — Middleware di Pagamento",
+      "description": "Middleware enterprise per l'ecosistema di pagamento di Regione Lombardia. Funge da ponte tra la piattaforma regionale e pagoPA, il sistema di pagamento pubblico italiano, orchestrando oltre 40 operazioni SOAP.",
+      "pointers": {
+         "0": "Implementato middleware di routing dinamico che smista oltre 40 operazioni SOAP tra i sistemi regionali e la piattaforma pagoPA.",
+         "1": "Progettato flusso di autenticazione OAuth2 + JWT con rotazione automatica delle credenziali e refresh dei token.",
+         "2": "Integrato pattern circuit breaker (Resilience4j) e meccanismi di retry per garantire tolleranza ai guasti nell'elaborazione dei pagamenti.",
+         "3": "Costruito un layer centralizzato di servizi HTTP con pool di connessioni, gestione dei timeout e logging delle richieste.",
+         "4": "Sviluppatore unico responsabile di architettura, implementazione, test e deploy dell'intero middleware."
+      }
+   },
+   "petFarmacy": {
+      "title": "Pet Farmacy — Piattaforma SaaS",
+      "description": "SaaS veterinario multi-tenant con gestione abbonamenti, notifiche WhatsApp e sistema di quote atomiche. Costruito come monorepo con Turborepo.",
+      "pointers": {
+         "0": "Sviluppato architettura multi-tenant con Prisma v7 e PostgreSQL, isolando i dati per farmacia condividendo l'infrastruttura.",
+         "1": "Implementato sistema di abbonamento Stripe con piani a livelli, quote di utilizzo e fatturazione automatica.",
+         "2": "Costruito sistema di notifiche WhatsApp in tempo reale tramite Twilio per avvisi di prescrizione e promemoria di ricarica.",
+         "3": "App Next.js 15 full-stack con App Router, Server Components, shadcn/ui e Tailwind CSS v4.",
+         "4": "App mobile complementare costruita con React Native + Expo per la gestione della farmacia in mobilità."
+      }
+   },
+   "food4You": {
+      "title": "Food4You — Food Delivery",
+      "description": "Applicazione mobile di food delivery in tempo reale con tracciamento live degli ordini, costruita con React Native e Socket.io.",
+      "pointers": {
+         "0": "Costruito app mobile multipiattaforma (iOS/Android) con React Native 0.79 e Expo 53.",
+         "1": "Implementato tracciamento ordini in tempo reale con WebSocket Socket.io per aggiornamenti live della consegna.",
+         "2": "Progettato sistema basato sui ruoli: i clienti effettuano ordini, i ristoranti gestiscono i menu e i fattorini tracciano i percorsi.",
+         "3": "Integrata autenticazione sicura con Expo SecureStore e token JWT."
+      }
+   },
+   "beachGo": {
+      "title": "BeachGo — Gestione Spiagge",
+      "description": "Applicazione mobile per la gestione delle prenotazioni di ombrelloni e strutture balneari, semplificando le operazioni turistiche in spiaggia.",
+      "pointers": {
+         "0": "Costruito con React Native + Expo per piattaforme iOS e Android.",
+         "1": "Progettato mappa interattiva della spiaggia con sistema di prenotazione ombrelloni drag-and-drop.",
+         "2": "Implementato sistema di prenotazione stagionale con prenotazioni ricorrenti e calendario disponibilità.",
+         "3": "API backend con Node.js, Express e PostgreSQL per una gestione affidabile delle prenotazioni."
+      }
+   },
+   "control": {
+      "title": "Control — Ecosistema Aziendale",
+      "description": "Ecosistema completo di gestione aziendale con oltre 1.100 commit costruito da solo. Backend Java monolitico con frontend Angular.",
+      "pointers": {
+         "0": "Architettato backend monolitico Spring Boot con Hibernate ORM che gestisce oltre 737 file Java.",
+         "1": "Costruito dashboard Angular 12 con Material UI 5 per gestire molteplici dimensioni aziendali.",
+         "2": "Progettato architettura modulare feature-based che consente lo sviluppo indipendente dei moduli di business.",
+         "3": "Implementato controllo accessi completo basato sui ruoli (RBAC) con permessi granulari."
+      }
+   },
+   "europCar": {
+      "title": "EuropCar — Noleggio Auto",
+      "description": "Sistema di gestione noleggio veicoli costruito con Java/Spring Boot, gestendo prenotazioni, tracciamento flotta e gestione clienti.",
+      "pointers": {
+         "0": "Sviluppato con Java + Spring Boot MVC, template JSP e jQuery per il layer frontend.",
+         "1": "Gestito database Oracle 10g con query complesse per disponibilità flotta e pianificazione prenotazioni.",
+         "2": "Deploy su Apache Tomcat con pipeline di build basata su Maven.",
+         "3": "Implementato tracciamento del ciclo di vita del veicolo dall'acquisizione al noleggio e manutenzione."
+      }
+   },
+   "debtManagement": {
+      "title": "Gestione Debiti",
+      "description": "Questa applicazione è nata dalla necessità ricorrente di gestire i debiti in modo efficiente.",
+      "pointers": {
+         "0": "L'applicazione ha la capacità di concedere permessi o meno, a seconda di chi ha creato il debito.",
+         "1": "Dispone di un sistema di autenticazione. Solo gli utenti che creano debiti con altri devono essere utenti registrati dell'applicazione ed essere contatti diretti tramite richieste di amicizia implementate.",
+         "2": "L'applicazione ha un sistema di statistiche dove l'utente può vedere, sia globalmente che per debiti specifici, qual è il saldo dei propri debiti.",
+         "3": "Ogni debito ha sistemi di note, pagamenti già implementati, tra le altre funzionalità."
+      }
+   },
+   "sellManagement": {
+      "title": "Gestione Vendite",
+      "description": "Questa applicazione è nata dalla necessità di gestire un'attività focalizzata sulla vendita di articoli e la stampa di foto e documenti su carta.",
+      "pointers": {
+         "0": "L'applicazione, tra le altre funzionalità, include un sistema di gestione dei lavoratori. Questi dipendenti sono registrati nell'applicazione e mantengono un registro, non solo dei loro dati personali, ma anche di tutti i loro risultati durante il periodo nell'attività.",
+         "1": "Dispone di un registro vendite giornaliero che include informazioni sui lavoratori del giorno, vendite, pagamenti con carta, pagamenti di stipendi e molto altro.",
+         "2": "Dispone di un sistema di note per tenere traccia degli ordini dei clienti, degli ordini completati e di vari altri dettagli.",
+         "3": "Ha una sezione di controllo inventario dove viene mantenuto un monitoraggio rigoroso sulla disponibilità, sia nell'attività che in magazzino.",
+         "4": "Ha controlli di percorso, dove i lavoratori registrati hanno accesso solo a parti specifiche dell'applicazione.",
+         "5": "Dispone di un sistema che, caricando un file Excel fornito da un programma desktop utilizzato nella configurazione locale, può elaborare tutti quei dati nel backend, salvando le informazioni formattate nel database per la visualizzazione sulla pagina web.",
+         "6": "Dettagli aggiuntivi rendono questa pagina web una piattaforma abbastanza completa."
+      }
+   },
+   "restaurant": {
+      "title": "Ristorante",
+      "description": "Questa applicazione è nata dalla necessità di gestire un ristorante. L'applicazione ha diverse funzionalità come gestione inventario, ordini e altro.",
+      "pointers": {
+         "0": "L'applicazione ha un sistema di login e registrazione. Solo gli utenti che hanno effettuato l'accesso all'applicazione possono accedere alle funzioni di gestione generale.",
+         "1": "Dispone anche di un sistema di modifica, registri degli ordini, sistemi di fatturazione e pannello di amministrazione dove l'amministratore può gestire tutte le voci dell'applicazione, oltre alle statistiche generali.",
+         "2": "L'applicazione ha un sistema di statistiche dove l'utente può vedere, sia globalmente che per ordini specifici, qual è il saldo dei propri ordini.",
+         "3": "Ogni ordine ha sistemi di note, pagamenti già implementati, tra le altre funzionalità.",
+         "4": "Ha una sezione di controllo inventario dove viene mantenuto un monitoraggio rigoroso sulla disponibilità, sia nell'attività che in magazzino.",
+         "5": "Ha controlli di percorso, dove gli utenti registrati hanno accesso solo a parti specifiche dell'applicazione.",
+         "6": "Ha un'implementazione di intelligenza artificiale per la creazione di menu, ordini e altre funzionalità."
+      }
+   }
+}

@@ -78,8 +78,8 @@
          "button": "Visit me"
       },
       "second": {
-         "title": "Twitter",
-         "description": "Follow me so you don't miss any posts from this journey! Become a spectator of my progress.",
+         "title": "Github",
+         "description": "Check out my code: web developer passionate about clean architecture. Follow my open source journey!",
          "button": "Visit me"
       },
       "or": "or",

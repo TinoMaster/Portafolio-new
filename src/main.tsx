@@ -8,9 +8,11 @@ import { I18nextProvider } from "react-i18next";
 /* Lenguajes */
 import global_en from "./data/translations/en/global.json";
 import global_es from "./data/translations/es/global.json";
+import global_it from "./data/translations/it/global.json";
 import projects_en from "./data/translations/en/projects.json";
 import projects_es from "./data/translations/es/projects.json";
-const storedLang = window.localStorage.getItem("lang") || "en";
+import projects_it from "./data/translations/it/projects.json";
+const storedLang = window.localStorage.getItem("lang") || "it";
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -23,6 +25,10 @@ i18next.init({
     en: {
       global: global_en,
       projects: projects_en,
+    },
+    it: {
+      global: global_it,
+      projects: projects_it,
     },
   },
 });
