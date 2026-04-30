@@ -88,5 +88,114 @@
    },
    "pageProjects": {
       "title": "Lista de Proyectos"
+   },
+   "timeline": {
+      "title": "Mi Trayectoria",
+      "subtitle": "Una línea de tiempo de proyectos y roles que han formado mi carrera.",
+      "myPay": {
+         "role": "Middleware Engineer",
+         "desc": "Único desarrollador del middleware de pagos para la Región Lombardía. Orquesté 40+ operaciones SOAP, diseñé autenticación OAuth2/JWT e implementé circuit breaker."
+      },
+      "petFarmacy": {
+         "role": "Full Stack Developer",
+         "desc": "Arquitecturé y construí una plataforma SaaS veterinaria multi-tenant con gestión de suscripciones, notificaciones WhatsApp y app móvil complementaria."
+      },
+      "food4You": {
+         "role": "Mobile Developer",
+         "desc": "Construí una app de delivery multiplataforma con seguimiento en tiempo real usando WebSockets y experiencias basadas en roles."
+      },
+      "beachGo": {
+         "role": "Mobile Developer",
+         "desc": "Desarrollé una app de gestión de playas con mapas interactivos, reservas drag-and-drop y sistema de temporadas."
+      },
+      "control": {
+         "role": "Full Stack Developer",
+         "desc": "Construí en solitario un ecosistema integral de gestión empresarial (1,100+ commits). Backend monolítico Spring Boot con dashboard Angular."
+      },
+      "europCar": {
+         "role": "Backend Developer",
+         "desc": "Desarrollé un sistema de alquiler de vehículos con seguimiento de flota y programación de reservas sobre base de datos Oracle."
+      },
+      "ecommerce": {
+         "role": "Full Stack Developer",
+         "desc": "Construí una plataforma e-commerce full-stack en AWS con Spring Boot, React, pagos Stripe y PostgreSQL."
+      },
+      "freelance": {
+         "role": "Web Developer",
+         "desc": "Inicié mi carrera como desarrollador web freelance, construyendo aplicaciones MERN stack y aprendiendo Java empresarial."
+      }
+   },
+   "skills": {
+      "title": "Skills & Expertise",
+      "subtitle": "Tecnologías y herramientas que domino, organizadas por dominio.",
+      "categories": {
+         "frontend": "Frontend",
+         "backend": "Backend",
+         "databases": "Bases de Datos",
+         "devops": "DevOps & Cloud",
+         "testing": "Testing",
+         "ai": "AI & Agentes"
+      }
+   },
+   "architectures": {
+      "title": "Patrones de Arquitectura",
+      "subtitle": "Patrones de diseño y estilos arquitectónicos que aplico en mis proyectos.",
+      "patterns": {
+         "microservices": {
+            "title": "Microservicios",
+            "desc": "Sistemas distribuidos con servicios desplegables independientes"
+         },
+         "multitenancy": {
+            "title": "Multi-tenancy",
+            "desc": "Infraestructura compartida con datos de inquilinos aislados"
+         },
+         "circuitBreaker": {
+            "title": "Circuit Breaker",
+            "desc": "Patrones de tolerancia a fallos y degradación graceful"
+         },
+         "featureBased": {
+            "title": "Feature-based",
+            "desc": "Arquitectura modular organizada por funcionalidades de negocio"
+         },
+         "jwtOAuth2": {
+            "title": "JWT & OAuth2",
+            "desc": "Autenticación basada en tokens con rotación de refresh tokens"
+         },
+         "websockets": {
+            "title": "WebSockets",
+            "desc": "Canales de comunicación bidireccional en tiempo real"
+         },
+         "monorepo": {
+            "title": "Monorepo",
+            "desc": "Gestión de múltiples apps con Turborepo"
+         },
+         "saas": {
+            "title": "SaaS",
+            "desc": "Arquitectura cloud multi-tenant basada en suscripciones"
+         },
+         "middleware": {
+            "title": "Middleware",
+            "desc": "Capa de enrutamiento dinámico y transformación de protocolos"
+         }
+      }
+   },
+   "aiAgents": {
+      "title": "AI & Agent Engineering",
+      "subtitle": "No solo uso IA — la diseño. Agentes, skills y flujos de trabajo personalizados.",
+      "promptEngineering": {
+         "0": "Diseño prompts estructurados con workflows definidos, árboles de decisión y formatos de salida",
+         "1": "Creo cadenas de agentes multi-paso que analizan, planifican, implementan y verifican autónomamente",
+         "2": "Optimizo uso de tokens y ventanas de contexto para conversaciones eficientes con agentes"
+      },
+      "customSkills": {
+         "0": "Construyo 20+ skills personalizadas para agentes en tareas especializadas (SEO, a11y, diagnósticos, PRDs)",
+         "1": "Versiono skills externas con hashes SHA-256 para comportamiento determinista",
+         "2": "Diseño arquitecturas de skills componibles con patrones de progressive disclosure"
+      },
+      "integrations": {
+         "0": "Integro múltiples proveedores de IA (Claude, GPT, DeepSeek) en flujos de trabajo unificados",
+         "1": "Conecto skills de agentes con herramientas de proyecto: issues, PRDs, pipelines CI/CD",
+         "2": "Construyo documentación orientada a agentes (AGENTS.md) que sirve tanto a humanos como a IA"
+      }
    }
 }

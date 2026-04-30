@@ -5,68 +5,115 @@ import { MenuLinksWithFollowMotion } from '../../Components/MenuLinksWithFollowM
 import { usePagProject } from '../../Hooks/usePagProject.hook'
 import { ProjectCard } from '../../Components/ProjectCard'
 import { useSEO } from '../../Hooks/UseSEO'
-import { myProjects } from '../../data/myProjects'
 import { useTranslation } from 'react-i18next'
-/* import { banner_back, banner_backMovil } from '../../utils/images' */
+import { motion } from 'framer-motion'
 
 const ProjectsPage = () => {
-   const { projectSelected, onChangeProject } = usePagProject()
+   const {
+      projectSelected,
+      filteredProjects,
+      allTechs,
+      activeFilter,
+      onChangeProject,
+      onToggleFilter,
+   } = usePagProject()
    const { links, image, name, tegnologies } = projectSelected
+   const [t] = useTranslation('global')
    useSEO({
       title: 'TinoMaster | Proyectos',
    })
-   const [t] = useTranslation('global')
 
    return (
-      <div className="flex flex-col min-h-screen overflow-hidden">
-         {/* <div className="w-full h-full absolute">
-            <picture>
-               <source media="(min-width: 768px)" srcSet={banner_back} />
-               <img
-                  loading="lazy"
-                  className="w-full h-full object-cover brightness-5"
-                  src={banner_backMovil}
-                  alt={`Imagen banner back`}
-               />
-            </picture>
-         </div> */}
-         {/* <div className="w-full h-full absolute bg-gradient-to-br from-darkMode/5 via-third/5 to-primary/5 z-10" />
-         <div className="w-full h-full absolute bg-gradient-to-b from-secondary/10 to-darkMode z-20" /> */}
-         <section className="container z-20">
-            <section className="flex flex-col gap-2 justify-center w-full min-h-screen">
-               <h2 className="w-full text-center text-2xl font-semibold font-serif text-slate-200 pt-24">
+      <div className="min-h-screen pt-24 pb-16">
+         <div className="container">
+            {/* Header */}
+            <motion.div
+               initial={{ opacity: 0, y: 20 }}
+               animate={{ opacity: 1, y: 0 }}
+               className="text-center mb-8"
+            >
+               <h2 className="text-3xl md:text-4xl font-bold font-lora text-gradient mb-2">
                   {t('pageProjects.title')}
                </h2>
-               <ul className="flex gap-2 justify-center py-5 px-2">
-                  <MenuLinksWithFollowMotion
-                     links={myProjects.map((el) => {
-                        return {
-                           title: el.name,
-                           image: el.image,
-                        }
-                     })}
-                     selectedLink={projectSelected.name}
-                     onChangeLink={onChangeProject}
+               <p className="text-slate-400 text-sm">
+                  {filteredProjects.length}{' '}
+                  {filteredProjects.length === 1 ? 'proyecto' : 'proyectos'}
+                  {activeFilter && (
+                     <span>
+                        {' '}
+                        con{' '}
+                        <span className="text-secondary">{activeFilter}</span>
+                     </span>
+                  )}
+               </p>
+            </motion.div>
+
+            {/* Filtros de tecnología */}
+            <motion.div
+               initial={{ opacity: 0 }}
+               animate={{ opacity: 1 }}
+               transition={{ delay: 0.2 }}
+               className="flex flex-wrap justify-center gap-2 mb-8"
+            >
+               {allTechs.map((tech) => (
+                  <button
+                     key={tech}
+                     onClick={() => onToggleFilter(tech)}
+                     className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+                        activeFilter === tech
+                           ? 'bg-secondary/15 text-secondary border border-secondary/30'
+                           : 'text-slate-500 border border-white/[0.04] hover:text-slate-300 hover:border-white/[0.1]'
+                     }`}
+                  >
+                     {tech}
+                  </button>
+               ))}
+            </motion.div>
+
+            {/* Tabs de proyectos */}
+            <div className="mb-10">
+               <MenuLinksWithFollowMotion
+                  links={filteredProjects.map((el) => ({
+                     title: el.name,
+                     image: el.image,
+                  }))}
+                  selectedLink={projectSelected.name}
+                  onChangeLink={onChangeProject}
+               />
+            </div>
+         </div>
+
+         {/* Project Card */}
+         <ProjectCard
+            inConstruction={
+               projectSelected?.inConstruction ? true : false
+            }
+            image={image}
+            title={name}
+            sections={['description', 'technologies', 'links']}
+            components={[
+               <ParagraphsWithPoints project={name} key="desc" />,
+               <RenderTegnologies
+                  tegnologies={tegnologies}
+                  key="tech"
+               />,
+               projectSelected.links.length > 0 ? (
+                  <LinksSocialRender
+                     linksSocial={links}
+                     showTitle
+                     key="links"
                   />
-               </ul>
-               <div className="grow">
-                  <ProjectCard
-                     inConstruction={
-                        projectSelected?.inConstruction ? true : false
-                     }
-                     image={image}
-                     title={name}
-                     sections={['description', 'technologies', 'links']}
-                     components={[
-                        <ParagraphsWithPoints project={name} />,
-                        <RenderTegnologies tegnologies={tegnologies} />,
-                        <LinksSocialRender linksSocial={links} showTitle />,
-                     ]}
-                     brand="TinoMaster"
-                  />
-               </div>
-            </section>
-         </section>
+               ) : (
+                  <p
+                     className="text-slate-500 text-center py-12"
+                     key="links"
+                  >
+                     —
+                  </p>
+               ),
+            ]}
+            brand="TinoMaster"
+         />
       </div>
    )
 }

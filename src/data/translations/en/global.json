@@ -88,5 +88,114 @@
    },
    "pageProjects": {
       "title": "Projects List"
+   },
+   "timeline": {
+      "title": "My Journey",
+      "subtitle": "A timeline of projects and roles that have shaped my career.",
+      "myPay": {
+         "role": "Middleware Engineer",
+         "desc": "Sole developer of the payment middleware for Regione Lombardia. Orchestrated 40+ SOAP operations, designed OAuth2/JWT authentication, and implemented circuit breaker patterns."
+      },
+      "petFarmacy": {
+         "role": "Full Stack Developer",
+         "desc": "Architected and built a multi-tenant SaaS veterinary platform with subscription management, WhatsApp notifications, and a mobile companion app."
+      },
+      "food4You": {
+         "role": "Mobile Developer",
+         "desc": "Built a cross-platform food delivery app with real-time order tracking using WebSockets and role-based experiences."
+      },
+      "beachGo": {
+         "role": "Mobile Developer",
+         "desc": "Developed a beach management app with interactive maps, drag-and-drop reservations, and seasonal booking system."
+      },
+      "control": {
+         "role": "Full Stack Developer",
+         "desc": "Built a comprehensive business management ecosystem solo (1,100+ commits). Monolithic Spring Boot backend with Angular dashboard."
+      },
+      "europCar": {
+         "role": "Backend Developer",
+         "desc": "Developed a vehicle rental management system with fleet tracking and reservation scheduling on Oracle database."
+      },
+      "ecommerce": {
+         "role": "Full Stack Developer",
+         "desc": "Built a full-stack e-commerce platform on AWS with Spring Boot, React, Stripe payments, and PostgreSQL."
+      },
+      "freelance": {
+         "role": "Web Developer",
+         "desc": "Started my career as a freelance web developer, building MERN stack applications and learning enterprise Java."
+      }
+   },
+   "skills": {
+      "title": "Skills & Expertise",
+      "subtitle": "Technologies and tools I master, organized by domain.",
+      "categories": {
+         "frontend": "Frontend",
+         "backend": "Backend",
+         "databases": "Databases",
+         "devops": "DevOps & Cloud",
+         "testing": "Testing",
+         "ai": "AI & Agents"
+      }
+   },
+   "architectures": {
+      "title": "Architecture Patterns",
+      "subtitle": "Design patterns and architectural styles I apply in my projects.",
+      "patterns": {
+         "microservices": {
+            "title": "Microservices",
+            "desc": "Distributed systems with independent deployable services"
+         },
+         "multitenancy": {
+            "title": "Multi-tenancy",
+            "desc": "Shared infrastructure with isolated tenant data"
+         },
+         "circuitBreaker": {
+            "title": "Circuit Breaker",
+            "desc": "Fault tolerance and graceful degradation patterns"
+         },
+         "featureBased": {
+            "title": "Feature-based",
+            "desc": "Modular architecture organized by business features"
+         },
+         "jwtOAuth2": {
+            "title": "JWT & OAuth2",
+            "desc": "Token-based authentication with refresh token rotation"
+         },
+         "websockets": {
+            "title": "WebSockets",
+            "desc": "Real-time bidirectional communication channels"
+         },
+         "monorepo": {
+            "title": "Monorepo",
+            "desc": "Turborepo-based multi-app code management"
+         },
+         "saas": {
+            "title": "SaaS",
+            "desc": "Subscription-based multi-tenant cloud architecture"
+         },
+         "middleware": {
+            "title": "Middleware",
+            "desc": "Dynamic routing and protocol transformation layer"
+         }
+      }
+   },
+   "aiAgents": {
+      "title": "AI & Agent Engineering",
+      "subtitle": "I don't just use AI — I engineer it. Custom agents, skills, and workflows.",
+      "promptEngineering": {
+         "0": "Design structured prompts with defined workflows, decision trees, and output formats",
+         "1": "Create multi-step agent chains that analyze, plan, implement, and verify autonomously",
+         "2": "Optimize token usage and context windows for efficient agent conversations"
+      },
+      "customSkills": {
+         "0": "Build 20+ custom agent skills for specialized tasks (SEO, a11y, diagnostics, PRDs)",
+         "1": "Version-lock external skills with SHA-256 hashes for deterministic behavior",
+         "2": "Design composable skill architectures with progressive disclosure patterns"
+      },
+      "integrations": {
+         "0": "Integrate multiple AI providers (Claude, GPT, DeepSeek) into unified workflows",
+         "1": "Connect agent skills with project tooling: issue trackers, PRDs, CI/CD pipelines",
+         "2": "Build agent-oriented documentation (AGENTS.md) that serves both humans and AI"
+      }
    }
 }

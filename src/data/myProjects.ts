@@ -1,12 +1,104 @@
 import { FaGithub } from 'react-icons/fa'
 import { IProject } from '../models/types/Project'
-import { appDebts, appLocal_dark, appRestaurant } from '../utils/images'
+import {
+   appDebts,
+   appLocal_dark,
+   appMercado,
+   appRestaurant,
+} from '../utils/images'
 import { AiOutlineGlobal } from 'react-icons/ai'
 
 export const myProjects: IProject[] = [
    {
+      name: 'myPay',
+      category: 'enterprise',
+      image: appMercado,
+      links: [],
+      tegnologies: [
+         { name: 'Java' },
+         { name: 'Spring Boot' },
+         { name: 'SOAP' },
+         { name: 'JWT' },
+         { name: 'Oracle' },
+         { name: 'Resilience4j' },
+         { name: 'Docker' },
+      ],
+   },
+   {
+      name: 'petFarmacy',
+      category: 'fullstack',
+      image: appLocal_dark,
+      links: [],
+      tegnologies: [
+         { name: 'Next.js' },
+         { name: 'TypeScript' },
+         { name: 'Tailwind' },
+         { name: 'Prisma' },
+         { name: 'PostgreSQL' },
+         { name: 'Stripe' },
+         { name: 'React Native' },
+      ],
+   },
+   {
+      name: 'food4You',
+      category: 'mobile',
+      image: appRestaurant,
+      links: [],
+      tegnologies: [
+         { name: 'React Native' },
+         { name: 'Expo' },
+         { name: 'TypeScript' },
+         { name: 'Node.js' },
+         { name: 'Express' },
+         { name: 'MongoDB' },
+         { name: 'Socket.io' },
+      ],
+   },
+   {
+      name: 'beachGo',
+      category: 'mobile',
+      image: appMercado,
+      links: [],
+      tegnologies: [
+         { name: 'React Native' },
+         { name: 'Expo' },
+         { name: 'TypeScript' },
+         { name: 'Node.js' },
+         { name: 'Express' },
+         { name: 'PostgreSQL' },
+      ],
+   },
+   {
+      name: 'control',
+      category: 'fullstack',
+      image: appDebts,
+      links: [],
+      tegnologies: [
+         { name: 'Java' },
+         { name: 'Spring Boot' },
+         { name: 'Hibernate' },
+         { name: 'Angular' },
+         { name: 'PostgreSQL' },
+         { name: 'Docker' },
+      ],
+   },
+   {
+      name: 'europCar',
+      category: 'fullstack',
+      image: appLocal_dark,
+      links: [],
+      tegnologies: [
+         { name: 'Java' },
+         { name: 'Spring Boot' },
+         { name: 'JSP' },
+         { name: 'Oracle' },
+         { name: 'Tomcat' },
+      ],
+   },
+   {
       inConstruction: true,
       name: 'restaurant',
+      category: 'frontend',
       image: appRestaurant,
       links: [
          {
@@ -21,24 +113,17 @@ export const myProjects: IProject[] = [
          },
       ],
       tegnologies: [
-         { name: 'Nextjs 14' },
-         { name: 'Typescript' },
-         {
-            name: 'Tailwind',
-         },
-         {
-            name: 'FramerMotion',
-         },
-         {
-            name: 'MongoDB',
-         },
-         {
-            name: 'NextAuth',
-         },
+         { name: 'Next.js' },
+         { name: 'TypeScript' },
+         { name: 'Tailwind' },
+         { name: 'FramerMotion' },
+         { name: 'MongoDB' },
+         { name: 'NextAuth' },
       ],
    },
    {
       name: 'debtManagement',
+      category: 'fullstack',
       image: appDebts,
       links: [
          {
@@ -59,22 +144,15 @@ export const myProjects: IProject[] = [
       ],
       tegnologies: [
          { name: 'React' },
-         {
-            name: 'Tailwind',
-         },
-         {
-            name: 'Nodejs',
-         },
-         {
-            name: 'Express',
-         },
-         {
-            name: 'MongoDB',
-         },
+         { name: 'Tailwind' },
+         { name: 'Node.js' },
+         { name: 'Express' },
+         { name: 'MongoDB' },
       ],
    },
    {
       name: 'sellManagement',
+      category: 'fullstack',
       image: appLocal_dark,
       links: [
          {
@@ -94,21 +172,11 @@ export const myProjects: IProject[] = [
          },
       ],
       tegnologies: [
-         {
-            name: 'React',
-         },
-         {
-            name: 'Tailwind',
-         },
-         {
-            name: 'Nodejs',
-         },
-         {
-            name: 'Express',
-         },
-         {
-            name: 'MongoDB',
-         },
+         { name: 'React' },
+         { name: 'Tailwind' },
+         { name: 'Node.js' },
+         { name: 'Express' },
+         { name: 'MongoDB' },
       ],
    },
 ]

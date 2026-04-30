@@ -4,6 +4,68 @@
       "technologies": "technologies",
       "links": "links"
    },
+   "myPay": {
+      "title": "myPay — Payment Middleware",
+      "description": "Enterprise middleware for Regione Lombardia's payment ecosystem. Acts as a bridge between the regional platform and pagoPA, the Italian public payment system, orchestrating 40+ SOAP operations.",
+      "pointers": {
+         "0": "Implemented dynamic routing middleware that dispatches 40+ SOAP operations between regional systems and the pagoPA platform.",
+         "1": "Designed OAuth2 + JWT authentication flow with automatic credential rotation and token refresh.",
+         "2": "Integrated circuit breaker pattern (Resilience4j) and retry mechanisms to ensure fault tolerance in payment processing.",
+         "3": "Built a centralized HTTP service layer with connection pooling, timeout management, and request logging.",
+         "4": "Sole developer responsible for architecture, implementation, testing, and deployment of the entire middleware."
+      }
+   },
+   "petFarmacy": {
+      "title": "Pet Farmacy — SaaS Platform",
+      "description": "Multi-tenant veterinary pharmacy SaaS with subscription management, WhatsApp notifications, and atomic quota system. Built as a monorepo with Turborepo.",
+      "pointers": {
+         "0": "Developed a multi-tenant architecture with Prisma v7 and PostgreSQL, isolating data per pharmacy while sharing infrastructure.",
+         "1": "Implemented Stripe subscription system with tiered plans, usage quotas, and automatic billing.",
+         "2": "Built real-time WhatsApp notification system via Twilio for prescription alerts and refill reminders.",
+         "3": "Full-stack Next.js 15 app with App Router, Server Components, shadcn/ui, and Tailwind CSS v4.",
+         "4": "Mobile companion app built with React Native + Expo for on-the-go pharmacy management."
+      }
+   },
+   "food4You": {
+      "title": "Food4You — Food Delivery",
+      "description": "Real-time food delivery mobile application with live order tracking, built with React Native and Socket.io.",
+      "pointers": {
+         "0": "Built cross-platform mobile app (iOS/Android) with React Native 0.79 and Expo 53.",
+         "1": "Implemented real-time order tracking with Socket.io WebSockets for live delivery updates.",
+         "2": "Designed role-based system: customers place orders, restaurants manage menus, and delivery personnel track routes.",
+         "3": "Integrated secure authentication with Expo SecureStore and JWT tokens."
+      }
+   },
+   "beachGo": {
+      "title": "BeachGo — Beach Management",
+      "description": "Mobile application for managing beach umbrella and structure reservations, streamlining tourist beach operations.",
+      "pointers": {
+         "0": "Built with React Native + Expo for both iOS and Android platforms.",
+         "1": "Designed interactive beach map with drag-and-drop umbrella reservation system.",
+         "2": "Implemented seasonal booking system with recurring reservations and availability calendar.",
+         "3": "Backend API with Node.js, Express, and PostgreSQL for reliable booking management."
+      }
+   },
+   "control": {
+      "title": "Control — Business Ecosystem",
+      "description": "Comprehensive business management ecosystem with 1,100+ commits built solo. Monolithic Java backend with Angular frontend.",
+      "pointers": {
+         "0": "Architected a monolithic Spring Boot backend with Hibernate ORM managing 737+ Java files.",
+         "1": "Built an Angular 12 dashboard with Material UI 5 for managing multiple business dimensions.",
+         "2": "Designed modular feature-based architecture allowing independent development of business modules.",
+         "3": "Implemented comprehensive role-based access control (RBAC) with granular permissions."
+      }
+   },
+   "europCar": {
+      "title": "EuropCar — Car Rental",
+      "description": "Vehicle rental management system built with Java/Spring Boot, handling reservations, fleet tracking, and customer management.",
+      "pointers": {
+         "0": "Developed with Java + Spring Boot MVC, JSP templates, and jQuery for the frontend layer.",
+         "1": "Managed Oracle 10g database with complex queries for fleet availability and reservation scheduling.",
+         "2": "Deployed on Apache Tomcat with Maven-based build pipeline.",
+         "3": "Implemented vehicle lifecycle tracking from acquisition to rental and maintenance."
+      }
+   },
    "debtManagement": {
       "title": "Debt Management",
       "description": "This application arose from the recurring need to manage debts efficiently.",

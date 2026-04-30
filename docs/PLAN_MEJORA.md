@@ -13,8 +13,8 @@
 | [Fase 1](#fase-1-limpieza-y-fundamentos) | ✅ Completo | Limpieza de código muerto, fixes técnicos |
 | [Fase 2](#fase-2-sistema-de-diseño) | ✅ Completo | Design tokens, tipografía, glassmorphism, animaciones scroll |
 | [Fase 3](#fase-3-rediseño-home) | ✅ Completo | Hero, Strengths, Features, CTA, Contact rediseñados |
-| [Fase 4](#fase-4-página-de-proyectos) | ⬜ Pendiente | Expandir a 9 proyectos, rediseñar ProjectCard, filtros |
-| [Fase 5](#fase-5-nuevas-secciones) | ⬜ Pendiente | Timeline, Skills categorizados, Arquitecturas, AI Agents |
+| [Fase 4](#fase-4-página-de-proyectos) | ✅ Completo | Expandir a 9 proyectos, rediseñar ProjectCard, filtros |
+| [Fase 5](#fase-5-nuevas-secciones) | ✅ Completo | Timeline, Skills categorizados, Arquitecturas, AI Agents |
 | [Fase 6](#fase-6-polish-y-rendimiento) | ⬜ Pendiente | Animaciones, responsive, SEO, a11y, performance |
 
 ---
@@ -135,50 +135,54 @@
 ## Fase 4: Página de Proyectos
 
 ### 4.1 — Expandir myProjects.ts (3 → 9 proyectos)
-- [ ] Restaurante App (existente)
-- [ ] Debt Management (existente)
-- [ ] Sell Management (existente)
-- [ ] myPay — Middleware pagos Regione Lombardia
-- [ ] Pet Farmacy — SaaS veterinaria multi-tenant
-- [ ] Food4You — App móvil food delivery
-- [ ] BeachGo — Gestión de playas
-- [ ] Control — Ecosistema gestión empresarial
-- [ ] EuropCar — Alquiler de vehículos
+- [x] myPay — Middleware pagos Regione Lombardia
+- [x] Pet Farmacy — SaaS veterinaria multi-tenant
+- [x] Food4You — App móvil food delivery
+- [x] BeachGo — Gestión de playas
+- [x] Control — Ecosistema gestión empresarial
+- [x] EuropCar — Alquiler de vehículos
+- [x] Restaurant, Debt Management, Sell Management (existentes mejorados)
 
 ### 4.2 — Rediseñar ProjectCard
-- [ ] Layout más moderno con glassmorphism
-- [ ] Tabs más suaves (mejor integración framer-motion)
-- [ ] Tech pills custom diseñadas con íconos
+- [x] Layout glassmorphism con imagen grande
+- [x] Tabs con layoutId animado de framer-motion
+- [x] Badge "In Construction" estilizado
 
-### 4.3 — Filtro por tecnología
-- [ ] Botones/pills para filtrar proyectos por tech stack
-- [ ] Animación al filtrar
+### 4.3 — Tech pills con íconos
+- [x] `RenderTegnologies` mapea 30+ tecnologías a react-icons con colores
 
-### 4.4 — Mejores imágenes
-- [ ] Usar LazyImage existente o mejorarlo
-- [ ] Placeholders atractivos mientras cargan
+### 4.4 — Filtro por tecnología
+- [x] Chips de filtro extraídos de todos los proyectos
+- [x] Toggle on/off, contador de proyectos filtrados
+- [x] Índice se resetea al cambiar filtro
+
+### 4.5 — Traducciones
+- [x] 6 nuevos proyectos en EN y ES con título, descripción y pointers
 
 ---
 
 ## Fase 5: Nuevas secciones
 
 ### 5.1 — Timeline de experiencia
-- [ ] Línea de tiempo vertical con roles y empresas/proyectos
-- [ ] Badges de tecnologías en cada entry
-- [ ] Animación de reveal al hacer scroll
+- [x] Línea de tiempo con 8 entries: myPay → freelance
+- [x] Diseño alternado left/right con glassmorphism
+- [x] Badges de tecnologías en cada entry
+- [x] Animación de reveal escalonada
 
 ### 5.2 — Skills categorizados
-- [ ] Grid por categorías: Frontend, Backend, Mobile, DevOps, Databases, AI/Agents
-- [ ] Indicadores de proficiency (barras o dots)
+- [x] 6 categorías: Frontend, Backend, Databases, DevOps, Testing, AI
+- [x] Barras de proficiency animadas (1-5)
+- [x] Íconos con colores reales por tecnología
 
 ### 5.3 — Arquitecturas
-- [ ] Cards visuales mostrando patrones: Microservicios, Multi-tenancy, Circuit Breaker, etc.
-- [ ] Diagramas simplificados o representaciones con íconos
+- [x] 9 patrones: Microservices, Multi-tenancy, Circuit Breaker, etc.
+- [x] Cards glass con ícono + título + descripción
+- [x] Grid responsive de 5 columnas
 
 ### 5.4 — AI & Agent Engineering
-- [ ] Sección destacando prompt engineering y custom skills
-- [ ] Muestra de agentes que has creado
-- [ ] Visual estilo "terminal" o "código"
+- [x] 3 columnas: Prompt Engineering, Custom Skills, Integraciones
+- [x] Borde superior con color de acento
+- [x] Bullet points con íconos de color
 
 ---
 
@@ -217,3 +221,5 @@
 | 30/04 | 1 | Limpieza completa | 25+ archivos/carpetas eliminados, 4 dependencias removidas, fixes i18n/footer/fonts |
 | 30/04 | 1 | Build & Lint | Verificación exitosa: 0 errores TypeScript, 0 warnings ESLint |
 | 30/04 | 3 | Home rediseñado | Hero con typewriter, 25 tech pills, 5 strengths con glassmorphism, features y contact rediseñados |
+| 30/04 | 4 | Proyectos expandidos | 9 proyectos, ProjectCard glass, filtro por tecnología, tech icons, traducciones EN/ES |
+| 30/04 | 5 | Nuevas secciones | Timeline (8 entries), Skills (6 categorías), Arquitecturas (9 patrones), AI Agents (3 áreas) |

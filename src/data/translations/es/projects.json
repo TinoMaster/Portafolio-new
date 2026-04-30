@@ -4,6 +4,68 @@
       "technologies": "tecnologías",
       "links": "enlaces"
    },
+   "myPay": {
+      "title": "myPay — Middleware de Pagos",
+      "description": "Middleware empresarial para el ecosistema de pagos de la Región Lombardía. Actúa como puente entre la plataforma regional y pagoPA, el sistema de pagos público italiano, orquestando más de 40 operaciones SOAP.",
+      "pointers": {
+         "0": "Implementé middleware de enrutamiento dinámico que despacha más de 40 operaciones SOAP entre sistemas regionales y la plataforma pagoPA.",
+         "1": "Diseñé flujo de autenticación OAuth2 + JWT con rotación automática de credenciales y refresh de tokens.",
+         "2": "Integré patrón circuit breaker (Resilience4j) y mecanismos de retry para garantizar tolerancia a fallos en procesamiento de pagos.",
+         "3": "Construí una capa de servicio HTTP centralizada con connection pooling, gestión de timeouts y logging de requests.",
+         "4": "Único desarrollador responsable de la arquitectura, implementación, testing y despliegue del middleware completo."
+      }
+   },
+   "petFarmacy": {
+      "title": "Pet Farmacy — Plataforma SaaS",
+      "description": "SaaS multi-tenant de farmacia veterinaria con gestión de suscripciones, notificaciones WhatsApp y sistema de cuotas atómicas. Construido como monorepo con Turborepo.",
+      "pointers": {
+         "0": "Desarrollé arquitectura multi-tenant con Prisma v7 y PostgreSQL, aislando datos por farmacia compartiendo infraestructura.",
+         "1": "Implementé sistema de suscripciones Stripe con planes escalonados, cuotas de uso y facturación automática.",
+         "2": "Construí sistema de notificaciones WhatsApp en tiempo real vía Twilio para alertas de recetas y recordatorios.",
+         "3": "App full-stack Next.js 15 con App Router, Server Components, shadcn/ui y Tailwind CSS v4.",
+         "4": "App móvil complementaria con React Native + Expo para gestión de farmacia en movimiento."
+      }
+   },
+   "food4You": {
+      "title": "Food4You — Delivery de Comida",
+      "description": "Aplicación móvil de delivery de comida en tiempo real con seguimiento de pedidos en vivo, construida con React Native y Socket.io.",
+      "pointers": {
+         "0": "App móvil multiplataforma (iOS/Android) con React Native 0.79 y Expo 53.",
+         "1": "Implementé seguimiento de pedidos en tiempo real con WebSockets Socket.io para actualizaciones de delivery en vivo.",
+         "2": "Diseñé sistema basado en roles: clientes realizan pedidos, restaurantes gestionan menús, y repartidores siguen rutas.",
+         "3": "Integré autenticación segura con Expo SecureStore y tokens JWT."
+      }
+   },
+   "beachGo": {
+      "title": "BeachGo — Gestión de Playas",
+      "description": "Aplicación móvil para gestión de reservas de sombrillas y estructuras de playa, optimizando operaciones turísticas de litoral.",
+      "pointers": {
+         "0": "Construida con React Native + Expo para plataformas iOS y Android.",
+         "1": "Diseñé mapa interactivo de playa con sistema drag-and-drop para reserva de sombrillas.",
+         "2": "Implementé sistema de reservas por temporada con reservas recurrentes y calendario de disponibilidad.",
+         "3": "API backend con Node.js, Express y PostgreSQL para gestión fiable de reservas."
+      }
+   },
+   "control": {
+      "title": "Control — Ecosistema Empresarial",
+      "description": "Ecosistema integral de gestión empresarial con más de 1,100 commits construido en solitario. Backend Java monolítico con frontend Angular.",
+      "pointers": {
+         "0": "Arquitecturé un backend monolítico Spring Boot con Hibernate ORM gestionando más de 737 archivos Java.",
+         "1": "Construí dashboard Angular 12 con Material UI 5 para gestionar múltiples dimensiones del negocio.",
+         "2": "Diseñé arquitectura modular feature-based permitiendo desarrollo independiente de módulos de negocio.",
+         "3": "Implementé control de acceso basado en roles (RBAC) con permisos granulares."
+      }
+   },
+   "europCar": {
+      "title": "EuropCar — Alquiler de Vehículos",
+      "description": "Sistema de gestión de alquiler de vehículos con Java/Spring Boot, manejando reservas, seguimiento de flota y gestión de clientes.",
+      "pointers": {
+         "0": "Desarrollado con Java + Spring Boot MVC, plantillas JSP y jQuery para la capa frontend.",
+         "1": "Gestioné base de datos Oracle 10g con consultas complejas para disponibilidad de flota y programación de reservas.",
+         "2": "Desplegado en Apache Tomcat con pipeline de build basado en Maven.",
+         "3": "Implementé seguimiento del ciclo de vida del vehículo desde adquisición hasta alquiler y mantenimiento."
+      }
+   },
    "debtManagement": {
       "title": "Manejo de deudas",
       "description": "Esta aplicación surgió de la necesidad recurrente de gestionar deudas de manera eficiente.",

@@ -23,57 +23,75 @@ export const ProjectCard = ({
    const [t] = useTranslation('projects')
 
    return (
-      <section className="text-gray-400">
-         <motion.div
-            initial={{ opacity: 0, x: 10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            key={image}
-            className="container px-4 py-5 mx-auto"
-         >
-            <div className="max-w-[600px] mx-auto flex gap-3 flex-col">
-               <img
-                  alt={`imagen del projecto ${title}`}
-                  className="w-full h-64 object-contain rounded bg-black/5 shadow-md"
-                  src={image}
-               />
-               <div className="w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-                  <h3 className="text-sm title-font text-gray-500 tracking-widest">
+      <motion.div
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.5 }}
+         key={image}
+         className="container px-4 py-8 mx-auto"
+      >
+         <div className="max-w-3xl mx-auto">
+            <div className="glass rounded-2xl overflow-hidden">
+               {/* Imagen del proyecto */}
+               <div className="relative h-64 md:h-80 bg-surface/50 flex items-center justify-center overflow-hidden">
+                  <img
+                     alt={`imagen del proyecto ${title}`}
+                     className="w-full h-full object-contain p-4"
+                     src={image}
+                  />
+                  {inConstruction && (
+                     <span className="absolute top-4 right-4 px-3 py-1 text-xs font-medium bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 rounded-full">
+                        In Construction
+                     </span>
+                  )}
+               </div>
+
+               {/* Contenido */}
+               <div className="p-6 md:p-8">
+                  <p className="text-xs text-slate-500 tracking-widest uppercase mb-1">
                      {brand}
-                  </h3>
-                  <h1 className="text-white text-3xl font-medium mb-4">
+                  </p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-6">
                      {t(`${title}.title`)}
-                     {inConstruction && (
-                        <p className="leading-relaxed text-sm p-2 bg-sec-900/20 rounded-md text-center">
-                           in construction
-                        </p>
-                     )}
-                  </h1>
-                  <div className="flex mb-4">
+                  </h2>
+
+                  {/* Tabs */}
+                  <div className="flex border-b border-white/[0.06] mb-6">
                      {sections.map((sect) => (
-                        <span
-                           onClick={() => setSection(sect)}
+                        <button
                            key={sect}
-                           className={`flex-grow text-secondary/80 border-b-2 capitalize ${
-                              section === sect ? 'border-secondary' : ''
-                           } py-2 text-lg px-1 hover:cursor-pointer`}
+                           onClick={() => setSection(sect)}
+                           className={`relative px-4 py-3 text-sm font-medium capitalize transition-colors ${
+                              section === sect
+                                 ? 'text-secondary'
+                                 : 'text-slate-500 hover:text-slate-300'
+                           }`}
                         >
                            {t(`sections.${sect}`)}
-                        </span>
+                           {section === sect && (
+                              <motion.div
+                                 layoutId="activeTab"
+                                 className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary rounded-full"
+                              />
+                           )}
+                        </button>
                      ))}
                   </div>
+
+                  {/* Contenido de tab */}
                   <motion.div
                      key={section}
-                     initial={{ opacity: 0, x: 10 }}
-                     animate={{ opacity: 1, x: 0 }}
-                     transition={{ duration: 0.5 }}
-                     className="flex justify-center min-h-[500px] text-gray-300"
+                     initial={{ opacity: 0, y: 8 }}
+                     animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.3 }}
+                     className="min-h-[300px] text-slate-300"
                   >
-                     {components && components[sections.indexOf(section)]}
+                     {components &&
+                        components[sections.indexOf(section)]}
                   </motion.div>
                </div>
             </div>
-         </motion.div>
-      </section>
+         </div>
+      </motion.div>
    )
 }
