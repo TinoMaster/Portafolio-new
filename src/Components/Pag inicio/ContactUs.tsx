@@ -81,7 +81,7 @@ export const ContactUs = () => {
                <div className="flex items-center gap-2 text-slate-500 text-sm mt-4">
                   <MdLocationOn className="text-secondary" />
                   <span>
-                     {t('contactsHome.country')} — Francavilla al Mare
+                     {t('contactsHome.country')} — Teramo
                   </span>
                </div>
             </motion.div>

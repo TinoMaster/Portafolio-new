@@ -72,12 +72,17 @@
    "contactsHome": {
       "title": "Connettiamoci",
       "subtitle": "Sono qui per aiutarti e rispondere a qualsiasi domanda tu possa avere. Spero di avere tue notizie.",
-      "first": {
-         "title": "Linkedin",
-         "description": "Esplora il mio mondo digitale: sviluppatore web appassionato di JavaScript. Connettiti e scopri di più!",
-         "button": "Visitami"
-      },
-      "or": "o",
+"first": {
+          "title": "Linkedin",
+          "description": "Esplora il mio mondo digitale: sviluppatore web appassionato di JavaScript. Connettiti e scopri di più!",
+          "button": "Visitami"
+       },
+       "second": {
+          "title": "Github",
+          "description": "Guarda il mio codice: sviluppatore web appassionato di architettura pulita. Segui il mio viaggio open source!",
+          "button": "Visitami"
+       },
+       "or": "o",
       "email": "Invia un'email",
       "country": "Italia"
    },
