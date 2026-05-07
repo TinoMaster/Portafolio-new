@@ -19,7 +19,7 @@ const contactMethods = [
 export const ContactUs = () => {
    const [t] = useTranslation('global')
    return (
-      <section className="section relative">
+       <section id="contact" className="section relative">
          <div className="container">
             <motion.div
                initial={{ opacity: 0, y: 30 }}

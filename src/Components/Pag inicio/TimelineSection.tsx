@@ -6,7 +6,7 @@ export const TimelineSection = () => {
    const [t] = useTranslation('global')
 
    return (
-      <section className="section relative overflow-hidden">
+       <section id="about" className="section relative overflow-hidden">
          <div className="absolute inset-0 bg-gradient-to-b from-surface/50 to-transparent pointer-events-none" />
          <div className="container relative">
             <motion.div

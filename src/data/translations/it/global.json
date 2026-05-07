@@ -1,7 +1,10 @@
 {
    "nav": {
       "home": "home",
-      "projects": "progetti"
+      "about": "su di me",
+      "skills": "competenze",
+      "projects": "progetti",
+      "contact": "contatto"
    },
    "hero": {
       "greet": "Ciao 🖐️, sono Oscar",

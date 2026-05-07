@@ -1,6 +1,7 @@
 export interface LinksScroll {
   name: string;
   path: string;
+  isHash?: boolean;
 }
 
 const linksScroll: LinksScroll[] = [
@@ -9,14 +10,24 @@ const linksScroll: LinksScroll[] = [
     path: "/",
   },
   {
+    name: "about",
+    path: "/#about",
+    isHash: true,
+  },
+  {
+    name: "skills",
+    path: "/#skills",
+    isHash: true,
+  },
+  {
     name: "projects",
     path: "/projects",
   },
-  /* {
-    name: "Sobre mi",
-    path: "/about",
-  }, */
-
+  {
+    name: "contact",
+    path: "/#contact",
+    isHash: true,
+  },
   /* {
     name: "Blog",
     path: "/blog",

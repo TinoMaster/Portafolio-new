@@ -7,7 +7,7 @@ export const SkillsSection = () => {
    const [t] = useTranslation('global')
 
    return (
-      <section className="section">
+       <section id="skills" className="section">
          <div className="container">
             <motion.div
                initial={{ opacity: 0, y: 30 }}
